@@ -1,0 +1,183 @@
+---
+title: "General conclusions"
+author: "Natascha Lewe"
+date: "08/07/2022"
+output:
+  word_document2:
+    number_sections: yes
+    toc_depth: 3
+    reference_docx: bib/Test.docx
+bibliography: testbookdown/20220513bib.bibtex
+csl: bib/apa.csl
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE, dpi = 300)
+library (tidyverse)
+library (rmarkdown)
+library (markdown)
+library (bookdown)
+```
+
+# General conclusions
+
+Community assembly processes like that of the plant-AMF mutualism are governed by a plethora of factors which interactively affect communities and, subsequently, alter ecosystem functioning. Having a better understanding how these factors steer the assemblage of plant-AMF communities will enable ecologist to better predict the trajectories and possible outcomes of ecosystem assembly. 
+I experimentally explored the interplay between three important factors that can affect the plant-AMF community. First, I examined the inherent interaction niche properties of pasture plant species, i.e., their functional role as generalist or specialist with AMF. The second factor of importance for the AMF-assembly is the presence of other plant species, which, depending on the species identity, can affect the AMF community composition of their neighbouring plants. Depending on the order of arrival of the plant hosts, which was the third factor I studied, these drivers of AMF assembly can be buffered or exacerbated, resulting in different AMF community compositions which, in turn, might affect the assembly of the plant community.
+
+
+I had four aims that formed the data chapters of my thesis:
+
+Aim 1: To examine if and how pasture plants differ in their inherent interaction strategies with AMF (Chapter 2).
+
+Aim 2: To assess if the plants'  interaction strategies with AMF influence the  carbon allocation to the microbial community (AMF and bacteria) as measured by their differences in biomass and community composition (Chapter 3); and if, due to priority effects, these differences had consequences for the further development of the rhizosphere community (Chapters 4 & 5).
+
+Aim 3: to examine the relative effects of plant neighbours and the order of arrival on the plant-AMF interaction of plants differing in their interaction niche strategies; and
+
+Aim 4: To evaluate the interplay between inherent interaction strategy, neighbour plants, and priority of arrival on the bipartite plant-AMF interaction network structure and its properties.
+
+
+My findings regarding these aims were:
+
+**Pasture plants employed diverse interaction strategies with AMF.**
+In **Chapter 2**, I measured complementary properties of the interaction niche for a comprehensive description of a plant as an interaction generalist or specialist with AMF. 
+For these interaction niche properties I chose several descriptors of the numeric and phylogenetic interaction niche width and also included information about the interaction behaviour of the plant species, like the specificity in their partner selection among plant individuals as a measure of being a specialist. 
+I defined that these properties constitute the plant species' interaction strategy, or their functional role in the interaction with AMF. 
+This approach revealed that the twenty pasture plant species studied had different functional roles in their interaction with AMF, with plants interacting as generalists and specialists at the same time, depending on the interaction niche property. 
+The most obvious differences among the plants concerned the AMF $\alpha$-diversity, especially the mean richness, which exhibited clear interaction generalism and specialism. Furthermore, my result showed that there was a phylogenetic signal in the AMF $\alpha$-diversity at the plant family level.
+The pasture plants also displayed differences in selectivity of the AMF pool, as measured by complementary numeric and phylogenetic $\beta$-diversity metrics.
+However, the propensity for selectivity in AMF interactions was independent of the plants' $\alpha$-diversity but depended instead of the plant species identity, i.e., the numeric specialists were not more selective in their AMF partner choice than the generalists.
+Taken together, this variety in interaction strategies within both of the studied plant functional groups, i.e., forbs and grasses, suggests increased niche partitioning, resulting in less niche overlap among the plant species. 
+Decreased degree of niche overlap coincides with less competition between species, therefore positively influencing coexistence and subsequently biodiversity of the system [@Ponisio2019].
+In addition, I showed that these interaction strategies are inherent stable traits of the plant species. Repeating the analysis of the interaction niche properties in Chapter 3 revealed high similarities as indicated in figure \@ref(fig:fig-ranked-richness) for the AMF richness, suggesting that the plant species functional role is independent of changes in the growth conditions, as well as unaffected by the available AMF pool. 
+
+
+
+```{r fig-ranked-richness, fig.cap = "Ranked mean AMF richness by plant species and experiment. On the left, the plant species of interest are ranked according to their numeric alpha-diversity of their AMF community (AMF richness) as determined in the experiment from Chapter 2. On the right side, the results for the ranked mean AMF richness of each plant species as determined in the experiment from Chapter 3 are depicted. To show differences in rank, each plant species pair is connected by a dotted line. Plants are colored by plant family with yellow = Asteraceae, blue = Plantaginaceae, green = Poaceae." }
+
+knitr::include_graphics('figures/Ch6_ranked_richness.png')
+
+```
+
+
+
+Because these results were obtained from plants grown separately, this raised the question whether these inherent interaction strategies will persist when other plants are present. Furthermore, I asked if the plants, depending on their  interaction strategy would differ in their rates of carbon allocation to the AMF community which could correspond to different degrees of dependency on the mutualistic interaction.
+Therefore, based on the results of Chapter 2, I chose eight plan species of contrasting interaction niche properties with AMF to examine the carbon allocation to the AMF community (Chapter 3) and to explore whether the plants' interaction strategies coincide with the relative effect they have on neighbouring plants (Chapter 5).  I also explored this neighbourhood effect under the aspect of timing of arrival, with one focal plant species arriving either before or after the other members of the plant community (Chapters 4 and 5).
+
+
+
+**The priority effect of the focal plant species on the bacterial community consisted after arrival of a plant community.** 
+Whereas the plant species identity and their interaction strategy had no notable effects on the absolute AMF biomass in the soil, the bacterial biomass differed strongly among the plant families. 
+Both the Poacaea and the Asteraceae increased the soil bacterial biomass, the presence of *P. lanceolata*, as only member studied here from the Plantaginaceae, did not change the biomass of the soil. 
+*P. lanceolata* contains bioactive secondary metabolites acting as antimicrobials [@Davini1986], which might explain the low bacterial biomass in its soil (Chapter 3, Fig. \@ref(fig:plot-bact-PLFA-perDW)). 
+This effect on the bacteria remained strong when *P. lanceolata* arrived before the plant community but was not detected when the plant arrived together with or after the plant community (Chapter 5, Fig. \@ref(fig:plot-totalPLFA-ACBCPlaSpe-PlaFam)). 
+A strong priority effect of *P. lanceolata* was also indicated by the community composition of the bacteria. 
+While the bacterial composition was very similar among the treatments of the other plant species, the early arrival of *P. lanceolata* resulted in a bacterial community that separated in its composition from that of the other plants, probably driven by changes in the ratio of Gram-positve to Gram-negative bacteria (Chapters 3 & 5, Fig. \@ref(fig:PLFA-PCA-biplot-groups), Fig. \@ref(fig:plot-PCA-PLFA-M2) and Table \@ref(tab:PLFA-GPGN6)) .
+Bacterial soil legacies have been identified as one of the main drivers of bacterial community composition of rhizophere communities [@Vieira2020] with probably large effects on the further productivity of the ecosystem [@Schnitzer2011].
+
+The potential infectivity of an AMF taxon is related to it prevalence of its infectious parts, i.e., hyphae and spores in the soil. Estimating both the change in the soil AMF community and the absolute AMF biomass therefore allowed for an assessment of the ability of each plant to potentially induce a strong or weak effect on late-arriving plant individuals.
+While the relative carbon allocation to the AMF varied among the plant families with the Asteraceae allocating high amounts of their photosynthates relative to their photosynthetic active biomass, the absolute AMF biomass was, with the exception of *P. cita*, not significantly different among the plants. 
+This suggests that the soil of an early-arriving *P. cita* plant might contain less infectious AMF structures, which could impact later arriving plants in the community.
+Contrary to that assumptions, the soil AMF biomass of the plant community of *P. cita* as early focal plant did not differ from that of the other early arrivals, which suggests that the plant community was able to compensate for the small carbon allocation of *P. cita* after its arrival. 
+Taken together, the results support other studies that the plants distinguish in their carbon allocation to the members of the microbial community, like AMF and different bacterial taxa.
+Plants promote distinct microbial communities in their rhizosphere that improve their fitness ("plant-growth promoting rhizobacteria (PGPR)") under the given growth conditions [@Zhalnina2018], utilising chemically mediated communication and rhizodeposition of C- and N-rich primary metabolites [@Kai2016; @Okubo2016]. 
+
+
+
+Priority and reciprocal plant neighbourhood effects strongly impacted AMF diversities in plant communities. 
+Considering the results from Chapters 3, 4 and 5 together, I detected that these effects were in part governed by an interplay between the plants' interaction strategies and traits related to plant biomass. 
+**The relative strengths of these effects differed among the plant species tested**, but I could not detect one specific variable responsible for the direction and relative strength of the changes in AMF diversity due to the priority effect. 
+However, some possible mechanisms emerged when concentrating on those plant species that most strongly impacted their neighbouring plant community. 
+When grown alone, *S. arundinaceus* was a numeric and phylogenetic generalist with low selectivity in its AMF partner selection, i.e., high $\beta$-diversity (Chapter 3, Table \@ref(tab:table-roots-properties)).
+Furthermore, it had a notably more diverse AMF community in its associated soil than the other plant species tested (Table \@ref(tab:table-soil-properties)), and *S. arundinaceus* also allocated comparably high amounts of C into the AMF community (Chapter 3, Fig. \@ref(fig:plot-mean-AMFbiomass) & \@ref(fig:plot-total-AMF-per-DW)). 
+Together, these properties of the plant might have facilitated the impact *S. arundinaceus* had on the late arriving plant community with increases in both the AMF richness and abundances in its plant neighbours (Chapter 5, Fig. \@ref(fig:plot-richness)), in parallel with having the highest AMF $\gamma$-diversity (Chapter 5, Table \@ref(tab:gamma-div)).
+
+In contrast, *B. willdenowii*, although a numeric generalists, too, showed high selectivity in its AMF partner selection. 
+With *B. willdenowii* as focal plant arriving early, the AMF richnesses and abundances in the plants from the plant community decreased notably as did the $\gamma$-diversity. 
+In addition, this focal plant was able to stay consistent in its interaction strategy when it arrived before the plant community, suggesting a strong top-down control either by filtering of the AMF pool or due to mechanisms suppressing the interactions between the AMF and the other plant species.
+That *B. willdenowii* had a low root biomass with a high shoot to root ratio might suggest that the plant outsources a large proportion of its nutrient accumulation to their AMF hyphal network [@Bergmann2020]. 
+Theoretically this should, in turn, result in high carbon allocation to the soil, which I could not corroborate for *B. willdenowii* (Chapter 3, \@ref(fig:plot-total-AMF-per-DW)).
+Testing the relationship between several traits of focal plants and their relative impact on the AMF of neighbouring plants, Mony et al. [-@Mony2021] detected instead that a large root system increased the AMF richness of plant neighbours. 
+They suggested that fungal dispersal processes are facilitated by larger root systems as those offer more niche space for interacting AMF. 
+Their suggestion fits with what I could detect for both *S. arundinaceus* and *B. willdenowii*. 
+*S. arundincaeus* had the largest root biomass of the grasses while that of *B. willdenowii* was one of the smallest, which coincides with the positive respectively negative impact they had on the AMF richness of their late arriving plant community.
+However, neither its interaction niche properties nor the root biomass could fully explain why the prior arrival of *A. capillaris* positively impacted the AMF richness of its plant community. 
+Analogously to *B. willdenowii*, *A. capillaris'* interaction strategy was characterised by high $\alpha$- and low $\beta$-diversities, and the AMF richness of its associated soil was low as well and *A. capillaris* had a root biomass of medium size.
+Yet the late plant community of *A. capillaris* showed comparably high AMF diversity (Chapter 5, Table \@ref(tab:Tukey-webAsymmetry-BC-table)), showing that other mechanisms might have played an additional role in the AMF assembly processes of the *A. capillaris* treatments. 
+Nonetheless, taken together these results suggest that the interaction strategy of the focal plant species can be a governing factor for the assembly of the plant-AMF community and might be a helpful tool deciphering community assembly. 
+However, other traits like root architecture or root exudation profiles need to be considered [@Bergmann] to get a better picture of the interconnected mechanism determining AMF community assembly.
+
+The observed changes in the AMF diversity might have consequences for the productivity of the plant-AMF community, especially if the loss of AMF pertains to loss of specific functions, i.e., regarding nutrient transfer [@Mader2000; @Thonar2014]. 
+I could not detect any significant impacts of the varying AMF diversity on the plant productivity of those communities, but these results were also overshadowed by the strong competition the focal plants exerted on their later arrivals (Chapter 5, Table \@ref(tab:DW-LMM)).
+Additional experimentation studying if these impacts consist long-term, and their effect on the further development of the plant-AMF community would be needed to evaluate a possible connection between AMF interaction strategy of an early arrival and resulting community productivity. 
+
+
+
+
+**Plant-AMF network topology is robust to priority effects on AMF richness and abundance.**
+While network measures related to AMF diversity and abundance, like generality and web asymmetry, differed among some of the treatments, depending on their focal plant species, those network metrics describing the topology remained unchanged. This stability of the network topology suggests that it is the composition of the plant community, not the order of arrival of its members that matters most for the network structure. 
+Here, all resulting plant communities had the same composition of plants of defined interaction strategies, which might have been the determining factor for the networks’ topologies. Instead, the plants showed a high flexibility in their AMF partner choice, probably based on functional redundancy of the AMF mutualists, therefore buffering the priority effect and obtaining the same network structure. That was corroborated by my observation that the plant species studied kept to their functional role within their guild, regardless of order of arrival and established AMF community, which demonstrated the importance of the plant species’ inherent interaction strategy with AMF. 
+The descriptors of network topology, i.e., nestedness, modularity and interaction evenness, are typically seen as indicator for the stability of interaction networks.
+Furthermore, diverse plant communities of plants characterised by a variety of interaction strategies and mycorrhizal dependencies generate stronger positive plant-soil feedbacks [@Semchenko2022].
+As a consequence, the observed priority effect might not interfere with the stability of the plant-AMF community, although the changes in AMF biodiversity can, under different conditions still impact the systems' productivity and community trajectory.
+
+
+## Strength and limitations
+
+On of the strength of this study is the use of a controlled glasshouse experiment employing a set of eight plant species that underwent the same treatments.
+Combining the results from determination of the AMF community from singly grown host plants with those of the focal plant as early or late arrival in a defined, identical plant community allowed me to distinguish between the net effects of priority and plant neighbourhood on the AMF assembly.
+By implementing a controlled environment, i.e., the manipulations of the mesocosms under identical conditions these effects could be evaluated independently from confounding factors like a patchy distribution of the AMF pool or variable abiotic impacts.
+While I was able to connect the results from Chapters 3, 4 and 5 due to those controlled conditions, this was unfortunately not the case for the comprehensive dataset from Chapter 2.
+Although those two experimental approaches resulted in highly different taxonomic compositions of the plant hosts’ AMF communities, the plants were still relatively consistent in their interaction niche properties.
+This observation can therefore be considered as excellent indicator for the applicability of the interaction niche properties as inherent interaction niche traits of the plant species.
+Of course, the use of manipulated glasshouse experiments versus field experiments can suffer from possibly unrealistic manipulations, like my choice of eight specific plant species as community and early arrivals.
+Furthermore, a cultivation bias exists, with AMF communities differing between greenhouse-based experiments and natural vegetation [@Smilauer2021a; @Sykorova2007].
+For those reasons, I refrained from discussing the AMF taxonomic composition in detail but instead concentrated on the properties of the AMF communities, i.e., their $\alpha$- and $\beta$-diversities.
+
+The integration of different functional plant groups, i.e., forbs versus grasses, was implemented to encompass a larger variety of interaction strategies with AMF, but the study would have benefitted from a more balanced choice of plants. 
+That two of the eight species, which were also the only clear numerical specialists, originated from the same plant family made it difficult to relate observations to the plants‘ interaction strategy instead to other, unappraised traits. To account for that problem, I concentrated at several places throughout my thesis on discussing the differences among the Poaceae instead. 
+Another limitation pertains to the differences in maturity of the plants studied. In the mesocosms, the late arriving plants did not reach the same developmental stage, although the time gap between early and late arrival was small in contrast to the timeframe the whole plant community was grown. 
+Because plant host age can determine the AMF community composition to a certain degree [@Smilauer2021], this confounding factor needs to be considered when directly comparing plant pairs from the AC and BC treatments. 
+Unfortunately I could not determine the AMF community of the plants also at these different growth stages, which would have offered a more correct picture. 
+Indeed, I based my hypotheses on the interaction niche properties obtained from the singly grown plants at the end of the experiment, which might have differed from those at the timing of manipulating the mesocosms. However, it is very unlikely that the plants would have differed significanly in their interaction strategies at different ages, as I have identified these strategies as an inherent plant trait, consistent even under different growth conditions. 
+Nonetheless, my results showed clearly the impact of the focal plant in the comparison of the AC to BC treatment using DAA, even if the relative strength of the differences between the two treatments might have been skewed according to the plants' age. Also, the experimental timeframe was with 3 months probably large enough to allow for the development of a mature AMF community, regardless of differences in plant development. 
+ 
+Including the determination of the AMF biomass by NLFA allowed me to estimate the relative infectivity of the soil associated with the focal plant species which might have helped explain different strengths of the plants‘ priority effects. 
+Yet NLFA analysis comes with the caveat that the relative proportions of the NL AMF biomarker varies among AMF taxa, with several members of the AMF family Gigasporaceae not containing any significant levels of the FA 16:1$\omega$5. The AMF communities reported here were strongly dominated by the AMF family Acaulosporaceae with only very small amounts of the Gigasporaceae present, according to the sequencing data. This minimised the risk of this caveat of the NLFA analysis skewing the AMF biomass data among samples, increasing the confidence in the comparisons of these values across the treatments. 
+My analysis, however, was also limited by the fact that further information about the plant species traits were not determined. For example, the root traits of plants, like specific root length or root diameter are expected to correlate with the plants' resource uptake strategies, i.e., if they preferably outsource nutrient acquisition to mycorrhizal fungi [@Bergmann2020]. 
+While I employed the shoot to root biomass ratios as simplified proxy for the suspected acquisition strategies of the respective plants, other root traits might have been more appropriate to relate to the aspects of nutrient acquisition.
+
+
+The application of metabarcoding followed by next-generations sequencing enabled me to comprehensively describe the AMF communities for each individual plant from a plant community at several treatments. Metabarcoding of microbial communities has grown rapidly as technique for community ecologists due to its increased affordability and the availability of a plethora of accessible bioinfomatic tools. This data allowed me to evaluate AMF assembly processes in detail, therefore adding to the growing knowledge of deciphering assembly processes of plants' arbuscular mycorrhizal communities. 
+A limitation of my approach is the chosen metabarcoding region ITS2, which does not allow for high esolutions of the identification of the Glomeromycotina than other, more specific regions [LIT]. This problem is excarbated by the difficulty of identifying the obtained sequences to a meaningful taxonomic level, as the informations in fungal databases is still limited, especially in comparison to those for bacterial 16S data. 
+The interpretation of sequencing-based community data is not without caveats. With the vast increase in available bioinformatic tools, the applicable analysis methods multiplied. 
+One of the problems is the necessity to choose a similarity threshold for the artificial definition of an AM fungal species. Studies on mycorrhizal fungi typically employ a 97% similarity threshold to define operational taxonomic units (OTUs). The increase in read quality on next-generation sequencing platforms [@Tan2018] and the development of robust denoising algorithms [@Callahan2016] made it possible to resolve sequence data into exact sequence features, so called amplicon sequence variants (ASVs) instead of artificial clustered OTUs which have been described as overestimating species richness [@Joos2020; @Pauvert2019].
+Neither ASVs nor OTUs are perfectly suitable to represent AMF species, as there is no consensus what delimits AMF species LIT. Some Glomeromycotina show a intraspecific genomic variability of up to 15 % [@Stockinger2010; @Chen2018], whereas the interspecific variability can be as low as 2 %, which makes their delimination by a artificial cut-off threshhold difficult. 
+However, there is also some indication that this intraspecific variability may result in increased adaptability among various environmental conditions and improved host compatibility (Corradi 2007) (Mathieu 2018). 
+I therefore consider the use of ASVs appropriate as proxy for an AMF species, or rather as a proxy for a unit of plant-AMF interaction.
+Nonetheless, my data provided reasonable, diversity estimations, that clearly distinguished the interaction niche properties among the plant hosts, which shows that the chosen bioinformatic approach was appropriate for my aims.
+
+
+
+## Future directions
+
+Based on my study on the priority effect on the AMF assembly in different host plants the following three areas would be the most interesting to include in further studies.
+
+The first would be the practical application, i.e., taking the results of interest from the glass house mesocosm into field conditions. 
+Testing if, for example, *A. capillaris* as early arrival would increase the AMF richness under field conditions, i.e., in the pastures in conversion to natural grassland our plants originated from could help increase restoration success. For that, it would also needed to be included in the studies if the early focal plant facilitates the fitness of the late arrivals. 
+Similar studies from grassland study systems reported that the order of arrival of plant species can govern the trajectory of the plant composition [@Weidlich2017], while others studied the effect of plant arrival on the mycorrhizal community [@Pueschel2008]. To understand if and how the priority effect impacts on the mycorrhizal community which, in turn, might affect the plant community, more field studies that combine long-term studies of the plant assembly with metabarcoding approaches of the microbial communities should be conducted.
+
+The second direction I would like to consider is the combination of metabarcoding with metagenomic sequencing of the AMF community. This would provide complementary information of the AMF taxonomy and functionality [@Debray2021], which will help understand selection processes of the AMF communities by specific plant hosts. For example, determining by metagenomics if the decrease in AMF richness I reported for some priority treatments changed the functional diversity of the AMF community could help predict the outcomes of those different community assemblages. 
+Metagenomic sequencing of the AMF *in vivo* is, however, constrained by the fact that non-AMF sequences will always be included [@Agnolucci2019], adding to the complexity of the interaction of plants with AMF and other microbes. 
+Nonetheless, metagenomic approaches are on the rise, and examining the functionality of plant associated microbes will help describe the functionality of the plants' microbial community and might answer why plants promote certain AMF and bacteria [@Marmeisse2013].
+
+The third direction I would like to take my study pertains to the interaction niche as theoretical model. Usually, the interaction between mutualistic guilds is described based on numeric properties, with generalists and specialists defined based only on the number of interaction partners which ignores some of its important aspects.
+I have shown here that the comprehensive description of the interaction niche properties revealed that the plants differ in their interaction strategies, that means they occupy distinct interaction niches. 
+This characterisation of the plant-AMF interaction could be further extended by including interaction traits like carbon allocation [@Pringle2016], transfer rates of P or N or root colonisation rates. Combining many interaction traits into a more comprehensive description would further inform about the continuum of functional roles in the plant-AMF interaction, which in turn could help elucidate mechanisms of coexistence and community assembly [@Sexton2017]. 
+Similar approaches to my use of the plants' interaction niche properties have been made characterising trophic interaction partner and visualising them as multidimensional in the niche space [@Dehling2018] or describing the functional roles of interacting partners by measuring indirect interaction traits instead [@Freschet2021]. 
+Combining different strategies, like the description of interaction traits including the relative benefits of the mutulaitic partners and methods of network assembly [@Tylianakis20x] might be beneficial for tackling the community assembly of mutualists.
+
+
+

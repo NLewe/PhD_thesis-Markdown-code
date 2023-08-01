@@ -1,0 +1,460 @@
+---
+title: "The interplay between host plants and priority effects in community assembly processes of arbuscular mycorrhizal fungi"
+author: "Natascha Lewe"
+date: "11/07/2022"
+output:
+  word_document2:
+    number_sections: yes
+    toc_depth: 3
+    reference_docx: bib/Test.docx
+bibliography: testbookdown/20220513bib.bibtex
+csl: bib/apa.csl
+editor_options: 
+  markdown: 
+    wrap: sentence
+nocite: |
+  @Phillips1970
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(message = FALSE)
+knitr::opts_chunk$set(warning  = FALSE)
+knitr::opts_chunk$set(dpi  = 300)
+
+#options(knitr.duplicate.label = "allow")
+library (tidyverse)
+library(rmarkdown)
+library(markdown)
+library(bookdown)
+library (flextable)
+```
+
+
+# Abstract {-}
+
+Plants and arbuscular mycorrhizal fungi (AMF) form a symbiosis for mutualistic benefits. AMF rely on the plants as carbon source, whereas the plants benefit from the development of an extensive hyphal network in the soil that delivers water and nutrients to the plant roots. The assembly of species into a community is governed by several abiotic and biotic factors and predicting the outcomes of community assembly is regarded as the holy grail of community ecology. The relative importance of the mechanisms underlying the assembly of AMF communities in plant roots are still a matter of discussion, with impacts by the host plant itself, effects exerted by the plant neighbourhood, soil conditions and dispersal processes as candidates for highly relevant determinants of the AMF assembly. To elucidate the interplay between some of these influences on the fungal assembly, and to reveal their relative importance as determinants of assembly mechanisms, I determined the generalism and specialism in the interaction of separately grown pasture plants with AMF by characterizing several numeric and phylogenetic interaction properties. I also examined the plant-AMF interaction of these plants grown in a plant community, in which I experimentally manipulated their order of arrival. My objectives were: 1) to determine if and how pasture plants differ in their inherent interaction strategies with AMF; 2) to deduce if the carbon allocation to the microbial community varies according to the plants' different interaction strategies with AMF; 3) to examine the relative effects of plant neighbours and the order of arrival on the plant-AMF interaction of plants differing in their interaction niche strategies; and 4) to determine the interplay between inherent interaction niche strategy and order of arrival (priority effect) on the bipartite plant-AMF interaction network structure. 
+
+By quantifying the plants' niche width in their interaction with AMF and their specificity for AMF species, I revealed that the pasture plant species were characterised by distinct inherent interaction strategies, suggesting partitioning of the plant-AMF interaction traits among the members of a plant community. When these plants were grown in a plant community, they still tended to employ their inherent interaction strategy, with some exceptions. In contrast, all studied plant species showed significant changes in their AMF abundances due to the influence of neighbouring plants in comparison to their single growth. I found that while the relative impact of the neighbourhood on a plant's AMF community assembly changed with the order of arrival of the host plant in the plant community, the direction and strength of that change was affected by the plants' inherent interaction strategy. My results suggest that the inherent interaction strategy, i.e., the host plant identity, mattered strongly as determinant of the AMF assembly and that the relative impact the plant neighbourhood and the priority of arrival have on the assembly of the AMF community depended on the plant's inherent interaction traits. I show that the interplay between order of species arrival and plant interaction strategies impacted the architecture of the plant-AMF mutualistic networks. My findings suggest that the combination of order of arrival and interaction strategies of the plants are relevant determinants of the plant-AMF interaction networks structure, with possible consequences for the succession of the system as well as for its stability and productivity.
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+
+# List of Abbreviations {-}
+
+```{r}
+readxl::read_xlsx("data/abbreviations.xlsx") %>%  flextable () %>%  border_remove()
+
+
+```
+
+# List of Tables {-}
+
+\listoftables
+
+\newpage
+# List of figures {-}
+
+\listoffigures
+\newpage
+
+# Acknowledgements {-}
+
+# STATEMENT OF AUTHORSHIP {-}
+
+This thesis is the intellectual and analytical work of the author, with assistance as described below.
+
+Fieldwork and glasshouse work for chapter 2 were conducted by Maedah Jafari-Raed, and laboratory work (DNA extractions) was conducted by Maedah Jafari-Raed and Marianna Bulgarella. Stephan Hartley assisted with plant identification and fieldwork. Bioinformatics of raw sequencing results, all statistical analysis and writing for chapter 2 were completed by the author. Julie Deslippe and Rob Keyzers advised on the manuscript.
+
+
+For Chapters 3, 4 and 5 all laboratory and fieldwork, statistical analyses, and writing were completed by the author, with further assistance from others as follows. Jacob Thomson-Laing, Nicki Papworth, Shannon Bentley and Julie Deslippe assisted with the preparation and harvest of the glasshouse experiment. Julie Deslippe advised on the study design and gave feedback on the statistical analysis. Julie Deslippe and Rob Keyzers provided feedback on each manuscript. 
+\newpage
+
+
+
+# General introduction
+
+##	Mutualism
+
+### Mutualism plays a central role in ecosystems
+Understanding the mechanisms underpinning species interactions has been a major focus of research in community ecology and it will continue to be of significance in view of ongoing anthropogenic disturbances of ecosystems [@McCann2000; @Tylianakis2010]. 
+Species interactions are of vast importance for the resilience, biodiversity and productivity of ecosystems and many organisms depend on mutualistic relationships for processes such as pollination, dispersal, resource acquisition or even stress alleviation [@Allesina2012; @Bascompte2006]. 
+Mutualism is an omnipresent biotic interaction that is defined by net positive benefits for the interacting organisms. Recently mutualism has attracted the interest of ecologists of different subdisciplines [@Bronstein2015]. 
+Until the 1980s, mutualism was viewed as relatively inconspicuous and unimportant at the ecosystem scale [@May1972]. Since then, a vast number of mutualistic interactions have been described in all ecosystems [@Bronstein2015; @Landi2018]. 
+Today the ubiquity and importance of mutualism is undisputed among ecologists. A well-characterised mutualism is the plant-pollinator interaction, which is recognised as one of the key elements of ecosystem functioning. Comparably less known is the mycorrhizal association between land plants and fungi, although more than 85% of vascular plants depend on mycorrhizae to maintain their productivity [@Brundrett2018; @Smith2008]. 
+However, many questions about this crucial mutualistic interaction, its structure and importance for ecosystem processes and resilience remain unaddressed. 
+
+
+### Defining mutualism
+The first use of the term mutualism in biological context was by Pierre-Joseph van Beneden, who described it as “mutual services rendered from one to another” [@Beneden1876]. 
+Since then, many conflicting definitions have emerged, and even today, the term mutualism is used with different meanings. These inconsistencies in definition are unsurprising because some of the defining characteristics of the interaction vary temporally and among interaction partners [@Boucher1982]. 
+For example, some mutualistic species change the net effect they are having on their interacting partner and become parasitic under certain circumstances [@Hoeksema2000; @Hoeksema2015; @Johnson1997].
+Historically, some authors defined an interaction as mutualistic only if the species were fully dependant on their associates [@Odum1953]. 
+However, interacting species can differ in their dependency on each other, and some mutualists even change between an obligate and facultative relationship depending on their life stage or environment [@Vazquez2004]. 
+Mutualism defies hard boundaries but rather exists as a continuum of interactions among partners optimising their own fitness. [@Boucher1982; @Bronstein2015]. 
+Here, I use the term mutualism with focus on mutual net-benefits of the interspecific interaction. In addition, the description of the mutualistic species can be expanded by several characteristics like the degree of specificity and dependence of each partner, their history of co-evolution and the nature of the exchanged benefits [@Bronstein2015]. 
+If the associating species live together in an intimate relationship, the mutualism is called a symbiosis. The terms mutualistic and symbiotic have often been used interchangeably in the literature on mycorrhizae [@Brundrett2004]. 
+However, caution should be exercised discussing mycorrhizae in the context of mutualism as this symbiotic association is not always beneficial for both partners but can range from mutualism to parasitism [@Bronstein2015; @Hoeksema2015]. 
+
+###	The benefits of mutualistic interactions
+Mutualists receive benefits in the form of rewards or services from the species they interact with. 
+Typical services rendered are the transportation and protection of the associated species, whereas rewards are often of a nutritional nature. 
+In plant-pollination mutualism, for example, the pollinator is rewarded with carbohydrate rich nectar, and at the same time they transport pollen between the flowering plant individuals. 
+Whereas in the latter case both benefits are bestowed directly to the partners, protection mutualism typically involves indirect positive net effects for the other mutualist [@Rosumek2009]. 
+Protection mutualism comprises of the defence against negative influences from either or both the abiotic or biotic environment [@Bulgarelli2013]. 
+For example, some tropical ant species actively defend plant individuals of Acacia spp. against other species, especially phytophagous insects and neighbouring plants, and are rewarded with food in return [@Janzen1966; @Rosumek2009]. 
+However, mutualism also inflicts miscellaneous costs on the interacting individuals [@Bronstein2001]. 
+In addition to the energy spent for rewards, systems that regulate the exchange of the benefits and that defend against cheating partners are maintained [@Sachs2015; @Skelton2016]. 
+It is not uncommon that the outcome of interaction shifts along a continuum between mutualism and parasitism, because the magnitudes of costs and benefits of the interaction change [@Johnson2013; @Johnson1997]. 
+These shifts are a result of the substantial influence of abiotic and biotic factors on the mutualistic net benefits [@Hoeksema2015; @Morris2007]. 
+For example, herbivory on plants can result in reduced carbon (C) allocation to mycorrhizal fungi, while the fungal partner maintains the phosphorous (P) transfer to plants [@Charters2020]. 
+Understanding the complex reciprocal interplay between mutualists and their abiotic and biotic environment will help unravel the mechanism shaping communities.
+
+###	The network structure of two mutualistic guilds
+The interaction of two assembled guilds of mutualists is typically represented as bipartite network (Fig. \@ref(fig:fig-bipartite-architecture)).
+The architecture of the network can be described by several characteristic network properties. 
+First, interacting mutualists often form highly nested bipartite networks with a group of generalists (i.e., species with a broad interaction niche) interacting with each other and the specialists, and specialists (i.e., species with a narrow interaction niche) typically interacting with a subset of the generalists [@Bascompte2003].
+Many interacting pairs show asymmetrical interaction strength in a way that strong dependencies exist in one direction, from the specialist to the generalist, whereas the other interacting partner is only weakly dependant on its mutualistic partner [@Bascompte2006]. 
+Another important network property is modularity, i.e., the existence of compartments or modules in a network [@Bascompte2009; @Olesen2007]. 
+In each module, a group of species interacts preferentially among themselves. 
+Whereas nestedness and modularity are descriptors of the overall topology of the bipartite network, other metrics are more related to the pattern of the interaction [@Bluethgen2010; @Dormann2008; @Landi2018], like the cluster coefficient, a measure of complexity, or the connectance which is calculated as the realised connections per possible ones [@Okuyama2008]. 
+
+```{r fig-bipartite-architecture, fig.cap="Bipartite network architecture. Representations of theoretical mutualistic networks between plant species and their mycorrhizal fungi. A) Bipartite network, where each square (nodes) represents a species and the lines (edges) between the squares indicate mutualistic interaction. In a perfectly nested network, the generalist species interact with several species, which can be generalists or specialists. The specialists interact only with a subset of the generalist species of the other guild. B) and C) Representation as interaction matrix with each row representing a plant species and each column representing a species of mycorrhizal fungus. Grey squares symbolise presence of mutualistic interaction. B) Interaction network of high modularity: Interactions are organised in compartments C) Perfectly nested bipartite interaction network." }
+
+knitr::include_graphics('figures/Ch1_bipartite_fig.png')
+
+```
+
+
+###	Mutualistic networks in the conceptual framework of the ecological niche
+The characteristics of species interactions govern all population dynamics. 
+The conceptual framework of the niche theory is well suited to study the bipartite interactions between mutualistic species. The concept of the ecological niche has been used in a plurality of ways by biologists, but the most commonplace definition denotes the ecological niche as the abiotic and biotic species’ requirements that are needed to thrive [@Dussault2020]. 
+Historically, the nice concept was introduced independently almost 100 years ago by Grinnell and Charles Elton. 
+Grinnell’s niche concept has a spatial context as he emphasised the similarities between the ecological requirements among species from different locations. 
+In contrast, Elton described the ecological niche as the functional role of the species in its community, emphasizing the impacts it has in that community, for example as prey for a specific predator in a trophic chain. 
+A third well-known abstract niche concept is that of Evelyn Hutchinson, who visualised the niche as n-dimensional hypervolume in which each axis describes the magnitude of an environmental factor [@Colwell2009; @Hutchinson1957]. 
+Hutchinson differentiated between the fundamental niche, i.e., the maximum possible hypervolume (or niche space) of a species, from the realised niche. 
+The niche space of his realised niche has smaller proportions because the species is constrained by negative biotic influences, i.e., especially interacting competitors. 
+In Hutchinson’s definition, mutualism and other positive interactions are implied as being part of the fundamental niche and changes in niche space are entirely contributed to negative interactions. 
+However, highlighting the role of mutualism and other positive interactions in shaping the ecological niche space is well versed to display how they can change the size of the niche space by mitigating the effects of negative interactions. 
+Furthermore, positive interaction can increase the realised niche space by modification of physical or chemical properties of the habitat, for example, AMF and their microbiota can mobilise phosphorus that is unavailable to plants [@Andrino2021; @Nacoon2020].
+
+Elton’s niche concept is best suited for the interaction between the mutualists as his description of the ecological niche is based on the trophic interactions of the species. To denote the characteristics of the functional role of a species, metrics describing the interaction niche width can be applied. 
+Typically, a species’ interaction niche width is described as the total number of possible interactions it enjoys. For example, species can be generalists (broad interaction width) or specialist (narrow interaction width) in their functional role, such as a predator which is specialised only on one prey species or a generalist mutualist which interacts with several taxa The use of bipartite networks to describe mutualistic interactions between two guilds fits well into Elton’s niche concept. 
+Metrics denoting a species’ network role in the bipartite network are apt descriptions of its functional role, i.e., its interaction niche space in the community. 
+Figure \@ref(fig:fig-concept-nestedness-overlap) illustrates the theoretical connection between nestedness and niche overlap for changing compositions of generalist and specialist species of one guild [@Ponisio2019]. 
+
+```{r fig-concept-nestedness-overlap,  fig.cap = "Conceptional figure illustrating the connection between network architecture (nestedness and modularity) and interaction niche properties (mean niche width and niche overlap). The interaction niche overlap refers to the extent to which mutualists are shared by two members of a guild. Each colour represents a species from a mutualistic guild and its interaction niche width is indicated by the width of the curve and symbolises the number of interacting mutualists from the other guild. Figures on the top and to the right are bipartite networks with one guild (e.g., plants) symbolised by black squares the other (e.g., fungi) by grey circles. Lines connecting species indicate interaction. Figure adapted from author and copyright holder Ponisio et al (2019) under the Creative Commons Attribution License (CCBY)."}
+
+knitr::include_graphics('figures/Ponisiofigure2.png')
+
+
+```
+ 
+
+
+Understanding how these patterns impact evolutionary processes or the stability of ecosystems, is critical to tackle questions about the responses of mutualistic networks on disturbances [@Bascompte2009]. 
+To achieve that, the influence of assembly mechanisms on the network characteristics needs to be studied as well. 
+
+###	Mutualism network stability
+
+The architecture and properties of the mutualistic network play a significant role in the functioning of the system it describes [@Bastolla2009; @Landi2018].
+Especially the network properties nestedness, connectivity, connectance and interaction strength have been revealed as significantly influential on stability and resilience of the network and therefore on the ecosystem [@Tylianakis2010]. 
+A highly nested network, for example, might be better able to buffer against temporal fluctuation, like environmental perturbations, therefore increasing the system's overall resilience [@Gaiarsa2019]. 
+The large majority of research on that topic, however, is based on theoretical modelling approaches [e.g., @Bastolla2009; @Hale2020; @May1972], which in some cases arrived at contradictory results, depending on the applied assumptions for the models and on the network properties included in the calculations. 
+For example, it has been argued that the distribution of the interaction strength impacts on the stability of the mutualistic community [@Gaiarsa2019; @Okuyama2008]. 
+Controversially, both low levels and high levels of interactions strength were purported to have a positive effect on system stability [@Allesina2012; @Hale2020; @Lucini2020] highlighting the lack of consensus on the ecosystem effects of this network property [@Landi2018]. 
+Similarly, the effects of connectance and connectivity on network stability have been hotly debated [@Gomez2011; @Peralta2020].
+Identifying meaningful connections between distinct network properties ecosystem stability is further impeded by the reciprocal influences the attributes can exert on each other. 
+For example, nestedness generally increases with species richness and connectivity [@Bascompte2003]. 
+Despite the controversy, there is consensus that ecosystem stability can be influenced by mechanisms that alter network architecture [@Chomicki2019]. 
+Further investigations are needed to gain insight to the mechanisms affecting network properties of mutualists and their effects on ecosystem stability. 
+
+###	Community assembly dynamics in mutualistic interactions
+A fundamental objective of community ecology is to discern the relative importance of various mechanisms driving variation in community composition. 
+Models of community assembly, however, have focussed primarily on dynamics of predation and competition [@Barabas2018; @Chase2003; @Chesson2000]. 
+Recently, mutualistic relationships like plant-pollinators and mycorrhizae have been an increasing focus. 
+Mutualistic interactions influence community assembly dynamics, but their relative significance is poorly understood due to the many interacting factors affecting community assembly. 
+Initially, the species of a local community are supplied from a regional pool, and both dispersal ability and chance determine their arrival at the new site [@Chaudhary2020]. 
+However, at small spatial scales, environmental niche-based processes become more relevant [@HilleRisLambers2012]. Abiotic factors act as filters affecting the establishment and subsequent survival and fitness at a site (“habitat filters”) [@Kraft2015; @Webb2002]. 
+Similarly, species interactions have reciprocal impacts on each other. 
+For example, mutualistic species can facilitate the survival of their partners by reducing the impact of the habitat filter by ameliorating abiotic stressors or promoting resource acquisition [@Aroca2013; @Kothamasi2009; @RamirezViga2018]. 
+But as the abundance of new arrivals into the community increases, both intra- and interspecific competition also increases [@Chesson2000]. 
+Theoretically, intraspecific competition can be avoided at the early stages of assembly if generalist species partition the resources amongst themselves. 
+A broad interaction niche width increases the likelihood that the mutualist encounters a compatible partner. 
+Specialist species, however, might be at a disadvantage at earlier assembly stages if their mutualistic partner is not yet established in the community. 
+As community assembly progresses, the mutualistic network will increase in complexity, and a new species will be most likely incorporated into the community if it is a specialist. 
+This integration of the specialist will be favoured if the species is able to interact with the already established generalist mutualists of the community, a process that would only create minimal additional competition [@Peay2016]. 
+During this assembly process, the network architecture would become more nested, and at least theoretically, should increase in stability and biodiversity [@Gaiarsa2019; @Lucini2020; @Okuyama2008]. 
+Because the identity and arrival time of a species can further influence the assembly process, alternate stable states of the community are possible. 
+Early arriving species can act as biotic filters on the species pool, exerting priority effects on later arrivals. 
+
+###	Phylogenetic signal in community assembly
+Biotic interactions are mediated by functional traits that are evolutionary conserved [@Crisp2012]. 
+For interacting mutualists, trait complimentary and mutual recognition systems are characteristic [@Anderson2015]. 
+Consequently, species’ interaction traits are more similar among closely related species, suggesting that community assembly patterns might show a phylogenetic signal if they are significantly influenced by mutualistic interaction. 
+The underlying mechanism suggested to attribute to these phylogenetic conserved patterns of trait correlation between interacting mutualists is co-evolutionary selection. 
+However, unambiguous evidence of co-evolution is rare [@Nuismer2013], and non-adaptive processes like stochastic amplification may also contribute to the nestedness of networks [@Valverde2018].
+Although co-evolutionary selection can drive trait distribution in mutualistic networks, [@GuimaraesJr2017; @Peralta2016; @Rohr2014], its relative impact depends on properties of the network [@Nuismer2013]. 
+For example, interaction traits are known to show an asymmetric phylogenetic signal resulting from asymmetric networks, for example, the pollinators show a stronger phylogenetic signal than the plants in the plant-pollinator mutualism [@Peralta2016; @Vazquez2004]. 
+Furthermore, indirect evolutionary effects, i.e. between non-interacting species, might play an additional role in shaping traits throughout a whole mutualistic network [@GuimaraesJr2017]. 
+In contrast, stabilisation of interaction networks can also be accompanied by the increase of niche differences, i.e., trait divergence, and subsequent prevention of competitive exclusion [@Chagnon2013; @Martignoni2020]. 
+However, the complex interplay between species of both guilds makes it difficult to tease apart the relative impact of these underlying mechanisms. 
+
+
+##	Mycorrhizae
+Mycorrhizae are omnipresent mutualistic associations that establish between living cells of plant roots and fungi. 
+More than 85% of all vascular plant species are mycorrhizal, and this association plays a key role in maintaining plant productivity and ecosystem stability [@Brundrett2018; @Heijden1998; @Vogelsang2006]. 
+The plants receive mineral nutrients, mainly phosphorous (P) and nitrogen (N), from their fungal symbiont, and in exchange they provide photosynthetically fixed carbon (C) products [@Argueello2016]. 
+Although different classifications exist, mycorrhizae are typically sorted into four principal types [@Smith2008] depending on their morphological structures: Arbuscular mycorrhizae (AM), Ectomycorrhizae (EcM), ericoid mycorrhizae (ErM) and orchid mycorrhizae (OrM). 
+72% of all vascular plants form AM, and fossil records show that the first AM-fungus like spores emerged about 450 M years ago, suggesting that they developed at the same time as the early land plants in the Ordovician [@Brundrett2018; @Parniske2008]. 
+In contrast, the other types of mycorrhizae appeared from about 150 M years ago, each type presumably in parallel with plants of newly emerging clades [@Hibbett2009; @Miyauchi2020]. 
+In another wave of mycorrhizal evolution, about 8% of the vascular plants seemingly lost their ability to form mycorrhizae again. Often, these non-mycorrhizal (NM) plants developed a nutritional specialisation in parallel, and about 7% of all land plants became facultatively AM [@Brundrett2018]. 
+On the fungal side, it is estimated that less than 25% of the fungi are able to form mycorrhizae [@Genre2020]. 
+Although most plant communities are dominated by mycorrhizal plants, the distribution of the distinct types depends on the habitat and the region, as well as on climatic influences [@Brundrett2018; @Steidinger2019]. 
+
+###	The classification of mycorrhizae
+The different types of mycorrhiza feature specific morphological traits [@Brundrett2004; @Smith2008]. 
+The most striking differences are that AM form highly branched structures, the arbuscules within the cells of the plant host’s root cortex, whereas the ectomycorrhizal fungi create a so-called Hartig net, a dense hyphal structure on the root surface, i.e., the rhizoplane, and between the epidermal and cortical root cells. 
+In contrast, OrM and ErM both form simple structures within root cells, they colonise the so-called endosphere. 
+For the majority of the plant species involved, a consistent mycorrhizal status can be assigned to genera, families or orders, which suggests the existence of a phylogenetic signal [@Brundrett2018]. 
+However, the assignment of a mycorrhizal type is not always straightforward, especially for more recent evolutionary developments, like specialised roots, in some plant families. Whereas OrM are associated with plants from the Orchidaceae, and ErM are limited to members of the Ericaceae, the EcM are formed by an estimated 8500 species from both gymnosperm and angiosperm plant lineages. 
+The fungal partners for these three mycorrhizal groups originate from a plethora of lineages of ascomycete and basidiomycete fungi, whereas the arbuscular mycorrhizal fungi (AMF) form a separate phylogenetic group, the Glomeromycota [@Brundrett2018]. 
+However, a majority of soil inhabiting taxa are still undescribed [@Tedersoo2014], highlighting the difficulty of studying mycorrhizal fungi. 
+Nevertheless, as mutualistic partners of many crops and due to their widespread occurrence in most ecosystems, understanding the interaction between AM plants and their fungal associates is of key importance.
+
+
+##	Arbuscular mycorrhizal fungi (AMF)
+AMF are obligate endosymbionts of plants, and are of central importance for natural and agricultural ecosystems [@Smith2008]. 
+Among plant species, dependence on this mutualism is high with 72% of all flowering plants forming obligate associations with fungi of the phylum Glomeromycota [@Brundrett2009; @Brundrett2018]. 
+In contrast, about 7% plants are facultative, i.e., showing flexibility in establishing arbuscular mycorrhizae. 
+Arbuscular mycorrhizae positively impact plant fitness by supporting the host’s growth through improved supply of water and nutrients, especially phosphate and nitrogen [@Hamel2004]. 
+On the other hand, the fungus obtains up to 20% of the photosynthetically fixed carbon from the host plant [@Smith2008]. 
+Their interaction with plants is mediated by functional traits that are evolutionary conserved, for example the utilization of complex chemical cues to facilitate mycorrhization [@Bonfante2015; @Raudaskoski2015; @Schmitz2014]. 
+From the origin of their association in the Ordovician era, plants and Glomeromycota co-evolved [@Parniske2008], resulting in plant genera, families and even orders that can be assigned a mycorrhizal status [@Brundrett2018]. 
+This consistency indicates that the mycorrhizal trait itself is strongly phylogenetic conserved. 
+It is, however, unclear if this phylogenetic trait conservation also affects the composition of the AM fungal community, i.e., if the phylogenetic signal results also in host-fungal interaction preferences. 
+
+###	Morphology and life cycle of AMF
+AMF can persist in the soil as spores without contact to their obligate mutualist for decades [@Smith2008]. 
+The large spores contain up to several thousands of haploid nuclei that are scattered across a coenocytic mycelium after spore germination. 
+The mycelium consists of hyphae growing in the extra-radical space of the root-surrounding soil and in the intracellular spaces of the root (Fig. \@ref(fig:AMF-morphology)). 
+In the root cortex, the hyphae penetrate plant cell walls to then differentiate into arbuscles, tree-like structures of high surface area. 
+Arbuscules are the main site of nutrient transfer, and the plant surrounds the arbuscule with the periarbuscular membrane (PAM), which contains specific transporters specialised for the exchange of nutrients between the plant and fungus [@Pumplin2009]. 
+The development of an arbuscule in the root cortex is estimated to take two to three days, and they degenerate again in less than a week, whereby the plant cell reverts to its original cortical state [@Alexander1989]. 
+Depending on the AMF family, either intra-radical vesicles or extra-radical auxiliary cells are formed to store carbon-rich material, mostly lipids [@Souza2015].
+Recent studies have reported that AMF may have a sexual life cycle in addition to the production of asexual spores [@Corradi2017; @Ropars2016]. 
+Some AMF strains have been identified that seem to carry nuclei originating from two parental genotypes (heterokaryons or dikaryons) in contrast to the former opinion that strains contain only uniform nuclei (homokaryons) [@Kokkoris2020].
+Furthermore, the first studies of these dikaryons suggest relatively stable proportions of nucleotypes within a strain but that these ratios may be influenced by the interaction with plant hosts, adding a further layer of complexity to the plant-AMF interaction [@Kokkoris2021]. 
+
+
+```{r AMF-morphology, fig.cap = "Morphology of AMF. AMF form arbuscules, highly branched structures within the cells of the plant host’s root cortex. They are the main site of nutrient exchange between the fungal and plant symbiotic partners. In addition, extra-radical hyphae develop that transport nutrients from beyond the nutrient depletion zone of the roots. Vesicles are storage structures containing high amounts of lipids. Created with BioRender.com (2022)."}
+
+knitr::include_graphics("figures/Ch1 AMF.png")
+
+```
+
+
+```{r arbuscules, fig.cap = "Arbuscles (A) of arbuscular mycorrhizal fungi in roots of Agrostis capillaris. Arbuscules are tree-like structures developing in the cells of the root cortex. They are the place of nutrient transfer between plant and fungus. Fungal structures stained with acid fuchsin (Phillips  Hayman, 1970)"}
+
+knitr::include_graphics("figures/arbuscule_foto.png")
+
+```
+
+
+```{r vesicles, fig.cap = "Vesicles (V) of arbuscular mycorrhizae in Achillea millefolium. Vesicles are storage structures that contain mainly neutral lipids. Stained with acid fuchsin (Phillips  Hayman, 1970)." }
+
+
+knitr::include_graphics("figures/Ch1_vesicle.png")
+
+```
+
+
+###	Communication between plant and fungus in the development of the mycorrhiza
+
+AM plants and their fungal symbiont follow a complex series of steps to recognise each other and to establish the mycorrhizal symbiosis [@Parniske2008].
+Root-exuded molecules, in particular strigolactones and several flavonoids act as chemical cues that induce responses in AMF that are important in the pre-symbiotic stage of the mycorrhizal interaction [@Akiyama2010; @Steinkellner2007]. 
+The regulation of mycorrhization is finely controlled by multiple signalling pathways that respond to the P status of the plant [@Mueller2019]. 
+For example, host plants react to P deficiency by upregulating their strigolactones biosynthesis and exudation to initiate interaction with AMF [@Kapulnik2016; @LopezRaez2008]. 
+Typical reactions of the fungus are an increase in metabolic activity and growth responses, for example spore germination and hyphal branching [@Besserer2006]. 
+As a result, the AMF starts to release chitin-derivates (Myc factors) [@Feng2019] and a set of proteins [@Tsuzuki2016], that act as effectors actively suppressing the immune reaction of the host plants [@Zipfel2017]. 
+After mutual recognition, which includes further chemical signals, the AMF invades the cortical cells of the plant root, which re-organises its cytoplasm in preparation for the hyphal penetration, and the arbuscules and their surrounding PAM are formed [@Schmitz2014]. 
+
+Although several molecules, receptors and genes that are needed for the mycorrhizal interaction have been described, many questions about the process and its effect on communities of the AMF and the AM plants are still unclear. 
+On one hand, plants that form AM seem to harbour a core set of phylogenetically conserved genes relevant for the successful colonisation by AMF. 
+On the other hand, plants show additional variation in the expression profiles of these symbiotic genes, and the composition of the chemical cues released into the rhizosphere can be very different depending on the plant species or genotype of the host plant [@Ellouze2012], suggesting the possibility of plant species-specific regulation of mycorrhization.
+
+From the fungal perspective, the responses of the AMF species vary depending on the composition of the released molecules. 
+For example, different signalling molecules from the strigolactones and the flavonoids effectuate genus- and species-specific reactions in AMF [@Akiyama2005; @Scervino2005], which could result in preferential colonisation of some plant species by specific AMF species. 
+Similarly, AMF species release both common and specific effector proteins, which could also alter their ability to colonise. 
+Investigation of the secretomes of the phylogenetic distant AMF *Gigaspora rosea* and *Rhizophagus irregularis*, for example, found different patterns of secreted proteins that are thought to be relevant for the establishment of the symbiosis. 
+*G. rosea* is a species with a narrower host spectrum and it presents a more specific expression profile that depends on its host. In contrast, *R. irregularis* secretes a larger, but more similar set of proteins in different plant species [@Kamel2017]. 
+Taken together, these findings suggest that both host plant and the fungal symbiont influence the selection of the mycorrhizal partner. 
+In a community, however, this ability to select via chemical crosstalk might be impacted by the presence of other species of the same guild. 
+This effect has been demonstrated in experiments using non-mycorrhizal (NM) plants that could be colonised by AMF to a small extent if neighbouring AM host plants established and supported an AMF mycelium [@Cosme2018; @Luginbuehl2017; @Veiga2013]. 
+
+
+###	Benefits of the plant-AMF mutualisms
+
+Both plants and fungi benefit to different extents from the AM mutualism, and the ratios of cost to benefit can change depending on the abiotic and biotic influences [@Gibert2019]. 
+The main benefit for the plant is improved nutrition of the macroelements P and N [@Hamel2004], which are often limiting in natural environments [@Binkley1989]. 
+Plants acquire P by taking up inorganic phosphates from the soil solution, but most of the soil P is bound in organic compounds [@Phoenix2020]. 
+AM fungi, however, are able to hydrolyse organic P and release inorganic P into the PAM where it is transported into the plant root [@Pel2018]. 
+Furthermore, the AMF facilitates access to nutrients outside the root depletion zone by growing an extensive mycelium in the soil, from which it transport the nutrients along the hyphae to the intraradical arbuscules [@Smith2008]. 
+Also, AMF can access N from organic sources like peptides or amino acids, but they transfer inorganic N, e.g., in the form of NH4+ to the plant via the PAM [@Govindarajulu2005; @Wang2020]. 
+In exchange, photosynthetically assimilated C is allocated to the fungus in the form of hexoses and fatty acids [@Jiang2017; @Luginbuehl2017]. 
+Recent research has shown that Glomeromycotan species seemingly lost their ability of de novo synthesis of fatty acids (FA), as the required fatty acid synthase (FAS1) is absent in their genome [@Jiang2017]. 
+These fungi are, however, able to elongate, modify and degrade FAs and to synthesise lipids, which are important storage compounds for the AM fungi [@Dalpe2012; @Trepanier2005]. 
+Comparison of the cooperation of different AM partners has shown that the efficiency of the nutrient transfer depends on the respective partner [@Argueello2016; @Kiers2011; @Lendenmann2011]. 
+For example, less efficient fungal species may demand of their hosts higher C costs in exchange for P acquisition [@Lendenmann2011] and even at the intraspecific level, AMF traits vary considerably which can impact nutrient flux to the interaction partner [@Behm2014]. 
+In addition, recent research has suggested that plants and AMF are both able to discriminate between different mutualistic partners and both guilds have strategies to sanction less-cooperative species as well as reward more cooperative partners: plants can preferentially allocate C to more beneficial partners [@Kiers2011] and AMF in turn regulate P distribution [@Whiteside2019].
+
+###	Community assembly dynamics of AMF
+Although many studies have reported AMF communities of plants from a variety of habitats, the underlying ecological process of AMF community assembly remains elusive. Multiple factors influence the assembly of arbuscular mycorrhiza and their resulting composition in plant roots. 
+Neutral mechanisms [@Rosindell2011] like dispersal limitation may contribute to differences between the structure of AMF communities, especially on larger spatial scales [@Dumbrell2009; @Valyi2016]. 
+Likewise, niche-based mechanisms affect AMF community patterns [@Oepik2016; @Oepik2006; @Valyi2016]. 
+Deterministic factors, such as environmental conditions can filter the AMF pool, and also influence the interaction between the host and AMF [@Davison2015]. 
+Changes in soil pH, salinity or phosphate content of the soil can result in shifts in the chemically-mediated regulation of the plant-AMF interaction, affecting the root colonisation [@Aroca2013; @Balzergue2011; @Dumbrell2009; @Aarle2002]. 
+At the same time, soil properties and climatic factors can impact the AM fungal community composition, like soil disturbance [@Casazza2017; @Schnoor2011], moisture [@Wolfe2007] and particularly pH [@Davison2021; @Aarle2002]. 
+
+Nonetheless, several field studies found covariation between plant communities and their mycorrhizal fungi communities [@Horn2017; @Krueger2017; @MontesinosNavarro2015]. 
+Early research mostly applied the theoretic framework of the driver and passenger hypothesis to describe covariation between plant and AMF-communities [@Hart2001]. 
+According to that theory, the interactions within the AMF community are either the driver that shapes the composition of the local plant community, or, contrarily, the AMF community is shaped by the presence of plant species, according to the passenger hypothesis [@Hart2001]. 
+However, the several mechanisms that influence the plant-AMF interaction may act in parallel or predominate, depending on the abiotic and biotic conditions (habitat hypotheses) [@Zobel2014]. 
+Studies most often report that habitat or environmental conditions have a greater effect on AMF community assembly than the plant host [@Davison2015; @Lekberg2016; @Sousa2018; @Veresoglou2014], but a number of studies report the opposite conclusion [@Neuenkamp2018; @Pendergast2013; @Smilauer2020; @Torrecillas2012; @Vandenkoornhuyse2003]. 
+Research to date has, however, been mostly restricted to the description of AMF communities of plants growing in plant communities or of selected plant species under variable treatments, e.g., pH gradient [@DeDeyn2011; @Oepik2006; @Veresoglou2014]. 
+The results strongly suggest that plants are able to shape the composition of the local AMF to a certain degree, but due to the interference of the co-occurring plants, it is challenging to measure the filtering effect of single host plants. 
+The impact of the plant host on the AMF community assembly remains therefore controversial [@Kokkoris2020].
+Historically, AMF species were described as non-host specific mostly due to the fact that about 80% or 200,000 of all vascular plants form arbuscular mycorrhizae with a comparably small number of Glomeromycotan fungi [@Brundrett2018]. 
+This imbalance between the two guilds becomes particularly apparent if it is considered that only 315 species are morphologically described [@Redecker2013]. 
+If a phylogenetic-based species description is applied, the number increases to about 1200 described AM fungi to date, depending on the studied gene region and the applied similarity cut-offs [@Kivlin2011]. 
+Investigations about the genetic differences in a population of *R. irregularis* have revealed that strong differentiation between isolates of AM fungi exists [@Croll2008], hinting at an even larger Glomeromycotan diversity [@Mathieu2018]. 
+Furthermore, these genotypes showed significant host preferences [@Croll2008], and caused substantial differences in the growth of the studied host species [@Koch2006]. 
+These findings indicate that the plant-AMF-interaction might be more complex than initially thought from studies based on a morphological definition of the AM fungal species.
+
+
+##	Plant-AMF communities in semi-natural grasslands
+
+Habitats such as temperate grasslands or semi-natural grasslands (pastures) are dominated by grasses, followed by forbs (non-grass herbs). 
+These plant growth forms differ with respect to their functional traits resulting in distinct adaptations to the biotic and abiotic factors of this habitat [@Ravenek2016; @Weaver1958]. 
+For example, grasses have a high tolerance to grazing, recovering quickly, often spreading by rhizomes [@Pykaelae2005]. 
+In contrast, some forbs typical to semi-natural grasslands tolerate changing conditions in the nutrient supply by relying on the nutrient storage in their roots. Grasslands are described as highly arbuscular mycorrhizal with high amounts of Glomeromycotan biomass in the soil [@Miller2012; @Olsson1999]. 
+However, the production of AMF hyphae differs between plant functional groups, seemingly positively influenced by plant above-ground production driving AMF productivity [@Gui2018] because highly photosynthetic plants deliver more carbon to their fungal mutualist. 
+Overall, grassland soils are a large store of carbon with – in addition to AMF -a plethora of fungi of different functional guilds and rhizosphere bacteria acquiring plant-derived carbon either directly or through soil trophic interaction [@Hannula2020].
+
+##	Findings and biases in field versus glasshouse studies of grassland systems
+Research on mutualistic networks and their assembly mechanisms has often focused on the manipulation of plant communities in the field where interactions are already established. Comparably less work has been done on simple plant communities and single plants in systems where the timing of interaction can be carefully controlled, such as in glasshouse experiments. 
+AMF communities are known to strongly vary with abiotic factors, especially temperature and pH [@Davison2021; @Hempel2018]. 
+Furthermore, at local scales, the strong influence of neighbouring plants on AMF assembly processes in planta are well-documented. These effects vary from synergistic, where the resulting AMF community resembles both the focal plant and its neighbour’s [@Hausmann2009], to strong control of the AMF community by the co-occurring plant [@Hausmann2010]. 
+To understand the effect of a host plant on its AMF community, these confounding abiotic and biotic factors need to be eliminated. Greenhouse studies in controlled environments enable greater control of both abiotic conditions and biotic interactions. 
+However, the controlled cultivation of plants also introduces biases, for example due to higher nutrient availability, decreased competition for space and increased soil disturbance, common in pot experiments [@Sykorova2007a]. 
+A comparison of AMF communities from both greenhouse-grown and field-collected forbs and grasses found that the forbs had significant richer AMF communities in the field, whereas the AMF communities from the grasses showed almost no difference between field and glass house approach [@Smilauer2021a]. 
+Although findings from greenhouse experimentation are not directly transferable to natural systems, controlled growth experiments are valuable to disentangle the effect of the host preference from other abiotic and biotic factors, especially the influence of neighbouring plants.
+
+##	Methods to examine AMF communities
+
+###	Metabarcoding of the AMF community
+
+The analysis of AMF communities at large scales presents some challenges. Traditional methods based on morphological identification of spores are time consuming and unsuitable to detect the active AMF community of an individual plant. 
+Recent studies increasingly apply molecular tools to investigate AMF communities in soils and roots [@Oepik2009; @Schlaeppi2016].
+For that, robust methods that can separate species from multi-species samples while being cost effective at the same time are needed. 
+The solution is metabarcoding, the amplification and sequencing of short but highly variable DNA regions that allow for species separation in environmental samples like soils or roots [@Taberlet2012]. 
+For fungi, the DNA region that includes the 18S, 5.8S and 28S rRNA genes, that are separated by two internal transcribed spacers ITS1 and ITS2 is of specific interest, because it is repeated up to 100 times in the genome which makes small amounts of DNA easily detectable [@Sanders2010]. 
+However, caution has to be exercised when analysing AMF communities based on rRNA gene metabarcoding as AMF species are known to have significant variability in the number of rRNA gene repeats [@Maeda2018]. 
+
+Several primer combinations exist for the successful amplification of fragments from Glomeromycota, and each is associated with potential biases [@OpDeBeeck2014; @Stockinger2010]. 
+The ITS3-ITS4 primer combination produces fragments of variable lengths between 352 - 430 bp, encompassing most of the 5.8S gene and the complete ITS2 region [@Stockinger2010; @White1990]. 
+The ITS2 fragment is easily amplified by PCR, and has shown to have both high reliability and high resolving power, allowing  closely related species to be discriminated [@Schoch2012].
+Additionally, fragment lengths of around 400bp are optimal for Illumina sequencing (Illumina Inc., San Diego, CA, USA) as paired-end reads, subsequently resulting in the best combination of sequencing depth and read quality [@Tan2019]. 
+Illumina sequencing is currently the default choice for metabarcoding because it offers high-throughput sequencing (HTS) which yields sequences of high quality at affordable prices [@Lindahl2013; @Nilsson2018].
+Sequence inference methods specific to Illumina amplicon sequencing have been developed replacing OTU clustering that has been historically applied in the analysis of fungal communities [@Pauvert2019]. 
+The DADA2 pipeline was developed especially to correct amplicon errors and generate exact amplicon sequence variants (ASVs) from Illumina amplicon sequencing [@Callahan2016]. 
+It features a higher accuracy in comparison to closed and open-reference OTU-clustering, which are known to introduce spurious sequences and therefore highly overestimating richness values in both 16S rRNA gene metabarcoding approaches [@Edgar2017] and fungal mock communities [@Joos2020]. 
+On the other hand, the high specificity of DADA2 in its default sequence inference mode, however, comes with the cost of removing rare ASVs. However, to include ASVs that might be rare in some samples but abundant in others due to a treatment effect, the DADA2 tool “pseudo-pooling”, can be implemented. 
+It processes ASVs twice, sample-wise comparing discarded ASVs of low abundance to ASVs that have been detected in other samples [@Callahan2016]. 
+
+
+##	Determination of the microbial biomass by phospholipid and neutral lipid fatty acid analyses (PLFA and NLFA)
+
+The identification of fatty acids (FAs) as biomarkers is a biochemical method that quantitatively delivers fatty acid profiles without the biases associated with culturing soil microbes or polymerase chain reaction PCR [@Kirk2004].
+
+###	Fatty acid analysis: Background
+
+Fatty acids (Fig. \@ref(fig:fatty-acid)) are a major component of biological lipids, which play a vital role in organisms. In bacteria and eukaryotic organisms, phospholipids (PL) are the major structural component of cellular membranes. 
+Triacylglycerides (neutral lipids = NL) are mainly used as storage lipids by eukaryotic organisms, such as fungi. In the phospholipids, two fatty acyl side chains are linked each via ester bonds to a phosphoglycerol moiety, whereas NL contain three fatty acyl chains linked to a glycerol backbone. 
+
+
+```{r fatty-acid, fig.cap= "AMF biomarker fatty acid 16:1ω5, a mono-unsaturated fatty acid with 16 carbon-atoms and one double bond. IUPAC name: (11E)-11-Hexadecenoic acid. Blue numbers indicate carbon position following IUPAC nomenclature, with carbon-atom C1 at the position of the functional group of the molecule. Numbering in red shows ω -nomenclature, starting at the ω-end of the chain. Image created with BioRender.com (2022)." }
+
+knitr::include_graphics("figures/fatty acid.png")
+
+
+```
+
+###	Neutral lipids fatty acid as signature biomarkers for AMF 
+AMF fungi form storage structures (vesicles, auxiliary cells) that contain high proportions of neutral lipids. 
+AMF fungi lack de novo fatty acid biosynthesis as they are not equipped with the fatty acid synthetase I (FAS I) complex [@Luginbuehl2017] needed to produce fatty acids. 
+Instead, AMF receive certain fatty acids (myristates) from their host plants [@Sugiura2019] and are able to construct other fatty acids and lipids from the supplied myristates. For this reason, the determination of the AMF lipid biomass can be considered an appropriate proxy for the carbon allocation from the plants to their mycorrhizal partner. 
+The amount of storage lipids also gives an indication about the number of infectious spores formed, because the stored carbon-rich macromolecules provide the necessary energy-rich products for spore production [@Souza2015].
+
+Neutral lipids are the primary storage compounds for fungi, while bacteria - with the exception of some taxa - do not store energy in the form of neutral lipids [@Baaaath2003; @Lechevalier1977]. 
+NL account for up to 90% of the lipids in the extraradical mycelium of AMF [@JabajiHare1988] and are found mainly in spores and also vesicles and auxiliary cells which are the main storage organs for AMF [@Madan2002; @Olsson1995; @Sharma2015;  @Wewer2014]. 
+The mono-unsaturated fatty acid 16:1ω5 is important as a biomarker in the NLFA fraction, because it shows a strong positive linear relationship with AMF spore densities in soil [@Sharma2015] and is well correlated to the vesicle concentration in roots [@VanDiepen2007]. 
+Furthermore, 16:1ω5 is usually the most abundant FA in the NL fraction, with up to 80 % of the total FAs [@Graham1995]. 
+However, the correlation between the AMF biomarker and the AMF colonization rates in roots vary between AMF taxa due to variations in their relative FA composition [@Graham1995; @Jansa1999; @Sakamoto2004]. 
+For example, the determination of 16:1ω5 is only of limited use for several species from the Gigasporacaea, as they do not contain the AMF biomarker at significant levels [@Graham1995; @Madan2002; @Olsson1995]. 
+Nonetheless, the application of the AMF biomarker from the NLFA fraction alone or in combination with its PLFA counterpart is useful as an indicator of carbon allocation processes to the AMF mycelium. 
+Whereas the NLFA derived biomarker is indicative for the size of lipid storage, the AMF signature PLFA describes the active biomass, and is most indicative for hyphal biomass as well as arbuscules [@VanDiepen2007; @Olsson1995; @Olsson1997]. 
+
+###	Phospholipid fatty acids as microbial biomarkers
+Variability of chain length, saturation and branching of FAs corresponds to different taxonomic groups of organisms.
+They are therefore used tentatively as biomarkers for microbial taxonomic groups, based on the assumption that these signature FAs have a relatively constant proportion of the cell’s biomass in different microorganisms [@Frostegaard2011; @Willers2015; @Zelles1992]. 
+For example, the cyclopropane PLFAs cy17:0 and cy19:0 are predominantly found in Gram-negative bacteria while branched PLFAs are more common in Gram-positive bacteria [@Frostegaard1993; @Zelles1997], and neither branched nor cyclopropane FA are common outside of bacterial taxa [@Lechevalier1977]. 
+Furthermore, the position of the double bond is regulated by its biosynthetic pathway, therefore characteristic “ω-families” can be described, assigned to taxa and used to investigate trophic interactions [@Ruess2010].
+
+However, while some PLFA are considered as signature biomarkers for particular taxonomic groups, many PLFA are common across taxa, and some PLFA used as biomarkers can even be found outside their indicated taxon [@Frostegaard2011; @Willers2015a; @Zelles1999]. 
+For example, the mono-unsaturated PLFA 16:1ω5 is a good measure of live AMF biomass within roots and in soil but it is also present in small amounts in the phospholipids of bacteria [@Olsson1999]. 
+This AMF biomarker has been found to correlate well with the hyphal length in the soil, and it can be applied to measure the spread and density of the mycelium [@Olsson1995]. 
+However, the relative abundances of PLFAs of an organism can vary due to their metabolic state or environmental factors [@Frey2008; @Kaur2005; @Wixon2013]. 
+Bacteria for example, can change their cell membrane PL composition to account for changes in temperature [@Heipieper1996]. 
+Nonetheless, the determination of the PLFAs is an important indicator of the biomass of living microorganisms because cell membranes are rapidly degraded and metabolised after cell death [@Baaaath2003; @Dunfield2007; @Hill2000; @Zhang2019].
+
+\newpage
+##	Research aims and outline of thesis 
+
+The primary aim of this research was to examine how the interplay between priority effect and plant species’ inherent interaction niche properties, i.e., their functional role as AMF generalist or specialist, influences the assembly of the AMF in different plant species.
+Understanding mechanisms of plant-AMF community assembly is critical to better predict outcomes of plant community restoration or ecosystem perturbation. 
+
+My specific aims were 
+
+1) to examine if and how pasture plants differ in their inherent interaction niche strategies with AMF 
+
+2) to assess if the plants' interaction strategies with AMF influence the carbon allocation to the microbial community (AMF and bacteria) as measured by their differences in biomass and community composition, and if, due to priority effects, these differences had consequences for the further development of the rhizosphere community.
+
+3) to examine the relative effects of plant neighbours and the order of arrival on the plant-AMF interaction of plants differing in their interaction niche strategies; and 
+
+4) to evaluate the interplay between inherent interaction niche strategy, neighbour plants, and priority of arrival on the bipartite plant-AMF interaction network structure. 
+
+These aims were addressed using microcosms and mesocosms of pasture plant species grown in common soil sourced from their pasture environment. 
+I determined the AMF community composition in plants and soil using next-generation sequencing and measured the biomass of the AMF using lipid analysis.
+
+In Chapter 2, I characterised properties of the interaction niche of twenty pasture plant species with AMF. For that, I quantified the numeric and phylogenetic interaction niche width, i.e., whether they acted as generalist or specialist for their AMF community. I predicted that the grasses, known as numeric generalists, would show less specific filtering of the available AMF pool in comparison with the forbs. 
+I also hypothesised that numeric AMF specialist plants employ different strategies of selectivity for their AMF community, i.e., either based on niche complementarity or optimisation of their mutualists. Based on the results of this chapter, I chose eight plant species that differed in their interaction niche properties with AMF to examine aims 2 and 3.
+
+In Chapter 3 I evaluated the relative impact of eight plants of different interaction strategies with AMF on their carbon allocation to the soil microbial community. I grew these plants separately and determined the AMF community in their roots and their associated soils by NGS. I repeated the description of the plants’ interaction niche property because this experiment was run under different conditions than that from Chapter 2. This allowed me to obtain a baseline for the plants’ interaction nice widths to compare the results of the experiments from Chapters 4 and 5 to, which were run in parallel under the same conditions. 
+I hypothesised that the interaction niche property of a plant would determine the biomass allocation to the microbial community. To test that, I measured the AMF biomass in the roots and associated soils by NLFA; and I examined the bacterial community composition of the soil by PLFA. 
+
+The assembly of the AMF community is governed by a complex interplay between the abiotic and biotic factors, which are in turn influenced by stochastic effects like those due to time of species arrival. I determined the net effects of the plant neighbourhood and that of priority of plant species arrival on the AMF interaction niche of the eight focal plant species in Chapter 4. To examine these effects, I grew the eight plant species in a mesocosm, with one of the species either arriving three weeks before the rest of the community (BC treatment) or after the community (AC treatment). I determined the AMF community of each focal plant and compared the interaction niche properties between the AC and BC treatment for each plant species to obtain the net effect of the order of arrival. To examine the interplay between plant neighbourhood and priority on the AMF community of the focal plants, I used differential abundance analysis to determine how each AMF species’ abundance changed between the different treatments, i.e., AC, BC and separate growth of the focal plants. The application of differential abundance analysis to examine AMF assemblages provided a novel insight into plant-AMF assembly mechanisms. 
+
+In Chapter 5 I examined if the interaction niche properties with AMF of early arriving plants determine the outcome of the AMF community assembly of later arriving plant species. For that, I determined the AMF communities of all plant individuals in both the BC and AC treatments and examined if and how the early arrival influenced the interaction niche properties of the late plant community. 
+I hypothesised that early arriving focal plants that are numeric generalist would increase the diversity of the AMF communities of the late-arriving species under the assumption that those plants would preferentially interact with an established AMF community. Furthermore, I predicted that a highly diverse AMF community of the early arrival would result in increased productivity of the plant community, which I quantified by measuring the plant aboveground biomass. 
+I used linear mixed-effects modelling to uncover if the AMF richness of the focal plant was a significant predictor for these responses. Using differential abundance analysis I examined the net priority the focal plant had on the AMF abundances of each plant species of the community. 
+Metrics of the bipartite plant-AMF interaction network help appraising the communities’ stability against perturbations. My prediction was that early AMF generalist plants would increase those metrics associated with the stability of the system, via increases in the AMF richnesses. 
+To test that, I calculated several network metrics describing the topology and other properties for each BC treatment and compared them among the plant species.
+
+\newpage
+## References 

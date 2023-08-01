@@ -1,0 +1,2346 @@
+---
+title: "Thesis"
+author: "Natascha Lewe"
+date: "08/07/2022"
+output:
+  word_document2:
+    number_sections: yes
+    toc_depth: 3
+    reference_docx: bib/Test.docx
+bibliography: testbookdown/20220513bib.bibtex
+csl: bib/apa.csl
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
+
+# Chapter 5: Plant-AMF networks are robust to priority effects on interaction richness
+
+## Introduction
+
+### Priority effects and plant-soil feedback
+
+The success of a plant species' establishment in a community depends on several conditions, like abiotic and biotic factors or the plants' order of arrival.
+Priority effects, i.e., when the order of species arrival affects their establishment, growth and survival, can have wide ranging impacts on the trajectory of the community development and subsequently on its productivity, diversity, and ecosystem services [@Weidlich2017].
+Examples from vegetation restoration at degraded sites show how the early introduction of target native plant species can support the development towards native communities, whereas the planting of aggressive early colonisers as initial vegetation of this highly disturbed sites might result in alternate, less diverse plant community assemblages compared with the native vegetation [@Holl2002].
+While priority effects can occur because of the effect of niche pre-emption, that is the depletion of resources like nutrients or space by the early arrival, the early arrival will also modify the niche by changing the abiotic and biotic soil conditions [@Debray2021].
+These soil legacies, in turn, can affect the productivity and establishment success of later arriving plants ("plant-soil feedback", PSF), which subsequently influences the trajectory of plant community assembly [@Putten2013; @Kulmatiski2019].
+
+Most often, conspecific plants suffer from negative PSF ("direct negative PSF") while heterospecific plants might be positively affected ("indirect positive PSF"), i.e., the later arriving plant individuals from the same species are reduced in their net-growth while different species show increased net-growth [@Cortois2016; @Putten2013; @Bennett2019].
+However, several studies demonstrated that more often the functional group of the studied plants, not necessarily their species identity, is a strong determinant of significant PSF effects, which could be demonstrated with grasses and forbs in grasslands creating soil legacies negatively affecting plants from the same functional groups [@Heinen2020; @Bezemer2006].
+Direct negative PSFs are described as a key factor in promoting coexistence in plant communities which positively affects diversity [@Crawford2019].
+On the other hand, indirect negative PSF is thought to be a relevant mechanism of invasive exotic plants suppressing the native vegetation resulting in their dominance in the community [@Callaway2000; @Perkins2016; @Wilson2012].
+Studying the mechanisms governing PSF is therefore important for understanding assembly processes of plant communities and can improve efforts of restoration.
+
+Several mechanisms are involved in PSF, like the direct impact on plants and the microbial community by secondary metabolites released in the soil or the indirect effect on plants via changes in the microbial communities.
+Typically, the accumulation of plant specific specialist pathogens is thought to be the main reason for negative PSF [@Putten2013], while positive PSFs are usually ascribed to the promotion of symbiotic mutualists like N-fixing rhizobacteria and mycorrhizal fungi [@Anacker2014].
+The roles of AMF in PSF ranges from ameliorating [@Bennett2019; @Morris2007; @Cortois2016] to reversing negative PSF effects [@GarciaParisi2017], therefore indicating at a fine balance between the relative strength of positive and negative PSF with different outcomes depending on abiotic and biotic conditions and the plant identity.
+Neighbouring plants can change the AMF diversity and composition of a focal plant, for example some invasive plants significantly change the AMF richness in their community, even when they arrive in an established plant community [@Hausmann2009; @Zhang2021].
+Theoretically, these effects should be even stronger when a plant with strong impacts on the AMF community arrives earlier than other plants.
+Gaining a better understanding of the mechanisms governing priority effects resulting from soil legacies will help predict outcomes of plant assembly.
+
+### The network architecture of the plant-AMF interaction
+
+Mutualistic interactions like between plants and AMF are usually depicted as bipartite networks.
+To examine changes in these complex systems of multiple interaction partners, tools to describe the network architecture and the functional roles of the members of the two guilds, i.e., plants and fungi, exist [@bipartite2009; @Dormann2011].
+Descriptors of the network topology like nestedness, modularity and connectance are important tools to indicate ecosystem functioning and stability, and network properties exists to describe interaction changes of the members of the guilds, for example changes in their interaction generality [@Allen2022].
+Plant-AMF networks are nested, which means they are formed by a core of well-connected generalist plants and AMF, with specialist species interacting with the generalist species of the other guild [@Bascompte2003].
+Nested networks with many interactions promote biodiversity and community resilience [@Okuyama2008; @Tylianakis2010], making these networks more robust against perturbation [@Gaiarsa2019; @Batstone2018].
+It is therefore important to better understand the mechanisms of community assembly that could change the plant-AMF network structure.
+The priority effect due to differences in order of arrival of the plant species, is one of the influences on community assembly that could change the architecture of the plant-AMF network.
+Depending on the plants' interaction properties, i.e., if they are generalists or specialists for their AMF, these plants might vary in their impact on the trajectory of the plant-AMF community, resulting in alternate states of the community assembly.
+For example, generalist plant species interact with a high proportion of the AMF species of the interaction network, they therefore promote the diversity and abundance of their interaction partners.
+In contrast, non-mycorrhizal plants or such that show low AMF dependance have been found to inhibit AMF with consequences for both the richness and abundance of AMF in their communities [@Zubek2016; @Stinson2006; @Pueschel2008].
+
+The generalism/specialism of the interaction partners, i.e., if a species acts as an interaction generalist or specialists is related to several network properties [@Allen2022; @Tylianakis2018] which can be changed by the introduction or removal of species to the community [@Maia2019; @Tylianakis2018].
+When a generalist plant species arrives at an early successional state in a community, it invests into the growth of a diverse mycorrhizal network in the soil.
+Later arriving plants could connect to that hyphal network provided by the generalist [@Mickan2021].
+The attachment to an established hyphal network would be advantageous for a plant species as it would get access to a large soil volume without initial carbon investment into the fungal partner.
+For plant species which have a low AMF selectivity, the preferential attachment to an established AMF hyphal network or the preferential interaction with other abundant AMF propagules could be the rule, which would be mostly ascribed to stochastic effects [@EncinasViso2016].
+Regardless of the mechanism, the connection to an established hyphal network would theoretically lead to increased nestedness and decreased modularity of the networks, especially if the overlap of the plants' AMF community with that of the earlier generalist is high [@Ponisio2019].
+In contrast, if selectivity for more attractive partners plays a larger role with subsequent competition of the plants for their AMF mutualists, the early arrival plant might outcompete late arrivals and suppress their access to the AMF network based on higher carbon exchange rates due to their later developmental stage [@Kiers2011].
+Changes to the network structure due to order of arrival of plant species of varying interaction niche property with AMF could therefore have important ecosystem-level consequences.
+
+### Aims of the study
+
+To understand the mechanisms governing the community assembly of AMF, controlled experiments using plants of defined interaction traits are needed.
+My aim was to study possible determinants underlying the architecture of plant-AMF networks.
+For that, I assembled mesocosms of plant communities of eight grassland plant species which differed in their interaction niche properties with AMF.
+I manipulated the order of arrival of these plant species such that one of the plant species, the focal plant, arrived before the community to examine the priority effect of the focal plant species on the network architecture.
+I determined the AMF community of each individual plant species by sequencing and built plant-AMF bipartite interaction networks from that information.
+Then, I calculated several network properties to describe how the interplay between priority effect and plant species identity, i.e., plant-AMF generalism influenced the network assemblage.
+I asked whether the priority effect of a plant species on the architecture of the interaction network would depend on the generalism/specialism of the early arrivals.
+Specifically, my hypothesis was: **Hyp 1**: Focal plant species that are numeric AMF generalist increase the AMF diversity and abundance of the neighbourhood plants' AMF community whereas the specialist plant species would result in smaller AMF diversities of later arrivals.
+While the results from Chapter 4 indicate that the specialist plants themselves are impacted in their AMF assembly by their neighbourhood but that this was independent from their order of arrival, this does not exclude the possibility that they, as early arrivals, reciprocally affect the AMF assembly of their plant neighbourhood.
+
+To assess whether the priority of the different focal plant species would impact the productivity of the late arrivals via PSF, and whether this was mediated by the AMF richness, I determined the plants' biomass as proxy for plant productivity and studied its relationship with the AMF richness.
+My hypothesis **Hyp 2** was: The plant biomass shows a positive relationship with the AMF richness of the focal plant species.
+
+Because the richness of the AMF species per plant is related to the network properties, I furthermore hypothesised: **Hyp 3**: Plant generalists as focal species result in better connected, more even and more nested interaction networks.
+For that, I used several complementary network metrics that describe these structural properties (see table).
+Generalist species establish a large and diverse AMF hyphal network in the soil to which later arrivals can connect to form a common mycorrhizal network.
+While a specialist plant also establishes such a hyphal network, it will consist only of a fraction of AMF species in comparison to that of the generalist.
+At the arrival of the plant community, these plants might at first preferentially connect to the available network, but also initiate new interaction with AMF, increasing the diversity and abundance of interacting AMF.
+In comparison to the AMF community of the generalist focal plant, the AMF community resulting from a specialist focal plant should therefore suffer from lower evenness, lower nestedness and connectivity.
+
+```{r aims-conc-fig-5, fig.cap = "Conceptional figure of the hypotheses for Chapter 5. The early arrival focal species, either a AMF numeric specialist (pink box) or a numeric generalist (green box) interacts with the AMF, establishing a AMF community of low or high diversity and abundance (Hyp 1). The later arrivals connect to the established AMF network, and are influenced in their productivity based on the richness of the focal plant (Hyp 2). The differences in generalism of the focal plant result in bipartite networks of differing architecture (Hyp 3)."}
+
+knitr::include_graphics('figures/Ch5_Hyp.png')
+
+# add conceptional figure
+
+```
+
+```{r setup, echo=FALSE, message=FALSE}
+
+knitr::opts_knit$set(root.dir = "C:/Users/Nat/OneDrive - Victoria University of Wellington - STAFF/PhD/Results/Marsden1/Marsden_1_2 roots/R/M1_2_NLFA")  # set root directory
+knitr::opts_chunk$set(echo = FALSE, message=FALSE, warning=FALSE, dpi = 300)
+options (ignore.negative.edge=TRUE)  ## for the tree
+```
+
+```{r libraries, echo=FALSE, message=FALSE}
+library(bookdown)
+library(kableExtra) #https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html
+library(tidyverse) # the most important package in the universe
+library(readxl)
+library(ggplot2)
+library (flextable)
+library(ggpubr)
+library(phyloseq)
+library(phylosmith)
+library (broom) #needed for tidy linear modelling
+library(rstatix)
+library(FactoMineR) # simple ordinations
+library(factoextra)
+library (rmarkdown)
+library (ggsignif) # adds signif to ggplot
+library (lme4)
+library (nlme)
+library (broom) # for pretty lm tables
+library(broom.mixed) # for pretty mixed model tables
+library (wPerm) #permutation ANOVA etc
+library(paletteer) 
+library (iNEXT)
+library (metagMisc)
+library(edgeR)
+library (limma)
+library (Glimma)
+library (ape)
+library (stats)
+library (ggtree)
+library (lmerTest)
+library (bipartite)
+library (grid)
+library(gridExtra)
+library(picante)
+library (reshape2)
+library (emmeans)
+```
+
+```{r data-import-sequences, echo=FALSE, message=FALSE, warning=FALSE}
+
+
+
+# meta 
+meta_M1Wcontrol<- read_xlsx("data/meta_M1Wcontrol.xlsx")%>%  mutate (DW_roots = as.double(DW_roots), DW_above = as.double(DW_above))
+meta_M2 <- read_xlsx ("data/M2_data/meta_table.xlsx") %>% 
+  filter (AC.BC == "AC"| AC.BC == "BC") %>% 
+  select (!c(Primer.comb, Lib)) 
+
+meta_all  <- read_xlsx ("data/M2_data/meta_table.xlsx") %>% 
+  select (!c(Primer.comb, Lib)) 
+
+
+#meta_M2
+#%>%    mutate (sampleID = str_c ("X", sampleID, sep = ""))
+meta_M1 <- 
+  meta_M1Wcontrol %>%  
+  filter (AC.BC == "M1")
+
+
+#phyloseq####
+ps_M1  <- readRDS ("data/ps_M1.rds") # only GLO   I got this file from running ALL 19 libraries together! Then subsetting for M1.
+ps_M1 <- prune_samples (sample_sums(ps_M1)>=1, ps_M1)
+# add sample data 
+sample_data (ps_M1) <- sample_data (data.frame (meta_M1, row.names = "sampleID"))
+
+# other PS objects
+ps_control  <- readRDS ("data/ps_control.rds")
+ps_ALL <- readRDS ("data/M2_data/ps_ALL.rds")  ## inlcudes ALL samples, ALL ASVs
+sample_data (ps_ALL) <- sample_data (data.frame (meta_all, row.names = "sampleID"))
+ps_ALL  <- prune_samples (sample_sums(ps_ALL)>=1, ps_ALL)
+ps_ALL  <- prune_taxa(taxa_sums(ps_ALL)>=1, ps_ALL)
+
+ps_M2_allASVs <- subset_samples(ps_ALL, AC.BC != "M1")
+ps_M2_allASVs <- subset_samples(ps_M2_allASVs, AC.BC != "control")
+
+
+## ps_M2 has only Glomeromycota
+ps_M2 <- subset_taxa(ps_M2_allASVs, Phylum=="Glomeromycota")
+#ps_M1_allASVs <- subset_samples (ps_ALL, AC.BC == "M1")
+#
+sample_data (ps_M2) <- sample_data (data.frame (meta_M2, row.names = "sampleID"))
+ps_M2  <- prune_samples (sample_sums(ps_M2)>=1, ps_M2)
+ps_M2  <- prune_taxa(taxa_sums(ps_M2)>=1, ps_M2)
+
+
+
+# track reads####
+track_reads_M2  <- read_csv("data/M2_data/track_reads_ALL.csv") %>% 
+  left_join (meta_all) %>% 
+  filter (AC.BC != "M1" & AC.BC != "control") 
+
+#Input reads M2
+input_M2 <- track_reads_M2 %>% summarise(input_all =sum (input))
+no_chim_M2 <-track_reads_M2 %>% summarise(input_all =sum (nonchim))
+# Average 
+ave_input_M2 <- track_reads_M2 %>%  summarise(ave_reads= mean(input))
+ave_nochim_M2  <- track_reads_M2 %>%  summarise(ave_reads= mean(nonchim))
+
+# number of ASVs before removal of non-Glomeromycota
+No.ASVs_M2<- estimate_richness(ps_M2_allASVs,measures = "Observed") %>% 
+  as_tibble (rownames = "sampleID")
+# mean number of ASvs per sample before removal of non_glo
+ave_ASV_M2 <- No.ASVs_M2 %>%  summarize (ave_ASV = mean(Observed), SD_ASV = sd(Observed))
+
+#ASV table alle samples before rarefaction
+ASV_table_Glo_M2<- t(otu_table(ps_M2)) %>%  
+  data.frame () %>%  
+  as_tibble (rownames = "sampleID") %>% 
+  pivot_longer(!sampleID, names_to = "ASV_ID", values_to = "ASV_count") %>% 
+  left_join((tax_table(ps_M2) %>% 
+               data.frame () %>%  
+               as_tibble (rownames = "ASV_ID")), by= "ASV_ID")
+
+
+# total count of reads for all Glo before rarefaction
+total_reads_Glo_M2  <- ASV_table_Glo_M2 %>%  summarise(total =sum(ASV_count))
+total_reads_Glo_M2_persample  <- ASV_table_Glo_M2 %>% left_join (meta_M2) %>%  group_by ( sampleID) %>% summarise(totals= sum(ASV_count))
+
+
+### ggf sollte man noch alle filtern die nicht auf family level identifiziert sind!
+
+
+# Mean percentage of Glo families in root and soil samples before rarefaction####
+# Perc_reads_Glo_Fam_M2 <- 
+#   ASV_table_Glo_M2 %>% 
+#   group_by (sampleID, Family) %>%  
+#   summarize (Fam_sum = sum (ASV_count)) %>%  
+#   left_join(total_reads_Glo_M1_persample) %>% 
+#   mutate (perc_Fam = 100*Fam_sum/totals) %>% 
+#   group_by (roots_soil, Family) %>% 
+#   summarize (mean =mean (perc_Fam)) %>%  
+#   group_by (roots_soil) %>%  
+#   arrange (desc(mean))
+
+# Perc_Fam_soil  <- Perc_reads_Glo_Fam_M1 %>%  filter (roots_soil == "soil")
+# Perc_Fam_roots  <- Perc_reads_Glo_Fam_M1 %>%  filter (roots_soil == "roots")
+
+
+#
+
+
+# ASV_per_Fam_roots <- 
+# ASV_table_Glo_M2 %>% 
+#   select (sampleID, ASV_ID, Family, ASV_count) %>% 
+#   left_join (meta_M2) %>% 
+#   filter (roots_soil == "roots") %>% 
+#   filter (ASV_count > 0) %>%  
+#   select (ASV_ID, Family) %>%  
+#   unique () %>% 
+#   group_by (Family) %>%  
+#   tally()%>%  
+#   arrange (desc(n))
+
+
+```
+
+```{r data-import-NLFA-PLFA}
+# 
+# #PLFA NLPFA####
+# ### read all excel sheets into one tibble
+# path<-"data/M1_NLRoots.xlsx" ###path of the file
+# path2 <- "data/M1_NLSoil.xlsx" ###path of the file
+# path3 <- "data/M1_PLSoil.xlsx"
+# Biomarker<- read_xlsx("data/FAME_RFF_biomarker.xlsx", sheet = "BM")
+# 
+# 
+# # import NLFA data - ROOTS ####
+# NL<- path%>%
+#   excel_sheets()%>%
+#   set_names() %>% 
+#   map_df(~read_excel(path=path, sheet = .x), .id= "sheet")  %>%  ###here, it would be possible to give a range for the sheets etc
+#   dplyr::rename("sampleID"="sheet")  #if using dplyr, add dplyr:: because of interference with plyr
+# 
+# #add Biomarker info to data
+# NL<-merge(NL, Biomarker, by="Name")
+# 
+# #add meta
+# NL<-merge(NL, meta, by="sampleID") ###here, it would be possible to give a range for the sheets etc
+#  
+# #Removal of a sample R09 (no IS)
+# NL<- NL %>% filter (sampleID!="R09")
+# 
+# # import NLFA data - SOIL ####
+# NL_soil  <- path2%>%
+#   excel_sheets()%>%
+#   set_names() %>% 
+#   map_df(~read_excel(path=path2, sheet = .x), .id= "sheet")  %>%  ###here, it would be possible to give a range for the sheets etc
+#   dplyr::rename("sampleID"="sheet")  #if using dplyr, add dplyr:: because of interference with plyr
+# 
+# #add Biomarker info to data
+# NL_soil<-merge(NL_soil, Biomarker, by="Name")
+# 
+# #add meta
+# NL_soil<-merge(NL_soil, meta, by="sampleID") ###here, it would be possible to give a range for the sheets etc
+#  
+# 
+# #PLFA SOil
+# # import PLFA data - SOIL ####
+# PL_soil  <- path3%>%
+#   excel_sheets()%>%
+#   set_names() %>% 
+#   map_df(~read_excel(path=path3, sheet = .x), .id= "sheet")  %>%  
+#   dplyr::rename("sampleID"="sheet")  #if using dplyr, add dplyr:: because of interference with plyr
+# 
+# #add Biomarker info to data
+# PL_soil<-merge(PL_soil, Biomarker, by="Name")
+# 
+# #add meta
+# PL_soil<-merge(PL_soil, meta, by="sampleID") %>%  
+# select (-c(DW_above, DW_roots ))
+##Calculate the loss of sample and correct areas of all FAMEs for loss
+#need: area of 19:0 (IS)
+# need: Area of 19:0 at 100% (calculated from calibration runs), IS is at 20nmol per sample 
+# RF for IS= 18842783498 Area per mol/l for 19:0 in sept 2019
+#conc= 20nmol/0.075 ml =2.6 exp-4 mol/l 
+#'calculate the theoretical area as RF * conc
+### theoretical area = 4899124 IS
+#take into account split etc
+# correction<- NL %>% select(c(sampleID,Area, Name))%>% 
+#this is splitless here
+# 
+# ###test run relative to IS
+# correction<- NL %>% select(c(sampleID,Area, Name))%>% 
+#   filter(Name=="19:0")%>%
+#   mutate(IS_area=Area*1) %>%  
+#   select(c(sampleID,IS_area ))
+# 
+# 
+# # Full table for all NL fatty acids
+# NL_FA_conc <-  left_join(NL, correction, by ="sampleID")%>% 
+#   mutate(conc_temp=Area*(0.266667/IS_area)*(1/RFF))%>%  ###the conc is now in e-03 mol/l
+#   mutate(conc_FA=75*conc_temp/sampleMass)  %>%    ##conc is changed from e-03 mol/l per g soil to nmol per g soil (by multiplication with 75 µL)
+#   select (sampleID, ID, Name, myorder, conc_FA, GorS)
+# 
+# ## calculate conc of AMF biomarker per root sample only in nmol per g root
+# AMF_conc<-  NL_FA_conc  %>% 
+#   group_by(sampleID, Name) %>%   #
+#   dplyr::summarise (sum_groups=sum(conc_FA))  %>% ##not relevant for NL because only one FA
+#   pivot_wider (names_from =  Name, values_from = sum_groups) %>% 
+#   mutate_all(~replace(., is.na(.), 0))  %>%
+#   select( '16:1w5', sampleID) %>% 
+#   add_column(type="root") %>%  ## needed for comparison soil vs root
+#   dplyr::rename(AMF='16:1w5') %>%  #  easier accessible name
+#   left_join( meta, by='sampleID') %>%  # add meta again
+#   select(sampleID, ID, AMF, M1_M2_order, PlaSpe, GorS, SpGen, type, PlantFamily, PlantSpeciesfull)
+# 
+# ## Same calcualtions for soil####
+# correction<- NL_soil %>% select(c(sampleID,Area, Name))%>% 
+#   filter(Name=="19:0")%>%
+#   mutate(IS_area=1*Area) %>%  ###in den anderen ist das nur Area
+#   select(c(sampleID,IS_area ))
+# 
+# # Full table for all NL fatty acids
+# NL_FA_conc_Soil <-  NL_soil %>% left_join( correction, by ="sampleID")%>% 
+#   mutate(conc_temp=Area*(0.266667/IS_area)*(1/RFF))%>%  ###the conc is now in e-03 mol/l
+#   mutate(conc_FA=75*conc_temp/sampleMass)  %>%    ##conc is changed from e-03 mol/l per g soil to nmol per g soil (by multiplication with 75 µL)
+#   select (sampleID, ID, Name, myorder, conc_FA, GorS)
+# 
+# ## calculate conc of AMF biomarker per soil sample only, in nmol per g soil
+# AMF_conc_Soil<-  NL_FA_conc_Soil  %>% 
+#   group_by(sampleID, Name) %>%   #
+#   dplyr::summarise (sum_groups=sum(conc_FA))  %>% ##not relevant for NL because only one FA
+#   pivot_wider (names_from =  Name, values_from = sum_groups) %>% 
+#   mutate_all(~replace(., is.na(.), 0))  %>%  # NA changes to 0
+#   select( '16:1w5', sampleID) %>% 
+#   add_column(type="soil") %>%  ## needed for comparison soil vs root
+#   dplyr::rename(AMF='16:1w5') %>%  #  easier accessible name
+#   left_join( meta, by='sampleID') %>%  # add meta again
+#   select( sampleID, ID, AMF , M1_M2_order, PlaSpe, GorS, SpGen, type, PlantFamily, PlantSpeciesfull)
+# 
+# #Bind data
+# NL_all  <- AMF_conc %>% 
+#   bind_rows (AMF_conc_Soil)  # nmol per g soil or g roots
+# 
+# ##PLFA###
+# ##Calculate the loss of sample and correct areas of all FAMEs for loss
+# #need: area of 19:0 (IS)
+# # need: Area of 19:0 at 100% (calculated from calibration runs), IS is at 20nmol per sample 
+# # RF for IS= 18842783498 Area per mol/l for 19:0 in sept 2019
+# #conc= 20nmol/0.075 ml =2.6 exp-4 mol/l 
+# #'calculate the theoretical area as RF * conc
+# ### theoretical area = 4899124 IS
+# ## correction of PL for soil####
+# correction<- PL_soil %>% select(c(sampleID,Area, Name))%>% 
+#   filter(Name=="19:0")%>%
+#   mutate(IS_area=1*Area) %>%    
+#   select(c(sampleID,IS_area ))
+# 
+# # Full table for all PL fatty acids
+# PL_FA_conc_Soil <-  PL_soil %>% left_join( correction, by ="sampleID")%>% 
+#   mutate(conc_temp=Area*(0.065/IS_area)*(1/RFF))%>%  ###the conc is now in e-03 mol/l
+#   mutate(conc_FA=75*conc_temp/sampleMass)  %>%    ##conc is changed from e-03 mol/l per g soil to nmol per g soil (by multiplication with 75 µL)
+#   select (sampleID, ID, Name, myorder, conc_FA, GorS, Biom2Soil, FvsB )
+```
+
+```{r data-import-NLFA-PLFA-M2}
+#PLFA NLPFA####
+### read all excel sheets into one tibble
+path<-"data/NLFA_soil_M2.xlsx" ###path of the file
+path2 <- "data/PLFA_soil_M2.xlsx" ###path of the file
+Biomarker<- read_xlsx("data/FAME_RFF_biomarker.xlsx", sheet = "BM")
+meta_plants  <- read_xlsx("data/metadata_M2_soil.xlsx", sheet = "meta_plants") %>% unique()
+meta_PLFA  <- read_xlsx("data/metadata_M2_soil.xlsx", sheet = "meta_M2_PLFA", range = "A1:G100")
+# import NLFA data - M2 soil ####
+NL_M2<- path%>%
+  excel_sheets()%>%
+  set_names() %>% 
+  map_df(~read_excel(path=path, sheet = .x), .id= "sheet")  %>%  ###here, it would be possible to give a range for the sheets etc
+  dplyr::rename("sampleID"="sheet") %>%   #if using dplyr, add dplyr:: because of interference with plyr
+  mutate (sampleID = str_replace_all (sampleID, "NL_", "")) %>% 
+  add_column (PL_NL= "NLFA") %>% 
+  select(sampleID, Name, area, PL_NL)
+  
+#add Biomarker info to data
+NL_M2<-merge(NL_M2, Biomarker %>%  select(-c(Biom1Soil, Soil_A1_kons, MW, RI)), by="Name")
+
+#add meta
+NL_M2<-left_join(NL_M2, meta_PLFA, by="sampleID") %>% left_join (meta_plants %>% unique(), by = "focal.sp")
+
+# import PLFA data - M2 soil  ####
+PL_M2<- path2%>%
+  excel_sheets()%>%
+  set_names() %>% 
+  map_df(~read_excel(path=path2, sheet = .x), .id= "sheet")  %>%  ###here, it would be possible to give a range for the sheets etc
+  dplyr::rename("sampleID"="sheet") %>%   #if using dplyr, add dplyr:: because of interference with plyr
+  mutate (sampleID = str_replace_all (sampleID, "PL_", "")) %>% 
+  add_column (PL_NL= "PLFA") %>% 
+  select(sampleID, Name, area, PL_NL)
+
+#add Biomarker info to data
+PL_M2<-merge(PL_M2, Biomarker %>%  select(-c(Biom1Soil, Soil_A1_kons, MW, RI)), by="Name")
+
+#add meta
+PL_M2<-left_join(PL_M2, meta_PLFA, by="sampleID")%>% left_join (meta_plants %>% unique(), by = "focal.sp")
+
+##Calculate the loss of sample and correct areas of all FAMEs for loss
+#need: area of 19:0 (IS)
+# need: Area of 19:0 at 100% (calculated from calibration runs), IS is at 20nmol per sample 
+#  19:0 in Feb 2021
+#conc= 20nmol/0.075 ml =2.6 exp-4 mol/l 
+#'calculate the theoretical area as RF * conc
+### theoretical area = 50,270,574 for IS - but I think there was a mistake somewhere - I assume 5Mio looks correct
+#take into account split etc - it was split 10 - but the 190 was too, so no back and forth calculation needed
+correction<- NL_M2 %>% select(c(sampleID,area, Name))%>% 
+  filter(Name=="19:0")%>%
+  mutate(IS_area=1*area) %>%  ###area as numerical
+  select(c(sampleID,IS_area ))
+
+# Full table for all NL fatty acids
+NL_FA_conc_M2 <-  left_join(NL_M2, correction, by ="sampleID")%>% 
+  mutate(conc_temp=area*(0.266667/IS_area)*(1/RFF)) %>%  ###the conc is now in e-03 mol/l
+  filter(!is.na (conc_temp)) %>% as_tibble() %>% mutate (m_soil=as.numeric(m_soil)) %>% 
+  mutate(conc_FA=75*conc_temp/m_soil)  
+    ##conc is changed from e-03 mol/l per g soil to nmol per g soil (by multiplication with 75 µL)
+
+## calculate conc of AMF biomarker per root sample only
+AMF_conc_M2<-  NL_FA_conc_M2  %>% 
+  group_by(sampleID, Name) %>%   #
+  dplyr::summarize (sum_groups=sum(conc_FA))  %>% ##not relevant for NL because only one FA
+  pivot_wider (names_from =  Name, values_from = sum_groups) %>% 
+  mutate_all(~replace(., is.na(.), 0))  %>%
+  select( '16:1w5', sampleID) %>% 
+  dplyr::rename(AMF='16:1w5') %>%  #  easier accessible name
+  left_join( meta_PLFA %>%  select (sampleID, focal.sp, treatment, AC.BC), by='sampleID') %>%  # add meta again
+  left_join (meta_plants)
+
+
+
+
+###Calculation for PLFA
+correction<- PL_M2 %>% select(c(sampleID,area, Name))%>% 
+  filter(Name=="19:0")%>%
+  mutate(IS_area=area*1) %>%  ###to get the IS area for each sample
+  select(c(sampleID,IS_area ))
+
+# Full table for all PLFA fatty acids
+PL_FA_conc_M2 <-  left_join(PL_M2, correction, by ="sampleID")%>% 
+  mutate(conc_temp=area*(0.065/IS_area)*(1/RFF)) %>%  ###the conc is now in e-03 mol/l
+  filter(!is.na (conc_temp)) %>% as_tibble() %>% mutate (m_soil=as.numeric(m_soil)) %>% 
+  mutate(conc_FA=75*conc_temp/m_soil)  
+##conc is changed from e-03 mol/l per g soil to nmol per g soil (by multiplication with 75 µL)
+
+## get control samples 
+PL_FA_conc_control <- 
+  PL_FA_conc_M2 %>%  filter (AC.BC == "control")  # in nmol per g Soil
+
+## full table pivotted, FA as columns
+PL_conc_M2<-  PL_FA_conc_M2  %>% 
+  group_by(sampleID, Name) %>%   #
+  dplyr::summarize (sum_groups=sum(conc_FA))  %>% ##not relevant for NL because only one FA
+  pivot_wider (names_from =  Name, values_from = sum_groups) %>% 
+  mutate_all(~replace(., is.na(.), 0))  %>%
+  left_join( meta_PLFA %>%  select (sampleID, focal.sp, treatment, AC.BC), by='sampleID') %>%  # add meta again
+  left_join (meta_plants )   # in nmol per g Soil
+
+
+
+
+```
+
+```{r rarefaction, message=FALSE, warning=FALSE, echo=FALSE}
+# coverage-based rarefaction --------------------------
+#Use package metagMisq for
+#ps_ALL_iter <-  phyloseq_coverage_raref(ps_ALL, iter =2) #produces 99 ps objects in list
+# runs for 99 iterations in raapoi for 4.30 with 24 cores
+# write_rds (ps_ALL_iter, "results/ps_ALL_iter99.rds")
+# ps_ALL_iter <- read_rds("data/ps_ALL_iter99.rds")
+
+## this is also too memory intensive
+# runs on Raapoi with 24 CPUs , 48 GB
+# interactive srun --pty --cpus-per-task=24 --mem=48G  --time=00:10:00 --partition=quicktest R
+
+# ALL_coverage_table_M2 <- 
+#   map(ps_ALL_iter, otu_table) %>%
+#   map (data.frame) %>%   map (t) %>%
+#   map (function (df) as_tibble (df,rownames = "sampleID" )) %>%
+#   map_dfr (bind_rows, .id = "TableNumber") %>%
+#   pivot_longer(!c(TableNumber, sampleID), names_to =  "ASV_ID", values_to = "counts") %>%
+#   group_by (sampleID, ASV_ID) %>% select (!TableNumber) %>%
+#   summarize (mean_counts = round (mean(counts))) %>%
+#   unique () %>%
+#   pivot_wider(id_cols = , names_from = "sampleID", values_from = "mean_counts") %>%
+#   data.frame()
+
+ALL_coverage_tables_M2_99 <- readRDS("data/ALL_cov_table_M2_99.rds")
+ALL_coverage_tables_M2 <- 
+  ALL_coverage_tables_M2_99 %>%  
+  t() %>%  
+  as_tibble (rownames = "sampleID") %>% 
+  mutate (sampleID = str_remove(sampleID, "X")) %>% # remove the X in sampleIDs
+  data.frame(row.names = "sampleID") 
+
+ps_ALL_rarefied <- ps_ALL  # make new ps object
+otu_table (ps_ALL_rarefied) <- otu_table(ALL_coverage_tables_M2, taxa_are_rows = F)  # exchange otu table with rarefoed one
+
+ps_M2_rarefied  <- subset_samples (ps_ALL_rarefied, AC.BC != "M1" & AC.BC != "control")
+ave_ASV_M2_rar <- sample_sums (ps_M2_rarefied) %>%  data.frame() %>% tibble () %>%  summarize (mean=mean (.))
+sum_allASV_M2_rar  <- sample_sums (ps_M2_rarefied) %>%  data.frame() %>% tibble () %>%  summarize (sum=sum (.))
+
+ps_All_Glo_rar <- subset_taxa (ps_ALL_rarefied, Phylum == "Glomeromycota")
+sample_data(ps_All_Glo_rar) <- sample_data (data.frame (meta_all, row.names = "sampleID"))
+ps_All_Glo_rar <- prune_taxa(taxa_sums(ps_All_Glo_rar)>=1, ps_All_Glo_rar)
+ps_All_Glo_rar  <- prune_samples(sample_sums(ps_All_Glo_rar)>=1, ps_All_Glo_rar)
+
+
+ps_M2_Glo_rar   <- subset_samples (ps_All_Glo_rar, AC.BC != "M1" & AC.BC != "control")
+ps_M2_Glo_rar  <- prune_samples (sample_sums (ps_M2_Glo_rar)>=1, ps_M2_Glo_rar)
+ps_M2_Glo_rar  <- prune_taxa(taxa_sums(ps_M2_Glo_rar)>=1, ps_M2_Glo_rar)
+
+total_reads_Glo_M2_rar  <- sample_sums (ps_M2_Glo_rar) %>%  data.frame() %>% tibble () %>%  summarize (total=sum (.))
+```
+
+\newpage
+
+
+## Methods
+
+### Mesocosms and examination of the AMF communities
+
+Plant mesocosms consisted of eight different plant species, with one of the plant species planted either before the arrival of the other seven plants in the community (BC treatment) or after their establishment (AC treatment).
+At harvest, the roots for each plant individual were separated and cleaned, the DNA extracted, and the AMF community composition determined by sequencing of the ITS2 region (see chapter 4 for details).
+
+### Statistical analysis
+
+#### AMF richness and $\gamma$-diversity
+
+To examine the impact of an early arriving plant species, i.e., the focal plant species, on the AMF community of each plant of the late arrivals, the AMF richness per plant species was determined for the BC treatments.
+For that, the raw sequencing data was first coverage-based rarefied as described before (see Chapter 3), which allows comparison of the AMF richness between samples.
+To examine if the AMF richness of the focal species determined the AMF richness of the plants of the later arriving community, linear mixed-effect modelling was applied.
+As response variable, the AMF richness of the plants from the plant community was used and the AMF richness of the focal plant was included as predictor variable.
+To account for the plant species' inherent differences in AMF richness, plant species identity (plant community) was used as random factor in the model.
+The identity of the focal plant was included as random factor as well to account for influences on the AMF richnesses of the neighbourhood plants, other than the focal plants' AMF richness.
+To test the assumptions of normality of the residuals and homoscedasticity, Shapiro-Wilk's test and Levene's test were applied respectively.
+To generate a pairwise comparison between the treatments of different focal species, a second linear mixed-effect model was calculated that included the focal species as predictor variable whereas the focal plants' AMF richness was treated as covariate.
+The plant species' identity of the plant community was used as random factor of the model and the model's assumption were tested as described above.
+Then, the estimated marginal means of the focal species as factor levels were statistically compared to each other, using functions from *emmeans* `r packageVersion ("emmeans")` with standard parameters (i.e., Tukey's *post-hoc* test) [@emmeans2022].
+
+To compare if the identity of an early arrival changes the overall AMF richness of the plant community, the $\gamma$-diversity was determined.
+For that, all samples belonging to one focal plant treatment were merged in phyloseq and the number of AMF ASVs for each of the resulting eight treatments calculated
+All statistical test were computed using the R package *stats* `r packageVersion ("stats")` [@R2021].
+Data and tables were visualised using the R *tidyverse* [@tidyverse2019] and the *flextable* package [@flextable2022] respectively.
+
+#### Differential abundance analysis (DAA)
+
+To assess the priority effect of the focal plant species on the AMF abundances of each plant of its plant community, differential abundance analysis (DAA) was applied.
+To calculate the changes in read abundances for each AMF ASV, the latest user Guide [@Chen2021edgeR] for the R package *edgeR* was followed.
+First, the raw data was filtered, removing ASVs of low counts.
+The sixteen different treatments, i.e., each of the eight focal plant species as early arrival (BC treatment) or late arrival (AC treatment), served as groupings for the filtering and the following calculation of abundance changes, i.e., BC *versus* AC.
+To account for the differences in sequencing read depth among the samples, scaling factors were computed and applied.
+Next, negative binomial generalised linear models (GLMs) were fitted and ASVs that were differential abundant between the AC and BC treatment of each focal plant species were identified for each plant species of the community.
+This was done by quasi-likelihood F-tests which resulted in *p-values* and associated log~2~-fold changes per plant species.
+For easier comparison of the net priority effect each focal plant species had on their plant community, the mean of the significant log~2~-fold changes was computed and visualised in bar charts.
+A phylogenetic tree of the AMF ASVs was calculated as described in Chapter 2 to examine if the priority effect of the focal plant species led to significant taxonomic changes in the AMF communities.
+
+#### Effect of the AMF richness of the early arriving focal plant on the plant biomass of the neighbours
+
+The aboveground dry weight of all plant individuals was determined as described before and the values were square-root transformed to acquire normality.
+To study if the AMF richness of the early arriving focal plant was a determinant for the productivity of the later arriving plant community, a linear mixed-effects model was calculated.
+It included the transformed plant biomass of the plant community as response variable with AMF richness of the focal plant and its biomass (dry weight in g) as predictor variables.
+The plant species identity of the focal plant was included as random effect to account for traits of the plant species other than its interaction generalism that might influence the plant productivity of the neighbourhood. The plant species identity of the plants from the added community was included as random effect to account for their inherent differences in plant biomass.
+The random effects were tested for significance using the ranova function in *lmerTest* [@lmerTest2017].
+The assumptions of the model were checked by calculating the Shapiro-Wilk's test to test the normality of the model's residuals and Levene's test was calculated to test their homoscedasticity as described before.
+
+#### Bipartite networks and their network metrics
+
+To examine how the priority of different plant species impacted the interaction networks, metrics describing the networks' architecture were calculated.
+I used both qualitative and quantitative measures to describe the networks and the interactions of the two guilds (see Table \@ref(tab:network-metrics)).
+For description of the network topology, the nestedness [@AlmeidaNeto2008] and modularity [@Strona2015] were calculated.
+To describe the overall generalism of the species, the interaction evenness [@Tylianakis2007] of the networks and the weighted generality for each guild [@Tylianakis2007] were computed. How strongly all species were connected to each other was assessed by calculating the global clustering coefficient [@Opsahl2013] for two-mode networks and the connectance [@Dunne2002] while the web asymmetry indicates changes in $\gamma$- diversity.
+All metrics were computed using the R package *bipartite* [@bipartite2009].
+The network metrics were calculated based on the interaction networks of each experimental unit, i.e., each pot of the plant community of eight plant individuals.
+For each metric, normality and homoscedasticity of the groups were tested as described above.
+If the assumptions were met, the influence of plant species identity was determined by one-way analysis of variance (ANOVA) using R package *stats* `r packageVersion("stats")`.
+Tukey's *post-hoc* test was applied for multiple pairwise comparison to determine which focal plant species differed from each other in their effect on the interaction networks.
+In cases where the data was non-normal and/or heterogeneous in their variances, the Kruskal-Wallis test was used to test for significant influences of the focal plant species identity on the network metrics, and the Games-Howell *post-hoc* test for the multiple pairwise comparison between the focal plant species was computed.
+Bipartite networks were visualised using the R package *bipartite*.
+For that, the mean abundances of the plant-AMF interactions were calculated from the interaction matrices of the experimental units, i.e., each mesocosm of the eight plant species.
+
+\newpage
+
+```{r network-metrics, tab.id = "network-metrics", label = "network-metrics", tab.cap = "Metrics for bipartite interaction networks" }
+
+### see word document Table_network_metrics.doc ##
+
+x<- "CHANGE ME"
+y <-2
+data.frame(x,y) %>%  flextable()
+
+```
+
+\newpage
+
+## Results
+
+### The AMF richness in a plant community depends on the arrival order of the species but is independent of the plants' interaction strategy
+
+```{r Richness-stats}
+
+## Calculate richness #
+richness_data  <- 
+  estimate_richness(ps_All_Glo_rar, measures = "Observed") %>%  
+  as_tibble (rownames = "sampleID") %>%   mutate (sampleID = str_replace_all (sampleID, "X", "")) %>% 
+  left_join(meta_all) %>% 
+  filter (AC.BC != "M1") %>% 
+  filter (AC.BC != "control") %>% 
+  left_join (meta_plants, by = c("GSPlaSpe" ="focal.sp")) 
+
+BC_richness_data <- richness_data %>%  
+   filter (AC.BC == "BC") %>% 
+  mutate (Observed2 = scale (Observed)) %>% 
+  mutate (SqrObserved = sqrt (Observed)) %>% 
+  left_join (meta_plants %>%  select (focal.sp, PlaSpe) %>%  dplyr::rename (PlaSpeFS = PlaSpe))
+
+BC_mean_richness <- richness_data %>% summarize (mean = mean (Observed))
+
+#### This is needed to separate the AMF richness of the focal species from the 
+## BC richness plant community #
+BC_richness_placom <-
+  richness_data %>%  
+  filter (AC.BC == "BC")   %>% 
+  filter (focal.sp != GSPlaSpe) %>%  
+  mutate (DW_above = as.numeric (DW_above)) %>%  
+  filter (!is.na(DW_above))  %>% 
+  mutate (SqrObservedPlaSpe = sqrt (Observed))
+
+## BC richness focal spe
+BC_richness_focal <- 
+  richness_data %>% 
+  filter (AC.BC == "BC")   %>%
+  filter (focal.sp == GSPlaSpe) %>%  
+  mutate (DW_above = as.numeric (DW_above)) %>%
+  filter (!is.na(DW_above)) %>%  
+  select (Observed, pot, DW_above) %>% 
+  mutate (SqrObservedFS = sqrt (Observed))
+
+## bc richness together in one table for LMM #
+BC_richness_LMdata <- 
+  BC_richness_placom %>% 
+  left_join (BC_richness_focal, by = "pot") %>%  
+  filter (!is.na (DW_above.y), !is.na (DW_above.x)) %>%  
+  mutate (SqrtDW_abovePlaSpe = sqrt (DW_above.x), SqrtDW_above_focal = sqrt (DW_above.y))  ### Square root transformed data to meet assumptions!
+
+
+
+
+BC_richness_Anova <- (aov(SqrObservedPlaSpe ~ focal.sp + PlaSpe, data = BC_richness_LMdata))
+
+BC_rich_AN_table <- summary (BC_richness_Anova)
+# Overall richness per pot !! ## 
+
+Tukey_BC_richness_table <- 
+  TukeyHSD(BC_richness_Anova)$focal.sp %>%  
+  as_tibble (rownames= "FS_comp") %>%  
+  filter (`p adj` < 0.05) %>%  
+  flextable ()
+LM<-lm(SqrObservedPlaSpe ~ focal.sp + PlaSpe, data = BC_richness_LMdata)
+# #qqnorm (resid (lm(Observed ~ PlaSpe, data = BC_richness_data)))
+# shapiro.test (resid (LM))
+# qqnorm(resid (LM))
+# bartlett.test(SqrObservedPlaSpe ~ focal.sp , data = BC_richness_LMdata)
+# bartlett.test(SqrObservedPlaSpe ~ PlaSpe , data = BC_richness_LMdata)
+##OLD
+#A two-way ANOVA with plant species as blocked factor revealed that there was a significant difference in the plants' AMF richness between the plant communities of at least two focal species as early arrivals (ANOVA F (`r  BC_rich_AN_table[[1]][["Df"]][3]`, `r  BC_rich_AN_table[[1]][["Df"]][1]`) = `r  round (BC_rich_AN_table[[1]][["F value"]][1],1)`, p = `r  round(BC_rich_AN_table[[1]][["Pr(>F)"]][1],4)`). A pairwise comparison by Tukey's HSD test found that especially the early arrivals of *B. willdenowii*, *A. capillaris* and *A. millefolium* led to significantly different outcomes in the AMF richnesses of their plant communities (Table \@ref(tab:Tukey-richness-BC-table)).
+
+#This decrease led to significant smaller mean AMF richnesses of the present plant species in comparison to the community plants of all other focal plant species except *A. millefolium*. The presence of *A. millefolium* before the arrival of the plant community had a similar effect as *B. willdenowii* on the AMF richnesses of the plants of its community. Comparing the mean AMF richnesses of the community's plants of a prior arriving *A. millefolium* to that of other focal plant species showed that the early arrival of *A. millefolium* led to significantly smaller AMF communities in comparison to all other focal species except *B. willdenowii* and *P. cita*. In contrast, the priority of *A. capillaris* in the plant community resulted in significant increases of the mean AMF richnesses in comparison to all other focal plant species with the exception of *S. arundinaceus* and *P. lanceolata*.
+
+
+```
+
+The interaction strategy of the early arriving plant species did not determine the AMF richness and $\gamma$-diversity of the plants from the plant community, contrary to my hypothesis 1 (Fig. \@ref(fig:plot-richness)). However, linear mixed-effect modelling revealed that there was a significant but small positive relationship between the AMF richness of the focal plant and the AMF richnesses of the plants from its late arriving plant community (Table \@ref(tab:LMM-richness)).
+Although the absolute AMF richness values varied among the treatments, i.e., plant communities of varying focal plant species, the overall patterns of the plant species' AMF richnesses were similar among them.
+To compare how the AMF richnesses of the plant communities differed among the focal plant species, the marginal means with focal plant species as factor of the linear mixed-effect model were estimated and contrasted. This showed that only  the AMF richnesses with *B. willdenowii* as focal plant differed significantly from those of *S. arundinaceus*, *P. lanceolata* and *C. intybus* (Table \@ref(tab:emmeans-richness-BC-table)), with the early arrival of *B. willdenowii* in its plant community resulting in a notable decrease in the community plants' mean AMF richnesses.
+
+
+
+```{r plot-richness, fig.cap= "Average AMF ASV richness per plant species by focal plant species, indicating the priority effect of different early arriving plant species on the AMF richness of each community plant. Each plant community consisted of one focal plant species that arrived three weeks before the rest of the plant community. The dotted line indicates the overall mean richness (S = 25) across all samples. Horizontal lines show median values, boxes denote the interquartile range (IQR), while whiskers show 1.5$*$IQR ranges. Outliers are indicated by dots." , fig.height=6, fig.width= 8, dpi = 300}
+
+
+## Plot Richness!####
+#plot compare treatments - ASV AMF richness per plant
+richness_data %>% left_join (meta_plants %>%  
+                               select (focal.sp, PlantSpeciesfull, M1_M2_order) %>%  
+                               dplyr::rename ("focalSpe" = "PlantSpeciesfull", "focalOrder"= "M1_M2_order")) %>% 
+  filter (AC.BC == "BC")  %>% 
+  ggplot (aes (x= reorder (PlantSpeciesfull, M1_M2_order), y = Observed, fill = PlantFamily)) +
+  geom_boxplot() +
+  facet_wrap(~reorder (focalSpe, focalOrder), nrow =2) +
+  #labs (title = "Richness of each plant species by AC BC treatments") + 
+  theme_light () +
+  theme (axis.text.x=element_text(family= "sans", size = 9, angle=45, hjust =1, color = "black" ))  +
+  theme (axis.text.y=element_text(family= "sans", size = 9, color = "black"))  +
+  theme (axis.title.y = element_text(family = "sans", size = 11 ),  
+         axis.title.x = element_blank(), 
+         legend.title=element_text(size=12),
+         legend.text=element_text(size=11), 
+         legend.position = "bottom"  ) +
+  ylab ("Richness") +
+  scale_fill_manual(values=c("Asteraceae"= "#edc948" ,
+                              "Plantaginaceae"= "#4e79a7",
+                              "Poaceae" = "#7F9A65" ), name = "Plant family") +
+  geom_hline( yintercept =  25, linetype = "dotted", color = "black") +
+  theme (strip.text = element_text (face = "italic", size = 11, color = "black")) 
+  
+
+```
+
+```{r LMM-richness, include = T, tab.id = "LMM-richness", label = "LMM-richness", tab.cap = "Results from a linear mixed-effect model with AMF richness of the plants of the plant community as response variable. The AMF richness  of the focal species was used as predictor variable. The identities of the focal plant and the plant species of the community were included as random effects respectively." }
+
+
+
+### hypothesis --- plants differ in their ..... ! concentrate o the differences between the plants, dann reicht BC
+# muss nicht verglichen werden gegen means etc da die community überall gleich ist - vergleiche gegeneinander- wer tamzt aus der riehe? 
+##generalised linear mixed-effect modelling was applied based on the Poisson distribution. The focal plant species was used as fixed effect and the plant species' identity as random effect to account for the plants' inherent differences in AMF community richness. 
+#
+# check histogram 
+# 
+#hist (BC_richness_LMdata$Observed.y)
+ LMM_BC_richness <- glmer(Observed.x ~ Observed.y +  (1|focal.sp) + (1|PlaSpe), data = BC_richness_LMdata , family = poisson)
+ LMM_BC_richness2 <- lmer(Observed.x ~ Observed.y +  (1|focal.sp) + (1|PlaSpe), data = BC_richness_LMdata )
+ LMM_BC_richness3 <- lmer(Observed.x ~ Observed.y +  focal.sp + (1|PlaSpe), data = BC_richness_LMdata )
+
+#emm_LMM_BC_rich <- emmeans (LMM_BC_richness,  ~ focal.sp)
+# pairs (emm_LMM_BC_rich)
+
+# normality met 
+shapiro_BC_richness <- shapiro_test(resid(LMM_BC_richness))
+shapiro_BC_richness2 <- shapiro_test(resid(LMM_BC_richness2))
+shapiro_BC_richness3 <- shapiro_test(resid(LMM_BC_richness3))
+
+
+
+#Assumption 2 Homogeneity of Variance of the residuals - MET
+#Levene or Bartlett test here - levene's for non-normal data
+BC_richness_LMdata$richness.Res<- residuals(LMM_BC_richness) #extracts the residuals and places them in a new column in our original data table
+BC_richness_LMdata$richness_Abs.Res <-abs(BC_richness_LMdata$richness.Res) #creates a new column with the absolute value of the residuals
+BC_richness_LMdata$richness.Res2 <- BC_richness_LMdata$richness.Res^2 #squares the absolute values of the residuals to provide the more robust estimate
+Levene.Model_richness <- lm(richness.Res2 ~ Observed.y, data = BC_richness_LMdata) #ANOVA of the squared residuals
+#anova(Levene.Model_richness) #displays the results
+# p = 0.3464 - greater than 0.05 - variance of resid is equal and assumption of homoscedacity met
+
+#Assumption 2 Homogeneity of Variance of the residuals - MET
+#Levene or Bartlett test here - levene's for non-normal data
+BC_richness_LMdata$richness.Resb<- residuals(LMM_BC_richness2) #extracts the residuals and places them in a new column in our original data table
+BC_richness_LMdata$richness_Abs.Resb <-abs(BC_richness_LMdata$richness.Resb) #creates a new column with the absolute value of the residuals
+BC_richness_LMdata$richness.Res2b <- BC_richness_LMdata$richness.Resb^2 #squares the absolute values of the residuals to provide the more robust estimate
+Levene.Model_richness <- lm(richness.Res2b ~ Observed.y, data = BC_richness_LMdata) #ANOVA of the squared residuals
+#anova(Levene.Model_richness) #displays the results
+# p = greater than 0.05 - variance of resid is equal and assumption of homoscedacity met
+
+
+
+##For model 3  ##### MET
+BC_richness_LMdata$richness.Res3<- residuals(LMM_BC_richness3) #extracts the residuals and places them in a new column in our original data table
+BC_richness_LMdata$richness_Abs.Res3 <-abs(BC_richness_LMdata$richness.Res3) #creates a new column with the absolute value of the residuals
+BC_richness_LMdata$richness.Res23 <- BC_richness_LMdata$richness.Res3^2 #squares the absolute values of the residuals to provide the more robust estimate
+Levene.Model_richness3 <- lm(richness.Res23 ~ focal.sp, data = BC_richness_LMdata) #ANOVA of the squared residuals
+#anova (Levene.Model_richness3)
+
+richness_focal.sp_emmeans <-  emmeans (LMM_BC_richness3, ~ focal.sp) %>%  pairs ()  %>%  data.frame () %>% filter (p.value <0.05)
+
+
+## compare 
+anova ( LMM_BC_richness2)
+car::Anova(LMM_BC_richness2)
+
+# summary (LMM_BC_richness2)
+ tidy  (LMM_BC_richness2) %>% 
+   mutate (term = c("Intercept", "AMF richness (focal species)", "sd (Intercept focal species)", "sd (Intercept plant species)", "sd residual" )) %>% 
+#   mutate (term= c("Intercept", "AgrCap", "BroWil", "PlaLan", "AchMil", "CicInt", "PoaCit", "SchAru", "sd (Intercept)" )) %>% 
+  #filter (effect =="fixed") %>% 
+ mutate (estimate = round (estimate,2), SE= round (std.error,2), statistic = round (statistic, 1), p = p.value) %>% 
+  select (effect, term, estimate, SE, p) %>% 
+   flextable () %>%  set_formatter(p = function (x) {
+     formatC(x, format = "e", digits = 3)}) %>% 
+ add_header_lines ("Model: AMF richness of plants from community ~ AMF richness of focal plant, random effects = plant species identity of focal plant + plant species identity of plants from community")
+ #%>% 
+  # add_header_lines(values = "Fixed effects") %>% 
+  # #add_footer_lines( values = "Random Effects") %>% 
+  # footnote(i = 1, j =1:3, value = as_paragraph(c("Groups", "Variance", "Std.Dev.")), inline=T) %>% 
+  #   footnote(i = 2, j =1:3, value = as_paragraph(c("PlaSpe (Intercept)", "0.82", "0.91")), inline=T)
+
+
+
+```
+
+Notable differences were also found among the $\gamma$-diversity of the plant communities of different focal plant species (Table \@ref(tab:gamma-div)).
+For example, the number of different AMF ASVs detected in the plant roots from all replicates of the plant community with *B. willdenowii* as prior arrival was with $\gamma$ = 109 AMF only half as rich as other plant communities, for example that of *S. arundinaceus* ($\gamma$ = 207).
+
+
+```{r gamma-div, tab.id = "gamma-div", label = "gamma-div", tab.cap =" Number of unique AMF ASVs (γ-diversity) by focal plant treatment." }
+
+ps_All_Glo_rar %>%  subset_samples(., AC.BC == "BC" ) %>% 
+  merge_samples(., group = "focal.sp") %>% estimate_richness(measures = "Observed") %>%  
+  as_tibble (rownames = "focal.sp" ) %>% 
+  left_join (meta_M2 %>%  select (pot, focal.sp)) %>% group_by (focal.sp) %>% 
+  summarize (mean_richness = mean (Observed)) %>%  
+  left_join (meta_plants %>%  select (focal.sp, PlantSpeciesfull, M1_M2_order)) %>% arrange(M1_M2_order) %>% 
+  select (PlantSpeciesfull, mean_richness) %>% 
+  dplyr::rename ("Focal plant species" = "PlantSpeciesfull", "y-diversity" = "mean_richness") %>% 
+  flextable () %>%  italic (j= "Focal plant species", part = "body" )
+
+```
+
+### AMF abundance in the plant community is governed by the arrival order of the plants but independent of their interaction niche property
+
+To assess how the arrival time of a focal plant species altered the abundance of the members of the AMF community in the roots of all present plants, differential abundance analysis (DAA) was applied.
+For each of the eight focal plant species, the log~2~-fold change of the read abundances per AMF ASV was calculated for each plant species in the BC plant community in comparison to the same plant species from the AC community (Fig. \@ref(fig:plot-DAA-heatmaps-bars)).
+Taking the averages of the significant log~2~-fold changes indicated the overall impact exerted by the early arrival of the respective focal plant, i.e., its net priority effect.
+Against my hypothesis that the generalism of the early arriving focal plant species determines the abundance of the AMF species of the late arriving plant community, the focal species interaction niche property did not coincide with a specific direction of the log~2~-fold change but depended on the focal plant species' identity (Fig. \@ref(fig:plot-DAA-heatmaps-bars) A).
+With *C. intybus*, *S. arundinaceus*, *A. capillaris* and *H. lanatus* as early arrivals, the AMF abundances showed a tendency to increase in most plants of their respective plant communities.
+In contrast, most plants of the plant community showed decreased AMF abundances when the generalist *B. willdenowii* arrived before the other plants of the plant community.
+Furthermore, *B. willdenowii* seemed to be the only focal species resulting in changes in the AMF abundances based on the taxonomic affiliation of the AMF, with mostly the Acaulosporaceae showing decreased read abundances in the BC treatment of *B. willdenowii* (Fig. \@ref(fig:plot-DAA-heatmaps-bars) B).
+
+```{r plot-DAA-heatmaps-bars, fig.cap = "Net priority effect on the AMF abundances of the plant species from the plant community by focal plant species. A) Average of the significant log~2~-fold changes per plant species. The focal plant of the community is indicated at the top of each plot and by the black border of its bar in the bar chart. Positive values indicate an on average enrichment of the AMF abundances in the plants of the BC treatment versus that of the AC treatment, and negative values, in turn, indicate an on average decrease of the AMF abundances. B) Heatmap of the log~2~-fold changes per AMF ASV by plant species. Each heatmap panel shows the impact the early arrival of a focal plant had on the AMF abundances of each plant from the plant community. Each square represents the change in the absolute abundance of one ASV as calculated by differential abundance analysis (DAA), with the colour indicating the log~2~-fold change (logFC). The taxonomic affiliation of each AMF ASV to Glomeromycotean families is indicated in the phylogenetic tree.",  fig.height= 8, fig.width=13}
+
+DAA_AchMil_HM <- read_rds ("data/DAA_AchMil_HM.rds")
+DAA_AgrCap_HM <- read_rds ("data/DAA_AgrCap_HM.rds")
+DAA_BroWil_HM <- read_rds ("data/DAA_BroWil_HM.rds")
+DAA_CicInt_HM <- read_rds ("data/DAA_CicInt_HM.rds")
+DAA_HolLan_HM <- read_rds ("data/DAA_HolLan_HM.rds")
+DAA_PlaLan_HM <- read_rds ("data/DAA_PlaLan_HM.rds")
+DAA_PoaCit_HM <- read_rds ("data/DAA_PoaCit_HM.rds")
+DAA_SchAru_HM <- read_rds ("data/DAA_SchAru_HM.rds")
+
+# All DAA together ###
+DAA_ALL_Ch5  <-
+  bind_rows(DAA_AchMil_HM, DAA_AgrCap_HM, 
+            DAA_BroWil_HM, DAA_CicInt_HM, 
+            DAA_HolLan_HM, DAA_PlaLan_HM, 
+            DAA_PoaCit_HM, DAA_SchAru_HM)
+
+# ps for this DAA (each DAA was run in extra scripts) #
+ps_edgeR_Com <- ps_ALL %>% subset_samples(., roots_soil != "soil") %>%  subset_samples (., AC.BC != "M1")
+
+## get a ps with only the ASVs from the heatmap
+ps_heatmap <- prune_taxa (taxa_names (ps_edgeR_Com) %in% (DAA_ALL_Ch5 %>% pull (ASV_ID)), ps_edgeR_Com)
+
+# use that ps to make a tree #
+MyTree_HM <-    ps_heatmap %>% phy_tree
+
+
+# create new taxonomy labels
+df.tax_HM <-  ps_heatmap %>% tax_table %>% as.data.frame
+df.tax_HM$ASV_ID   <-  df.tax_HM %>% row.names # add column with the ASV iD 
+
+df.tax_HM <-  df.tax_HM  %>% mutate( TaxLabel = paste(Family, Genus, sep = "_")) %>%
+  select(ASV_ID, TaxLabel, Phylum, Class, Order, Family, Genus)
+
+# Change the NA in the taxon table to the nearest identified taxon
+df.tax_HM = df.tax_HM %>%
+  mutate(GenusLabel = ifelse(!is.na(Genus), paste(Genus), 
+                             ifelse(!is.na(Family), paste('Unid. ', Family, sep = ""), 
+                                    ifelse(!is.na(Order), paste('Unid. ', Order, sep = ""),
+                                           ifelse(!is.na(Class), paste('Unid. ', Class, sep = ""), paste("Unid. ", Phylum, sep = "")))))) 
+
+# get a tibble of the whole taxa table incl new GenusLabel
+taxa_names_HM <- df.tax_HM %>% as_tibble ()
+
+
+# Tree plot ####
+p  = ggtree(MyTree_HM, layout = "rectangular",ladderize = F, branch.length = "none") %<+% df.tax_HM
+
+p_tree <- 
+  p +  
+  geom_tippoint(aes(color= Family), size=2, show.legend = T ) +
+  theme_tree2() +
+  #geom_tiplab (align = T) +
+  theme (plot.margin = unit (c(5,1,5.9,1), "mm")) + 
+  #xlim(NA, 0.34) +
+  theme (legend.position = "none")
+# +
+#   geom_cladelabel (node = 147, label = "G.", angle = 90, align = T, hjust = 0.4,  offset.text = 0.005) +
+#   geom_cladelabel (node = 91, label = "Acaulosporaceae", angle = 90, align = T, hjust = 0.5, offset.text = 0.005) + 
+#   geom_cladelabel (node = 84, label = "Gigas.", angle = 90, align = T, hjust = 0.5,  offset.text = 0.005) +
+#   geom_cladelabel (node = 66, label = "D.", angle = 90, align = T, hjust = 0.2,  offset.text = 0.005) +
+#   geom_cladelabel (node = 78, label = "Cl.", angle = 90, align = T, hjust = 0.3,  offset.text = 0.005) +
+#   geom_cladelabel (node = 81, label = "A.", angle = 90, align = T, hjust = 0.3,  offset.text = 0.005)
+
+
+#  get the order of the tree tips for use in the DAA plot
+order_taxa_HM <- 
+  get_taxa_name(p) %>%  
+  as_tibble () %>% 
+  dplyr::rename ("ASV_ID" = "value") %>%  
+  left_join (taxa_names_HM) %>% 
+  add_column (order = c(1:155))  # change by hand if needed
+
+
+DAA_ALL <- 
+  DAA_ALL_Ch5  %>%  
+  left_join (order_taxa_HM %>% select (ASV_ID, order), by = "ASV_ID") %>% 
+  left_join(meta_plants %>%  select (PlaSpe, M1_M2_order), by = c("PlaSpe" = "PlaSpe") ) 
+
+# DAA heatmap all ###
+DAA_heatmap   <-
+  DAA_ALL  %>% 
+  ggplot (aes (x = reorder(PlaSpe, M1_M2_order), y = reorder (ASV_ID,order), fill = logFC)) +
+  geom_tile () +
+  theme_classic() +
+  scale_fill_gradient2(low = "#075AFF",
+                       mid = "#FFFFCC",
+                       high = "#FF0000") +
+  facet_wrap (~fct_relevel (PlaSpeFS, "AchMil", "CicInt", "PlaLan", "PoaCit", "SchAru", "BroWil", "AgrCap", "HolLan"), nrow = 1)  +
+  theme (axis.text.y = element_blank(), 
+         axis.ticks.y = element_blank(), 
+         axis.title = element_blank(),
+         axis.text.x = element_text(angle = 30, vjust = 0.9, hjust = 0.9), 
+         legend.position = "none", 
+         plot.margin = margin (t=0), 
+         strip.text = element_blank()) #+
+
+
+DAA_ave_log <- 
+  DAA_ALL %>%  
+  mutate (type= case_when (PlaSpe== PlaSpeFS ~ "FS", PlaSpe!= PlaSpeFS ~"PS")) %>% 
+  group_by (PlaSpeFS, type, PlaSpe) %>% 
+  summarise(meanlogFC = mean (logFC)) %>%  
+  left_join (meta_plants %>% 
+               select (PlaSpe, PlantSpeciesfull) %>%  
+               dplyr::rename ("PlaSpeFS"="PlaSpe", "PlantSpeciesfullFS" = "PlantSpeciesfull")) %>%  
+  left_join (meta_plants) %>% 
+  ggplot (aes (x= reorder (PlaSpe, M1_M2_order), y = meanlogFC, fill = PlantFamily, color = type)) +
+  geom_bar(stat = "identity", aes (group = type )) +
+  facet_wrap (~fct_relevel (PlantSpeciesfullFS, "A. millefolium", "C. intybus", "P. lanceolata", "P. cita", "S. arundinaceus", "B. willdenowii", "A. capillaris", "H. lanatus"), nrow = 1)  +
+  theme_classic() + 
+  geom_hline(aes (yintercept=0)) + 
+  theme (axis.line.x = element_blank(), axis.ticks.x = element_blank(), axis.text.x = element_blank(), 
+         axis.title.x = element_blank(), legend.position = "none", 
+         plot.margin = margin (b =0.05), 
+         strip.text = element_text(face = "italic")) + 
+  ylab ("average logFC") + 
+  scale_fill_manual(values=c("Asteraceae"= "#edc948" , "Plantaginaceae"= "#4e79a7",   "Poaceae" = "#7F9A65" )) + 
+  #geom_text (aes (x= "AgrCap", label = "FS", y= 1.05)) +
+  scale_color_manual(values = c("FS" = "black", "PS" = "white")) 
+
+DAA_HM_bars <- ggarrange (DAA_ave_log, NULL, DAA_heatmap, nrow = 3, heights = c(1,-0.2,2), align = "hv", labels = c("A", "", "B"))
+
+
+ggarrange (ggarrange (NULL, p_tree, heights = c(0.82,2), nrow = 2), DAA_HM_bars, widths = c (1,4))
+```
+
+### The AMF richness of an early arriving focal plant does not determine the biomass of plant neighbours
+
+Linear mixed-effects modelling was run to examine if the AMF richness is a factor influencing the plant productivity, measured by the plant dry aboveground biomass.
+Contrary to my hypothesis 2, the interaction generalism with AMF did not govern the plant productivity (Fig. \@ref(fig:plot-plant-biomass)), but the aboveground biomass of the focal plant species impacted the biomass of the plant community (Table \@ref(tab:DW-LMM)).
+However, the model assumptions were not met and therefore variance partitioning was not possible.
+
+```{r DW-LMM, tab.id = "DW-LMM", label = "DW-LMM", tab.cap ="Impact of the AMF richness of an early arriving focal plant species on the plant biomass of the later arriving plant community. Shown are the results form a linear mixed-effect model: Plant biomass ~ AMF richness of the focal plant + biomass (DW in g) of the focal plant. The identity of the plant species of the later arriving community was used as random effect to account for their inherently different growth forms. Plant species identity of the focal species was included to account for any trait other than the AMF richness affecting the productivity of the plant community. Plant biomass was square-root transformed. The model did not meet the assumptions of normality and homoscedasticity of the residuals." }
+
+## H2 s the test if the plant biomass depends on the focal plant species#
+# as it could be alos the biomass of the focal plant pecies, model selection is needed ##
+# it could be tested if it is the richness of the AMF soil community (taken from M1) # 
+
+
+#### Productivity ####
+ps_M1_soil_Glo_rar <- read_rds ( "results/ps_M1_soil_Glo_rar.rds")## AMF richness in the soil of M1 plants -  to add to focal plant information #
+
+soil_richness <- 
+  ps_M1_soil_Glo_rar %>%  
+  estimate_richness(measures = "Observed") %>%  
+  as_tibble(rownames = "sampleID") %>%  
+  left_join(meta_all %>%  select (!pot)) %>%  
+  group_by (focal.sp) %>% 
+  summarize (mean_obs = mean (Observed))  ### this is count data - needs hpoisson distribution??
+
+
+
+
+### hier müsste ich jetzt model auswahl machen
+# covariate DW  or eigner factor 
+
+# LMER1_DW <- lmer (DW_above.x ~ focal.sp + DW_above.y  + (1|GSPlaSpe), data = BC_richness_LMdata) 
+# LMER2_DW <- lmer (DW_above.x ~  focal.sp + (1|GSPlaSpe), data = BC_richness_LMdata) 
+# LMER3_DW <- lmer (DW_above.x ~ DW_above.y + (1|GSPlaSpe), data = BC_richness_LMdata) 
+# LMER4_DW <- lmer (DW_above.x ~  DW_above.y + focal.sp  + (1|GSPlaSpe), data = BC_richness_LMdata) 
+#LMER5_DW <- lmer (DW_above.x ~  DW_above.y + (1|focal.sp)  + Observed.y + (1|GSPlaSpe), data = BC_richness_LMdata) 
+
+LMER5B_DW <- lmer (SqrtDW_abovePlaSpe ~  SqrtDW_above_focal + (1|focal.sp)  + Observed.y + (1|GSPlaSpe), data = BC_richness_LMdata) 
+
+# teting including the original richnesses does not work because I can only have one mean value for each focal pecies
+# but not for each sample - would not work in model ##
+
+## check random effect 
+# ranova (LMER5_DW)  ### excellent both highly significant
+
+#Anova (LMER5_DW, type = 3)
+#emmeans (LMER5_DW,~ focal.sp) %>% pairs () %>%  data.frame() %>%  filter (p.value < 0.05)
+
+# es ist  die biomasse von den focal plants ##
+tidy (LMER5B_DW) %>% 
+  mutate (term= c("Intercept", "biomass (DW) focal species", "AMF richness focal species", 
+                   "sd (Intercept focal species)" , "sd (Intercept plant species)", 
+          "sd (Residuals)")) %>%     
+  mutate (estimate = round (estimate,3), SE= round (std.error,2), statistic = round (statistic, 1), p = p.value) %>% 
+  select (effect, term, estimate,SE,p ) %>%    
+  flextable () %>%  
+  set_formatter(p = function (x) {  
+    formatC(x, format = "e", digits = 3)}) %>% 
+   add_header_lines ("Model: Biomass of community plants ~ AMF richness of focal plant + biomass of focal plant, random effects = plant species identity of focal plant + plant species identity of plants from community")
+
+
+
+### ??? überhaupt reported?
+
+#Assumption 1 - Linearity - plot residuals vs observed - MET
+# par(mfrow=c(1,1))
+# Plot.Linearity <- plot(resid(LMER5_DW), BC_richness_LMdata$DW_above.x)
+# 
+# par(mfrow=c(2,2))
+# plot(LMER5_DW) 
+ # shapiro_test (resid (LMER5_DW))  ## non normal
+
+
+
+#Assumption 1 - Linearity - plot residuals vs observed - MET
+# par(mfrow=c(1,1))
+# Plot.Linearity <- plot(resid(LMER5B_DW), BC_richness_LMdata$SqrtDW_abovePlaSpe)
+# 
+# par(mfrow=c(2,2))
+# plot(LMER5_DW)
+# shapiro_LMER5B_DW <- shapiro_test (resid (LMER5B_DW))  ## non normal
+
+#Assumption 2 Homogeneity of Variance of the residuals - NOT MET
+#Levene or Bartlett test here - levene's for non-normal data
+BC_richness_LMdata$DW_Res5B<- residuals(LMER5B_DW) #extracts the residuals and places them in a new column in our original data table
+BC_richness_LMdata$Abs.Res5B <-abs(BC_richness_LMdata$DW_Res5B) #creates a new column with the absolute value of the residuals
+BC_richness_LMdata$DW.Res25B <- BC_richness_LMdata$DW_Res5B^2 #squares the absolute values of the residuals to provide the more robust estimate
+Levene.Model5B <- lm(DW.Res25B ~ focal.sp + SqrtDW_above_focal, data = BC_richness_LMdata) #ANOVA of the squared residuals
+#anova(Levene.Model5B) #displays the results
+# if greater than 0.05 - variance of resid is equal and assumption of homoscedacity met
+
+### Second dmodel
+
+LMER4B_DW <- lmer (SqrtDW_abovePlaSpe ~  SqrtDW_above_focal + focal.sp  + (1|GSPlaSpe), data = BC_richness_LMdata) 
+
+
+# tidy (LMER4B_DW) %>% 
+#   mutate (term= c("Intercept", "DW focal plant" ,"AgrCap", "BroWil", "PlaLan", "AchMil",
+#                   "CicInt", "PoaCit", "SchAru", "sd (Intercept)" , "sd (Residuals)")) %>%     
+#   mutate (estimate = round (estimate,3), SE= round (std.error,2), statistic = round (statistic, 1), p = p.value) %>% 
+#   select (effect, term, estimate,SE,p ) %>%    
+#   flextable () %>%  
+#   set_formatter(p = function (x) {  
+#     formatC(x, format = "e", digits = 3)})
+# ranova (LMER4_DW) ## good
+ # shapiro_test (resid (LMER4B_DW))  ## non normal
+# 
+# #Assumption 2 Homogeneity of Variance of the residuals - NOT MET
+# #Levene or Bartlett test here - levene's for non-normal data
+# BC_richness_LMdata$DW_Res<- residuals(LMER4B_DW) #extracts the residuals and places them in a new column in our original data table
+# BC_richness_LMdata$Abs.Res <-abs(BC_richness_LMdata$DW_Res) #creates a new column with the absolute value of the residuals
+# BC_richness_LMdata$DW.Res2 <- BC_richness_LMdata$DW_Res^2 #squares the absolute values of the residuals to provide the more robust estimate
+# Levene.Model <- lm(DW.Res2 ~ focal.sp + SqrtDW_above_focal, data = BC_richness_LMdata) #ANOVA of the squared residuals
+# anova(Levene.Model) #displays the results
+# # if greater than 0.05 - variance of resid is equal and assumption of homoscedacity met
+# 
+
+#richness_data %>%  filter ( AC.BC == "BC") %>% filter (!is.na (Observed)) %>%  
+ # left_join (soil_richness) %>%  group_by (GSPlaSpe) %>%  nest () %>%  mutate (anova_DW = map (data,~aov(DW_above~mean_obs, data = .)))
+
+```
+
+### Impact of plant species arrival on the network structure of the plant-AMF interaction
+
+```{r NWL}
+
+# ## get ps for each separate pot to calculate each network#
+# ps_pots  <- phyloseq_sep_variable(ps_M2_Glo_rar, factor("pot"))
+# # this gives a list of all  pots
+# 
+# # Change list of phyloseq objects to list of 32 otu_tables
+# OTU_Tables_pots <- purrr::map(ps_pots, otu_table) 
+# ### now the rows are the ASVs, the columns are the plants 
+# 
+# 
+# ##HL is the Myc level, LL is the Plant level
+# 
+# 
+# NWL_ALL_pots2 <- map (OTU_Tables_pots, data.frame ) %>%  
+#  map_dfr(    networklevel, index =  c("connectance",   
+#                                      "NODF", "web asymmetry", "functional complementarity"), 
+#  .id = "pot") %>% 
+#   pivot_longer(!pot , names_to = "index", values_to = "values")
+# 
+# ### Weighted generality (Tylianakis 2007) ##
+# NWL_ALL_pots3 <- map (OTU_Tables_pots, data.frame ) %>%  
+#  map_dfr(    networklevel, index =  c("generality"),
+#              weighted = T, 
+#  .id = "pot") %>% 
+#   pivot_longer(!pot , names_to = "index", values_to = "values")
+# 
+# ### interaction eveneness with sum as denominator part, like in Tylianakis 2007##
+# NWL_ALL_pots4 <- map (OTU_Tables_pots, data.frame ) %>%  
+#  map_dfr(    networklevel, index =  c("interaction evenness"), 
+#              intereven = "sum", .id =  "pot") %>% 
+#   pivot_longer(!pot , names_to = "index", values_to = "values")
+# ## quick read in of the NWL results ##
+# 
+# # cluster coefficient ##
+# NWL_ALL_pots5 <-
+# map (OTU_Tables_pots, data.frame ) %>%  map (web2edges) %>%  map_dfr (clustering_tm, .id ="pot")
+# NWL_ALL_pots5  <-
+#   NWL_ALL_pots5 %>%  
+#   select (pot, bi) %>%  
+#   dplyr::rename (CC = bi) %>% 
+#   pivot_longer(!pot , names_to = "index", values_to = "values")
+# 
+# 
+# #NOS
+# NWL_ALL_pots6 <- 
+#   map (OTU_Tables_pots, data.frame ) %>%   map_dfr (NOS, .id ="pot") %>% 
+#   select (pot, mod) %>% 
+#     pivot_longer(!pot , names_to = "index", values_to = "values")
+
+
+
+## All results together
+#NWL_ALL_pots <- bind_rows(NWL_ALL_pots2, NWL_ALL_pots3, NWL_ALL_pots4, NWL_ALL_pots5, NWL_ALL_pots6)
+
+#write_rds (NWL_ALL_pots, "results/NWL_all_pots_M2.rds")
+NWL_ALL_pots  <- read_rds ("results/NWL_all_pots_M2.rds")
+
+
+
+```
+
+```{r NWL-stats}
+### Only BC ###
+## Are there differences between the focal plant species?###
+NWL_BC_ANOVAs <- 
+  NWL_ALL_pots %>% 
+  unique () %>% 
+  left_join  (meta_M2, by ="pot") %>%  
+  select (pot, index, values, AC.BC, treatment, focal.sp) %>%  
+  unique () %>%  
+  left_join(meta_plants) %>% ## adds info for focal.sp
+  filter (AC.BC == "BC") %>% 
+  dplyr::group_by (index) %>% 
+  nest () %>% 
+  mutate(model = map (data, ~aov(values ~ PlaSpe, data = .))) %>%   
+  mutate(model_sum = map (model, summary)) %>% 
+  mutate (normalityTest = map (data, ~levene_test(formula =values ~ PlaSpe, data = .))) %>% 
+  mutate (BartlettTest = map (data, ~bartlett.test(formula= values ~ PlaSpe, data= .))) %>% 
+  mutate (Tukey = map (model, TukeyHSD)) %>% 
+  mutate (KW = map (data, ~kruskal_test(data = ., formula = values ~ PlaSpe))) %>% 
+  mutate (GHT = map (data, ~games_howell_test(data =., formula = values ~ PlaSpe))) #%>% 
+  # mutate(model_perm = map (data, ~perm.anova(values ~ PlaSpe, data = ., nperm =  1000))) %>% 
+  # mutate(model_perm_pairs = map (data, ~pairwise.perm.var.test(.$values, .$PlaSpe, nperm =  1000))) 
+
+## Packahge RVAideMemoire
+## ANOVAs were fine, but the pairwise (both F test and multiple t tests did not show any significant)
+
+#  4 and 9 are heterosced ##
+# 4 = fc AMF
+# 9 = cc 
+##significant: 
+# 1,2,7 ANOVAs
+# 4 KW 
+
+# 1 = connectance
+# 2 web asym
+# 7  generality plants
+# all others are fine both in normality and homosced ##
+
+### Tukey results for significant ####
+# web asymm
+# NWL_BC_ANOVAs$Tukey[[2]]$PlaSpe %>%  as_tibble (rownames = "PlA") %>% filter (`p adj` < 0.05)
+# ##generality HL##
+# NWL_BC_ANOVAs$Tukey[[7]]$PlaSpe %>%  as_tibble (rownames = "PlA") %>% filter (`p adj` < 0.05)
+# #cc##
+# ##Kruskal wallis non significant
+# #NWL_BC_ANOVAs$GHT[[9]] %>% filter (p.adj < 0.05)
+# 
+# # connectance#
+# NWL_BC_ANOVAs$Tukey[[1]]$PlaSpe %>%  as_tibble (rownames = "PlA") %>% filter (`p adj` < 0.1)
+
+
+```
+
+Network metrics were calculated to examine the influence of the identity of the early arriving focal plant species on the network architecture of a plant-AMF interaction network.
+Statistical testing if the network metric varied between the plant communities that differed in their focal species revealed that there were no significant differences in nestedness (NODF) (ANOVA F (`r NWL_BC_ANOVAs$model_sum[[3]][[1]][["Df"]][2]`, `r  NWL_BC_ANOVAs$model_sum[[3]][[1]][["Df"]][1]`) = `r  round (NWL_BC_ANOVAs$model_sum[[3]][[1]][["F value"]][1],1)`, *p* = `r  round (NWL_BC_ANOVAs$model_sum[[3]][[1]][["Pr(>F)"]][1],4)`), modularity (ANOVA F (`r NWL_BC_ANOVAs$model_sum[[10]][[1]][["Df"]][2]`, `r  NWL_BC_ANOVAs$model_sum[[10]][[1]][["Df"]][1]`) = `r  round (NWL_BC_ANOVAs$model_sum[[10]][[1]][["F value"]][1],1)`, *p* = `r  round (NWL_BC_ANOVAs$model_sum[[10]][[1]][["Pr(>F)"]][1],4)`), interaction evenness (ANOVA F (`r NWL_BC_ANOVAs$model_sum[[8]][[1]][["Df"]][2]`, `r  NWL_BC_ANOVAs$model_sum[[8]][[1]][["Df"]][1]`) = `r  round (NWL_BC_ANOVAs$model_sum[[8]][[1]][["F value"]][1],1)`, *p* = `r  round (NWL_BC_ANOVAs$model_sum[[8]][[1]][["Pr(>F)"]][1],4)`), the generality of the AMF (ANOVA F (`r NWL_BC_ANOVAs$model_sum[[6]][[1]][["Df"]][2]`, `r  NWL_BC_ANOVAs$model_sum[[6]][[1]][["Df"]][1]`) = `r  round (NWL_BC_ANOVAs$model_sum[[6]][[1]][["F value"]][1],1)`, *p* = `r  round (NWL_BC_ANOVAs$model_sum[[6]][[1]][["Pr(>F)"]][1],4)`), and the global cluster coefficient (Kruskal-Wallis test $\chi$^2^ = `r round (NWL_BC_ANOVAs$KW[[9]][["statistic"]][[1]],2)`, df = `r NWL_BC_ANOVAs$KW[[9]][["df"]][[1]]`, *p* = `r round (NWL_BC_ANOVAs$KW[[9]][["p"]][[1]],4)`) among any of the interaction networks of the focal plant species.
+
+Testing by one-way ANOVA revealed that there was a statistically significant difference in connectance (ANOVA F (`r NWL_BC_ANOVAs$model_sum[[1]][[1]][["Df"]][2]`, `r  NWL_BC_ANOVAs$model_sum[[1]][[1]][["Df"]][1]`) = `r  round (NWL_BC_ANOVAs$model_sum[[1]][[1]][["F value"]][1],1)` , *p* = `r  round (NWL_BC_ANOVAs$model_sum[[1]][[1]][["Pr(>F)"]][1],4)`) among the plant communities from different focal plant species. However, Tukey's *post-hoc* test did not show any pairwise differences among the focal plant species at the significance level of *p* < 0.05.
+
+The mean values for web symmetry differed significantly (ANOVA F (`r NWL_BC_ANOVAs$model_sum[[2]][[1]][["Df"]][2]`, `r  NWL_BC_ANOVAs$model_sum[[2]][[1]][["Df"]][1]`) = `r  round (NWL_BC_ANOVAs$model_sum[[2]][[1]][["F value"]][1],1)` , *p* = `r  round (NWL_BC_ANOVAs$model_sum[[2]][[1]][["Pr(>F)"]][1],4)`), indicating that at least two focal plants differed in their effect on the web asymmetry of the interaction network. A pairwise *post-hoc* comparison revealed that *A. capillaris* had a significantly larger web asymmetry than *A. millefolium* and *B. willdenowii* (Table \@ref(tab:Tukey-connectance-BC-table)). In contrast, the web asymmetry of the interaction network with *B. willdenowii* as focal early arrival was smaller than that of *C. intybus*, *H. lanatus*, *P. lanceolata*, and *S. arundinaceus*.
+
+At the guild level of the plants, the generality in the interaction network differed among the networks of at least two early arriving focal plant species (ANOVA F (`r NWL_BC_ANOVAs$model_sum[[7]][[1]][["Df"]][2]`, `r  NWL_BC_ANOVAs$model_sum[[7]][[1]][["Df"]][1]`) = `r  round (NWL_BC_ANOVAs$model_sum[[7]][[1]][["F value"]][1],1)` , p = `r  round (NWL_BC_ANOVAs$model_sum[[7]][[1]][["Pr(>F)"]][1],4)`). The *post-hoc* comparison among the focal plants' interaction networks revealed that the plants' generality in the interaction networks of the early arrival *B. willdenowii* was significantly lower than in the networks of the focal plants *C. intybus*, *P. lanceolata* and *S. arundinaceus* (see Table \@ref(tab:Tukey-generality-plants-BC-table)). 
+
+
+```{r plot-NWL-ACBC, include = F}
+### plot Networklevel plot####
+## Plot each treatment
+  NWL_ALL_pots_plot <-
+  NWL_ALL_pots %>% 
+  unique () %>% 
+  left_join  (meta_M2, by ="pot") %>%  
+  select (pot, index, values, AC.BC, treatment, focal.sp) %>%  
+  unique () %>%  
+  filter (!is.na(values)) %>% 
+  filter (AC.BC == "BC") %>% 
+  group_by (treatment, index) %>%  
+  summarize (mean_index = mean (values), Sd_index = sd (values)) %>% 
+    left_join(meta_all %>% select (focal.sp, treatment, AC.BC)) %>% 
+    left_join (meta_plants) %>% unique () 
+   
+    
+NWL_ALL_pots_plot %>% 
+  ggplot (aes (x= reorder (PlantSpeciesfull, M1_M2_order), y = mean_index #group = AC.BC, 
+               #fill = paste (NWL_ALL_pots_plot$AC.BC, NWL_ALL_pots_plot$PlantSpeciesfull))) 
+               ))+ 
+  geom_bar (stat = "identity", position= position_dodge (), color = "black") +  
+  geom_errorbar(aes (ymin = mean_index, ymax =mean_index+ Sd_index), position = position_dodge()) + 
+  facet_wrap(~index, scales = "free_y") +
+  #scale_fill_manual(values=c("AC A. millefolium" = "#edc948" , "BC A. millefolium" = "#f6e4a3" , 
+                             # "AC C. intybus" = "#edc948" , "BC C. intybus"= "#f6e4a3" , 
+                             # "AC P. lanceolata" ="#4e79a7", "BC P. lanceolata" = "#94aeca",
+                             # "AC A. capillaris" ="#7F9A65" , "BC A. capillaris" = "#b2c2a2",
+                             # "AC B. willdenowii"  = "#7F9A65" , "BC B. willdenowii"  = "#b2c2a2",
+                             #  "AC H. lanatus" ="#7F9A65" ,  "BC H. lanatus"= "#b2c2a2",
+                             # "AC P. cita" ="#7F9A65" , "BC P. cita"= "#b2c2a2",
+                             # "AC S. arundinaceus" ="#7F9A65" ,  "BC S. arundinaceus"= "#b2c2a2")) +
+    ylab("Network index") +
+    xlab ("Focal plant Species") +
+    theme_bw () +
+    theme(axis.text.x= element_text(family= "sans", face= "italic", size = 11, angle = 45, hjust = 1 )) +
+    theme (axis.text.y=element_text(family= "sans", size = 11))  +
+    theme (axis.title = element_text(family = "sans", size = 13 ),   legend.position = "none" )
+
+```
+
+```{r table-tTest-NWL, include =F}
+    NWL_ALL_pots %>% 
+    left_join  (meta_M2 %>%  select (pot, AC.BC, focal.sp), by ="pot") %>%  
+    left_join  (meta_plants) %>% 
+    unique () %>% 
+    dplyr::group_by(index, PlaSpe) %>%  
+    nest () %>% 
+    mutate(model = map (data, ~t_test(values ~ AC.BC, data = .))) %>% 
+    unnest(cols = c(data, model))  %>% 
+    select (index, PlaSpe, PlantSpeciesfull, PlantFamily,statistic, df, p) %>% 
+    unique () %>% 
+    filter (p <0.1) %>% 
+    flextable ()
+```
+
+\newpage
+
+
+## Discussion
+
+The prior arrival of a plant species, the focal plant, in a plant community had significant effects on the AMF richness, abundance and productivity of all plants.
+However, contrary to my hypotheses, these effects differed in their direction and strength depending on the identity of the early arriving plant species, but seemed to be unrelated to its interaction generalism or specialism. 
+The topology of the bipartite plant-AMF interaction networks was robust against the priority of the plants, although network metrics related to $\alpha$- and $\gamma$-diversity differed among the bipartite networks of different focal plants.  
+
+### Priority effects change AMF richness and abundances of a plant community
+
+The early arrival of some plant species resulted in notable changes in the AMF richness of the plant species from the community but the direction of these changes was not governed by the generalism of the focal plant species.
+For example, both *A. millefolium*, a numeric specialist and *B. willdenowii*, a numeric AMF generalist, strongly and significantly decreased the mean AMF richness of their plant neighbours, which arrived shortly after the focal plant's establishment. In contrast, the prior arrival of the generalist grass *A. capillaris* resulted in signifant increases of the mean AMF richnesses of its plant community's members.
+Although linear mixed-effect modelling detected a significant relationship between the AMF richness of the focal plants and that of the plants from their community, this effect was very small. 
+Furthermore, the focal plant could have also been influenced in its richness by the late-arriving plant community, which is indicated by the slight differences between the AMF richness of the focal plant when grown alone (Chapter 3, Table \@ref(tab:table-roots-properties)) and when grown in a plant community (Chapter 4, Table \@ref(tab:Int-niche-prop)). 
+In addition to the mean AMF richness per plant in the community, a priority effect was also detected in the $\gamma$-diversity of the plant communities.
+Depending on the early arrival plant species, these values varied notably between \~100 and 200 AMF ASVs, indicating strong impacts on both the $\alpha$- and $\gamma$-diversities of the plant community due to the order of arrival of the plant species.
+
+My results corroborate other studies reporting prior-arriving plants changing the soil AMF assembly of later arriving plants [@Hausmann2010; @Bittebiere2020].
+Reported changes pertained both the AMF richness [@Mony2021; @Zhang2021a] and abundances [@Zubek2016], and different mechanisms governing these impacts on the plant-AMF interaction of late arriving plants have been suggested.
+Stochastic processes based on different propagation rates of the AMF due to preferential allocation of carbon to specific AMF by the respective focal plant species can change the AMF communities of late arrivals [@Bittebiere2020; @Brigido2017].
+Mony *et al.* [-@Mony2021] and Zhang *et al.* [-@Zhang2021a] suggested an influence of the root biomass respective root richness on the AMF richness, with increased investment in roots leading to an increase in colonisation niches for AMF.
+However, I could not determine a positive relationship between the root biomass and the AMF richness (chapter 3) across the studied plant species.
+When taking the shoot to root biomass ratio of the focal plants from all studied grasses into account, a slightly different picture emerges.
+The two focal plants with the by far highest values for the shoot to root ratio, *B. willdenowii* and *P. cita*, both decreased the AMF richnesses of their plant community, whereas the other grasses showed the opposite tendency in shoot:root ration and impact on the AMF richness of their plant community.
+Plants that outsource their nutrient acquisition to AMF invest less into the biomass of their root system [@Bergmann2020], therefore, the most parsimonious explanation for the different priority effect of these plants might lie in their varying carbon allocation into their AMF mutualists.
+It is also possible that different root exudation profiles played a role, with some plant species releasing compounds inhibiting further AMF germination or growth after their initial root colonisation [@Werner2015].
+Whether the observed priority effects on the AMF assembly of the plant community will affect the trajectory of the plant community development depends on several factors.
+If the impact of the focal plant on the AMF community assembly of the neighbouring plants does affect their productivity or when the differences in AMF assembly are long-lasting, the order of arrival might result in shifts in the plant community assembly with consequences for the diversity and stability of the ecosystems [@Yang2014].
+
+### Competition for resources, not interaction niche properties determined the biomass productivity of the late arrivals
+
+The early arrival of a plant individual in the mesocosm had notable consequences for the productivity of the later-arriving plant community.
+These effects were governed by the biomass, but were independent of the interaction niche properties of the focal plant and seemed also unrelated to its impacts on the AMF assembly in the plant community.
+Thus, I rejected my hypothesis that the plant productivity of the late arriving plant community is positively related to the AMF richness of the focal plant, mediated by positive plant-soil-feedback.
+Instead, the late arrivals were strongly outcompeted by their focal plant, probably due to pre-emption effects of the resources like nutrients and space [@Debray2021].
+This was indicated by the biomass of the focal plant being the best predictor for the productivity of the later-arriving plants.
+It is well described that early arrivals are able to grow quickly, depleting the available resources and might therefore constrain the growth of later arrivals [@Kardol2013].
+Here, the strength of this exploitative competition differed among the focal plants with plant biomass being an important trait for the competitive strength of the species. 
+Although the influence of the richness of the mycorrhizal community could not been detected statistically, the mutualistic interaction will have contributed to the relative effect of the competition between the plants [@Bennett2019].
+AMF mutualists can promote plant species coexistence [@Crawford2019; @Hart2003] but have also been shown to generate negative effects on the biomass of establishing seedlings [@Dassen2021].
+The relative strength of these effects are governed by an interplay of several factors like plant species identity of the early and late-arriving plants [@Hausmann2009; @Hausmann2010], and their AMF community composition and richness [@Vogelsang2006] which makes it difficult to separate these factors in my results.
+
+
+### The topology of the plant-AMF bipartite interaction network is robust against priority effects on the AMF richness
+
+The order of arrival of focal plants, which had different interaction properties when grown alone, did not change the topology of the plant-AMF bipartite network but some focal plant species affected those network properties that are related to measures of  AMF alpha diversity. 
+That the early arrival of some focal plant species resulted in significant changes in the AMF richness for all plants of the community, was mirrored in network metrics related to diversity measures as well.
+For those plant communities that differred among each other in $\alpha$- and $\gamma$-diversity, like those of the focal plants *B. willdenowii* and *A. capillaris*, the web asymmetry showed significant differences as well, corroborating the significance of the changes in diversity at the level of the network.
+Analogously, the network metric generality, which measures the AMF richness per plant while accounting for the interaction abundances, corroborated my results assessing the AMF richness and change in AMF abundances for each plant of the community separately. 
+That the early arrival of some plants, especially *B. willdenowii*, decreased the AMF diversity can negatively impact the resistance of the plant-AMF community under changing conditions, like perturbations [@Aslan2019]. This would be especially the case if AMF species of diverging functions from those of the AMF actively interacting with the plant community are lost over time. A high amount of functional diversity and life history strategies of an interaction partner are paramount to provide different ecosystem services for their interaction partner [@Verbruggen2012], loss of species could therefore result in lower resistance and resiliance of the ecosystem [@Thebault2010], which could lead to further biodiversity loss.
+
+
+Contrary to my hypothesis that the interaction niche property of the early arriving focal plant would result in different values for nestedness, modularity and evenness of the network, the topology of the plant-AMF interaction was robust against priority effects of the studied plant species. 
+While differences in the plants' AMF diversity might result in changes in some network metrics, ultimately it is the topology of the plant-AMF interaction network that is of relevance for the stability of mutualistic communities [@Morrison2020; @Thebault2010; @Gomez2011]. 
+Studies on the plant-pollinator mutualism have shown that the pollinators are labile in their interaction partner choice, with the result that, after species losses due to disturbances, the remaining species can switch their interaction partners  [@Morrison2020; @Suweis2013]. 
+This opportunism in partner interaction is thought to be a common concept across mutualistic interactions, and is potentially one of the drivers of the formation of nestedness [@Guimares2007]. Here, I reported systems that showed the same level of nestedness, modularity and quantitative interaction evenness although their early arriving focal plant species had significant different AMF diversities. 
+That the topology of the plant-AMF interaction stayed consistent indicates that the AMF assembly might be driven by optimisation processes, maximising the possible benefit of the interaction even under different regiments of AMF diversity [@Suweis2013]. For that strategy to be successful, a high plasticity of the interaction traits of at last one of the guilds is needed, so that the species remaining after a disturbance can reorganise the network based on functional replacement [@Sheykhali2020].
+Still, my results showed also that the plants retained their relative functional roles as specialists and generalist in their network, albeit at different degrees of specialism and generalism. Taken together, this indicates that the architecture of the plant-AMF interaction network is determined by the inherent functional and network roles of the interacting species with a certain flexibility in absolute AMF richness due to priority effects. 
+
+
+
+
+### Conclusion
+
+Using a community of eight different plant species and comparing their AMF communities when one of the plants arrived before the others showed that the order of plant arrival impacted the AMF diversity but not the topology of the plant-AMF interaction network. 
+Some plants’ early arrival led to notable changes in the AMF richness and abundance of the plants from the community.
+However, these changes were not related to the focal plants’ inherent interaction properties as AMF generalist or specialist which indicates that the preferential attachment to an established AMF hyphal network might not be a strong determinant of the outcome of the plant-AMF assembly. Instead, other traits like root exudation, root architecture or carbon allocation rates to the mycorrhizae might have governed the assembly mechanisms. 
+Nonetheless, that some early arrivals like *B. willdenowii* or *A. capillaris* decreased respectively increased the AMF richness of the community might have strong effects on the trajectory of a plant community, making them objects of interest for some applications like restoration of grasslands. 
+Interestingly, the topology of the plant-AMF networks did not differ among the communities of the eight early arrivals, which, in turn, suggests that the changes in AMF richness does not affect the formation of a nested mutualistic plant-AMF network.
+Furthermore, the plants’ functional roles in the network persisted, which might indicate the stability of the system. It is, however, unclear if the changes in the AMF diversity will have long-lasting impacts on the plant productivity, the community stability and its future trajectory.
+
+\newpage
+
+
+## References
+
+\newpage
+
+## Appendix for Chapter 5
+
+### Multiple pairwise comparison of the AMF richness among focal plants
+
+```{r emmeans-richness-BC-table , tab.id = "emmeans-richness-BC-table", label = "emmeans-richness-BC-table", tab.cap = "Pairwise comparison of the mean AMF richnesses among treatments of different focal plant species. The calculation was based on the results from a linear mixed effects model, using the plant species identity of the later arriving plants as random variable." }
+# Tukey_BC_richness_table %>%  
+#   separate (FS_comp, c("Focal plant 2", "PlaSpe"), "-") %>%  
+#   left_join(meta_plants)  %>%  
+#   mutate ("Focal plant 1" = reorder(PlaSpe, M1_M2_order)) %>%  
+#   select (PlaSpe, 'Focal plant 2', diff, lwr, upr, `p adj`) %>% 
+#   mutate (diff = round (diff,2), lwr = round (lwr,2), upr = round (upr,2)) %>%  
+#   dplyr::rename ("Focal plant 1" = "PlaSpe", "mean difference (Focal plant 2 versus 1)" = "diff", 
+#           "Lower bound"= "lwr", "Upper bound" = "upr", "p" = `p adj`) %>%  
+#   flextable () %>%  
+#    set_formatter(p = function (x) {
+#      formatC(x, format = "e", digits = 2)}) %>% 
+#   bold ( ~ p < 0.05 ) %>%  
+#   add_header_row(values = c( "", "95 % Confidence interval", ""), colwidths =  c(3,2,1)) 
+ 
+#richness_focal.sp_emmeans  
+  
+  emmeans (LMM_BC_richness3, ~ focal.sp ) %>%  
+  pairs ()  %>% 
+  data.frame () %>% 
+  separate(contrast, c ("focal.sp", "Focalplant1")," - ") %>% 
+  left_join(meta_plants)  %>%  
+  #mutate ("Focal plant 1" = reorder(focal.sp, M1_M2_order)) %>%  
+  select (PlantSpeciesfull, 'Focalplant1', estimate, SE, df, t.ratio, p.value) %>% 
+  mutate (estimate = round (estimate,2),  t.ratio= round (t.ratio,2), SE = round (SE,2), 
+          df = round (df), p.value = round (p.value,5)) %>%  
+  dplyr::rename ("Focal plant 2" = "PlantSpeciesfull", "mean difference (Focal plant 2 versus 1)" = "estimate", 
+          "t-ratio"= "t.ratio", "p" = "p.value") %>%  
+  left_join (meta_plants %>%  select (focal.sp, PlantSpeciesfull), by = c("Focalplant1"= "focal.sp")) %>% 
+  dplyr::rename ("Focal plant 1" = "PlantSpeciesfull") %>% 
+  select ("Focal plant 1", "Focal plant 2", 
+          "mean difference (Focal plant 2 versus 1)" , SE, df, "t-ratio", p) %>% 
+  flextable () %>% 
+  italic (part = "body", j = c(1:2)) %>% 
+    bold ( part = "body", ~p < 0.05)
+
+
+
+
+
+```
+
+### Pairwise comparison of network metrics
+
+
+```{r Tukey-nestedness-BC-table, tab.id = "Tukey-nestedness-BC-table", label = "Tukey-nestedness-BC-table", tab.cap = "Pairwise comparison of the mean network nestedness (NODF) by Tukey HSD among focal plant species. Significant differences (p < 0.05) are in bold." }
+NWL_BC_ANOVAs$Tukey[[3]]$PlaSpe %>%  as_tibble (rownames = "FS_comp") %>% 
+  separate (FS_comp, c("Focalplant1", "PlaSpe"), "-") %>%  
+  left_join(meta_plants)  %>%  
+  mutate ("Focal plant 2" = reorder(PlantSpeciesfull, M1_M2_order))  %>%  
+  left_join (meta_plants %>%  select (PlaSpe, PlantSpeciesfull) %>%  
+               dplyr::rename ("Focalplant1"= "PlaSpe", "Focal plant 1" = "PlantSpeciesfull")) %>%  
+  select ( 'Focal plant 1', 'Focal plant 2', diff, lwr, upr, `p adj`) %>% 
+  mutate (diff = round (diff,2), lwr = round (lwr,2), upr = round (upr,2)) %>%  
+  dplyr::rename ( "mean difference (Focal plant 2 versus 1)" = "diff", 
+             "Lower bound"= "lwr", "Upper bound" = "upr", "p" = `p adj`) %>%  
+  flextable () %>%  
+  set_formatter(p = function (x) {
+        formatC(x, format = "e", digits = 2)}) %>% 
+  bold ( ~ p < 0.05 )  %>%  
+  italic (part = "body", j = c(1:2)) %>% 
+  add_header_row(values = c( "", "95 % Confidence interval", ""), colwidths =  c(3,2,1)) 
+ 
+
+
+
+
+```
+
+
+```{r Tukey-modularity-BC-table, tab.id = "Tukey-modularity-BC-table", label = "Tukey-modularity-BC-table", tab.cap = "Pairwise comparison of the mean network modularity by Tukey HSD among focal plant species. Significant differences (p < 0.05) are in bold." }
+NWL_BC_ANOVAs$Tukey[[10]]$PlaSpe %>%  as_tibble (rownames = "FS_comp") %>% 
+  separate (FS_comp, c("Focalplant1", "PlaSpe"), "-") %>%  
+  left_join(meta_plants)  %>%  
+  mutate ("Focal plant 2" = reorder(PlantSpeciesfull, M1_M2_order))  %>%  
+  left_join (meta_plants %>%  select (PlaSpe, PlantSpeciesfull) %>%  
+               dplyr::rename ("Focalplant1"= "PlaSpe", "Focal plant 1" = "PlantSpeciesfull")) %>%  
+  select ( 'Focal plant 1', 'Focal plant 2', diff, lwr, upr, `p adj`) %>% 
+  mutate (diff = round (diff,2), lwr = round (lwr,2), upr = round (upr,2)) %>%  
+  dplyr::rename ( "mean difference (Focal plant 2 versus 1)" = "diff", 
+             "Lower bound"= "lwr", "Upper bound" = "upr", "p" = `p adj`) %>%  
+  flextable () %>%  
+  set_formatter(p = function (x) {
+        formatC(x, format = "e", digits = 2)}) %>% 
+  bold ( ~ p < 0.05 )  %>%  
+  italic (part = "body", j = c(1:2)) %>% 
+  add_header_row(values = c( "", "95 % Confidence interval", ""), colwidths =  c(3,2,1)) 
+ 
+
+
+
+
+```
+
+
+```{r Tukey-intEv-BC-table, tab.id = "Tukey-intEv-BC-table", label = "Tukey-intEv-BC-table", tab.cap = "Pairwise comparison of the mean interaction evenness by Tukey HSD among focal plant species. Significant differences (p < 0.05) are in bold." }
+NWL_BC_ANOVAs$Tukey[[8]]$PlaSpe %>%  as_tibble (rownames = "FS_comp") %>% 
+  separate (FS_comp, c("Focalplant1", "PlaSpe"), "-") %>%  
+  left_join(meta_plants)  %>%  
+  mutate ("Focal plant 2" = reorder(PlantSpeciesfull, M1_M2_order))  %>%  
+  left_join (meta_plants %>%  select (PlaSpe, PlantSpeciesfull) %>%  
+               dplyr::rename ("Focalplant1"= "PlaSpe", "Focal plant 1" = "PlantSpeciesfull")) %>%  
+  select ( 'Focal plant 1', 'Focal plant 2', diff, lwr, upr, `p adj`) %>% 
+  mutate (diff = round (diff,2), lwr = round (lwr,2), upr = round (upr,2)) %>%  
+  dplyr::rename ( "mean difference (Focal plant 2 versus 1)" = "diff", 
+             "Lower bound"= "lwr", "Upper bound" = "upr", "p" = `p adj`) %>%  
+  flextable () %>%  
+  set_formatter(p = function (x) {
+        formatC(x, format = "e", digits = 2)}) %>% 
+  bold ( ~ p < 0.05 )  %>%  
+  italic (part = "body", j = c(1:2)) %>% 
+  add_header_row(values = c( "", "95 % Confidence interval", ""), colwidths =  c(3,2,1)) 
+ 
+
+
+
+
+```
+
+```{r Tukey-clusterC-BC-table, tab.id = "Tukey-clusterC-BC-table", label = "Tukey-clusterC-BC-table", tab.cap = "Pairwise comparison of the mean network cluster coefficient by Tukey HSD among focal plant species. Significant differences (p < 0.05) are in bold." }
+NWL_BC_ANOVAs$Tukey[[9]]$PlaSpe %>%  as_tibble (rownames = "FS_comp") %>% 
+  separate (FS_comp, c("Focalplant1", "PlaSpe"), "-") %>%  
+  left_join(meta_plants)  %>%  
+  mutate ("Focal plant 2" = reorder(PlantSpeciesfull, M1_M2_order))  %>%  
+  left_join (meta_plants %>%  select (PlaSpe, PlantSpeciesfull) %>%  
+               dplyr::rename ("Focalplant1"= "PlaSpe", "Focal plant 1" = "PlantSpeciesfull")) %>%  
+  select ( 'Focal plant 1', 'Focal plant 2', diff, lwr, upr, `p adj`) %>% 
+  mutate (diff = round (diff,2), lwr = round (lwr,2), upr = round (upr,2)) %>%  
+  dplyr::rename ( "mean difference (Focal plant 2 versus 1)" = "diff", 
+             "Lower bound"= "lwr", "Upper bound" = "upr", "p" = `p adj`) %>%  
+  flextable () %>%  
+  set_formatter(p = function (x) {
+        formatC(x, format = "e", digits = 2)}) %>% 
+  bold ( ~ p < 0.05 )  %>%  
+  italic (part = "body", j = c(1:2)) %>% 
+  add_header_row(values = c( "", "95 % Confidence interval", ""), colwidths =  c(3,2,1)) 
+ 
+
+
+
+
+```
+
+
+
+```{r Tukey-connectance-BC-table, tab.id = "Tukey-connectance-BC-table", label = "Tukey-connectance-BC-table", tab.cap = "Pairwise comparison of the mean network connectance by Tukey HSD among focal plant species. Significant differences (p < 0.05) are in bold." }
+NWL_BC_ANOVAs$Tukey[[1]]$PlaSpe %>%  as_tibble (rownames = "FS_comp") %>% 
+  separate (FS_comp, c("Focalplant1", "PlaSpe"), "-") %>%  
+  left_join(meta_plants)  %>%  
+  mutate ("Focal plant 2" = reorder(PlantSpeciesfull, M1_M2_order))  %>%  
+  left_join (meta_plants %>%  select (PlaSpe, PlantSpeciesfull) %>%  
+               dplyr::rename ("Focalplant1"= "PlaSpe", "Focal plant 1" = "PlantSpeciesfull")) %>%  
+  select ( 'Focal plant 1', 'Focal plant 2', diff, lwr, upr, `p adj`) %>% 
+  mutate (diff = round (diff,2), lwr = round (lwr,2), upr = round (upr,2)) %>%  
+  dplyr::rename ( "mean difference (Focal plant 2 versus 1)" = "diff", 
+             "Lower bound"= "lwr", "Upper bound" = "upr", "p" = `p adj`) %>%  
+  flextable () %>%  
+  set_formatter(p = function (x) {
+        formatC(x, format = "e", digits = 2)}) %>% 
+  bold ( ~ p < 0.05 )  %>%  
+  italic (part = "body", j = c(1:2)) %>% 
+  add_header_row(values = c( "", "95 % Confidence interval", ""), colwidths =  c(3,2,1)) 
+ 
+
+
+
+
+```
+
+
+```{r Tukey-webAsymmetry-BC-table, tab.id = "Tukey-webAsymmetry-BC-table", label = "Tukey-webAsymmetry-BC-table", tab.cap = "Pairwise comparison of the mean network web asymmetry by Tukey HSD among focal plant species. Significant differences (p < 0.05) are in bold." }
+ NWL_BC_ANOVAs$Tukey[[2]]$PlaSpe %>%  
+  as_tibble (rownames = "FS_comp") %>% 
+  separate (FS_comp, c("Focalplant1", "PlaSpe"), "-") %>%  
+  left_join(meta_plants)  %>%  
+  mutate ("Focal plant 2" = reorder(PlantSpeciesfull, M1_M2_order))  %>%  
+  left_join (meta_plants %>%  select (PlaSpe, PlantSpeciesfull) %>%  
+               dplyr::rename ("Focalplant1"= "PlaSpe", "Focal plant 1" = "PlantSpeciesfull")) %>%  
+  select ( 'Focal plant 1', 'Focal plant 2', diff, lwr, upr, `p adj`) %>% 
+  mutate (diff = round (diff,2), lwr = round (lwr,2), upr = round (upr,2)) %>%  
+  dplyr::rename ( "mean difference (Focal plant 2 versus 1)" = "diff", 
+             "Lower bound"= "lwr", "Upper bound" = "upr", "p" = `p adj`) %>%  
+  flextable () %>%  
+  set_formatter(p = function (x) {
+        formatC(x, format = "e", digits = 2)}) %>% 
+  bold ( ~ p < 0.05 )  %>%  
+  italic (part = "body", j = c(1:2)) %>% 
+  add_header_row(values = c( "", "95 % Confidence interval", ""), colwidths =  c(3,2,1)) 
+ 
+
+
+```
+
+
+
+```{r Tukey-generality-plants-BC-table , tab.id = "Tukey-generality-plants-BC-table", label = "Tukey-generality-plants-BC-table", tab.cap = "Pairwise comparison of the mean plant generality in the networks by Tukey HSD among focal plant species. Significant differences (p < 0.05) are in bold." }
+ NWL_BC_ANOVAs$Tukey[[7]]$PlaSpe %>%  
+as_tibble (rownames = "FS_comp") %>% 
+  separate (FS_comp, c("Focalplant1", "PlaSpe"), "-") %>%  
+  left_join(meta_plants)  %>%  
+  mutate ("Focal plant 2" = reorder(PlantSpeciesfull, M1_M2_order))  %>%  
+  left_join (meta_plants %>%  select (PlaSpe, PlantSpeciesfull) %>%  
+               dplyr::rename ("Focalplant1"= "PlaSpe", "Focal plant 1" = "PlantSpeciesfull")) %>%  
+  select ( 'Focal plant 1', 'Focal plant 2', diff, lwr, upr, `p adj`) %>% 
+  mutate (diff = round (diff,2), lwr = round (lwr,2), upr = round (upr,2)) %>%  
+  dplyr::rename ( "mean difference (Focal plant 2 versus 1)" = "diff", 
+             "Lower bound"= "lwr", "Upper bound" = "upr", "p" = `p adj`) %>%  
+  flextable () %>%  
+  set_formatter(p = function (x) {
+        formatC(x, format = "e", digits = 2)}) %>% 
+  bold ( ~ p < 0.05 )  %>%  
+  italic (part = "body", j = c(1:2)) %>% 
+  add_header_row(values = c( "", "95 % Confidence interval", ""), colwidths =  c(3,2,1)) 
+ 
+
+
+
+```
+
+
+```{r Tukey-generality-AMF-BC-table , tab.id = "Tukey-generality-AMF-BC-table", label = "Tukey-generality-AMF-BC-table", tab.cap = "Pairwise comparison of the mean AMF generality in the networks by Tukey HSD among focal plant species. Significant differences (p < 0.05) are in bold." }
+ NWL_BC_ANOVAs$Tukey[[6]]$PlaSpe %>%  
+as_tibble (rownames = "FS_comp") %>% 
+  separate (FS_comp, c("Focalplant1", "PlaSpe"), "-") %>%  
+  left_join(meta_plants)  %>%  
+  mutate ("Focal plant 2" = reorder(PlantSpeciesfull, M1_M2_order))  %>%  
+  left_join (meta_plants %>%  select (PlaSpe, PlantSpeciesfull) %>%  
+               dplyr::rename ("Focalplant1"= "PlaSpe", "Focal plant 1" = "PlantSpeciesfull")) %>%  
+  select ( 'Focal plant 1', 'Focal plant 2', diff, lwr, upr, `p adj`) %>% 
+  mutate (diff = round (diff,2), lwr = round (lwr,2), upr = round (upr,2)) %>%  
+  dplyr::rename ( "mean difference (Focal plant 2 versus 1)" = "diff", 
+             "Lower bound"= "lwr", "Upper bound" = "upr", "p" = `p adj`) %>%  
+  flextable () %>%  
+  set_formatter(p = function (x) {
+        formatC(x, format = "e", digits = 2)}) %>% 
+  bold ( ~ p < 0.05 )  %>%  
+  italic (part = "body", j = c(1:2)) %>% 
+  add_header_row(values = c( "", "95 % Confidence interval", ""), colwidths =  c(3,2,1)) 
+ 
+
+
+
+```
+
+
+### Bipartite networks
+
+```{r bipartite-AchMil-BC, fig.cap= "Bipartite network of the plant mesocosm with A. millefolium (AchMil) as early focal plant. Species are colored by family association." }
+knitr::include_graphics("figures/plotBC_S1.png")
+```
+
+
+```{r bipartite-CicInt-BC, fig.cap= "Bipartite network of the plant mesocosm with C. intybus (CicInt) as early focal plant. Species are colored by family association." }
+knitr::include_graphics("figures/plotBC_S2.png")
+```
+
+
+```{r bipartite-PoaCit-BC, fig.cap= "Bipartite network of the plant mesocosm with P. cita (PoaCit) as early focal plant. Species are colored by family association." }
+knitr::include_graphics("figures/plotBC_S3.png")
+```
+
+
+```{r bipartite-SchAru-BC, fig.cap= "Bipartite network of the plant mesocosm with S. arundinaceus (SchAru) as early focal plant. Species are colored by family association." }
+knitr::include_graphics("figures/plotBC_S4.png")
+```
+
+
+```{r bipartite-PlaLan-BC, fig.cap= "Bipartite network of the plant mesocosm with A. P. lanceolata (PlaLan) as early focal plant. Species are colored by family association." }
+knitr::include_graphics("figures/plotBC_G4.png")
+```
+
+```{r bipartite-BroWil-BC, fig.cap= "Bipartite network of the plant mesocosm with B. willdenowii (BroWil) as early focal plant. Species are colored by family association." }
+knitr::include_graphics("figures/plotBC_G3.png")
+```
+
+```{r bipartite-AgrCap-BC, fig.cap= "Bipartite network of the plant mesocosm with A. capillaris (AgrCap) as early focal plant. Species are colored by family association." }
+knitr::include_graphics("figures/plotBC_G2.png")
+```
+
+```{r bipartite-HolLan-BC, fig.cap= "Bipartite network of the plant mesocosm with H. lanatus (HolLan) as early focal plant. Species are colored by family association." }
+knitr::include_graphics("figures/plotBC_G1.png")
+```
+
+
+
+### Plant productivity
+
+```{r plot-plant-biomass, fig.cap = "Plant biomass per plant species of the late arriving community by focal species. The biomass of the focal species is not shown. Horizontal lines show median values, boxes denote the interquartile range (IQR), while whiskers show 1.5$*$IQR ranges. Outliers are indicated by dots." , fig.height=6, fig.width= 8, dpi = 300}
+
+## when the focal plant biomass was included, I could SEE that with a increase in focal plant biomass the others biomass decreased --- competition!!! SPACE !
+BC_richness_LMdata %>% left_join (meta_plants %>%  
+                                    select (focal.sp, PlantSpeciesfull, M1_M2_order) %>%  
+                                    dplyr::rename ("focalSpe" = "PlantSpeciesfull", "focalOrder"= "M1_M2_order")) %>% 
+  #mutate (DW = as.numeric (DW_above)) %>% 
+  #filter (!is.na (DW)) %>% 
+  #filter (AC.BC == "BC") %>% 
+  ggplot (aes (x= reorder (PlantSpeciesfull, M1_M2_order), y = DW_above.x, fill = PlantFamily)) +
+  geom_boxplot() +
+  facet_wrap(~reorder (focalSpe, focalOrder), nrow =2) +
+  #labs (title = "Richness of each plant species by AC BC treatments") + 
+  theme_light () +
+  theme (axis.text.x=element_text(family= "sans", size = 9, angle=45, hjust =1, color = "black" ))  +
+  theme (axis.text.y=element_text(family= "sans", size = 9, color = "black"))  +
+  theme (axis.title.y = element_text(family = "sans", size = 11 ),  
+         axis.title.x = element_blank(), 
+         legend.title=element_text(size=12),
+         legend.text=element_text(size=11), 
+         legend.position = "bottom"  ) +
+  ylab ("Plant biomass in g") +
+  scale_fill_manual(values=c("Asteraceae"= "#edc948" ,
+                             "Plantaginaceae"= "#4e79a7",
+                             "Poaceae" = "#7F9A65" ), name = "Plant family") +
+#  geom_hline( yintercept =  25, linetype = "dotted", color = "black") +
+  theme (strip.text = element_text (face = "italic", size = 11, color = "black")) 
+  
+```
+
+### Microbial community structure
+
+```{r detected-PLFA, include = F, tab.id = "detected-PLFA", label = "detected-PLFA", tab.cap = "Detected phospholipid fatty acids (PLFA) and their distribution in soil samples. For 37 of 40 possible sample, PLFA data could be obtained."}
+PL_M2 %>% group_by(Name) %>% 
+  tally() %>% 
+  filter (Name != "19:0") %>% 
+  filter (Name != "20:0") %>% 
+  flextable ()  %>%  
+  autofit()
+
+NumberPLFA_M2  <- PL_M2 %>% group_by(Name) %>% 
+  tally() %>% 
+  filter (Name != "19:0") %>% 
+  filter (Name != "20:0") %>% 
+  tally ()
+```
+
+```{r totalPLFA-ACBCPlaSpe-PlaFam }
+
+## Biomass of plants , total per pot (some measurements were missing) ####
+biomass_pot_DW  <- 
+  meta_M2 %>%  
+  select (!c(GSPlaSpe, roots_soil, notes)) %>%  
+  mutate (DW = as.numeric(DW_above)) %>%  
+  filter (!is.na (DW)) %>% 
+  group_by (pot)  %>%  
+  dplyr::summarise( pot_DW = sum (DW)) 
+
+## Biomass (DW above ) pot average for AC vs BC experiment#####
+biomass_mean_pot_ACBC  <- 
+  meta_M2 %>%  
+  select (!c(GSPlaSpe, roots_soil, notes)) %>%  
+  mutate (DW = as.numeric(DW_above)) %>%  
+  filter (!is.na (DW)) %>% 
+  group_by (pot)  %>%  
+  dplyr::summarise( pot_DW = sum (DW)) %>%  
+  left_join (meta_M2 %>% select (AC.BC, focal.sp, pot) %>%  unique ()) %>%  
+  group_by(AC.BC) %>%  
+  dplyr::summarise(meanDW_ACBC = mean(pot_DW))
+
+
+#get dataframe f total PLFA per sample, incl all meta #####
+  totalPLFA_M2 <-  PL_FA_conc_M2  %>% 
+  group_by(sampleID,  Biom2Soil) %>%   #
+  dplyr::summarise (sum_groups=sum(conc_FA))  %>% #result in microbial groups
+  dplyr::filter (Biom2Soil != "IS" & Biom2Soil != "NAFA" & Biom2Soil != "remove")  %>%  
+  dplyr::filter (Biom2Soil != "Fungi" & Biom2Soil != "AMF") %>% #removes all FA that are of unknown origin or IS
+  group_by (sampleID) %>% 
+  dplyr::summarise(PLFA = sum (sum_groups)) %>% 
+  left_join(meta_all, by = "sampleID") %>% 
+    select (-c( notes, roots_soil, DW_above)) %>% 
+    left_join (biomass_pot_DW)  %>% 
+    left_join(meta_plants)  #PLFA is in nmol
+
+## STATS ####
+#test normality
+PLFA_shapiro_M2 <- totalPLFA_M2 %>%  group_by (PlaSpe, AC.BC) %>% shapiro_test(PLFA )
+  #p-value > 0.05 implying that the distribution of the data are not significantly different from normal distribution.
+  #In other words, we can assume the normality for all Pla Spe
+
+PLFA_bartlett_M2 <- bartlett.test(totalPLFA_M2$PLFA~totalPLFA_M2$treatment ) # p > 0.05 variances are the same (less than 0.05 = variances not equal).
+## Plant Family ####
+#STATS ### Pla Fam
+#test normality
+ PLFA_shapiro_PlaFam_M2 <- totalPLFA_M2 %>%  group_by (PlantFamily) %>% shapiro_test(PLFA )
+#   #p-value > 0.05 implying that the distribution of the data are not significantly different from normal distribution.
+#   #In other words, we can assume the normality for all Pla Spe
+# 
+PLFA_bartlett_PlaFam_M2 <- bartlett.test(totalPLFA_M2$PLFA ~ totalPLFA_M2$PlantFamily ) # heteroscad ...
+# 
+# both okay -> ANOVA, t test  possible
+  
+
+#T-Test for comparison of AC BC for each PlaSpe ####
+ tTest_PlaSpe_M2 <- 
+   totalPLFA_M2 %>% 
+   filter (PlaSpe != "soil") %>%  
+   dplyr::group_by(PlaSpe) %>%  
+   nest() %>% 
+   mutate(model = map (data, ~t_test(PLFA ~ AC.BC, data = .)))
+ # oder anova 
+ # anovas_PlaSpe_M2 <- 
+ #   totalPLFA_M2 %>% 
+ #   filter (PlaSpe != "soil") %>%  
+ #   dplyr::group_by(PlaSpe) %>%  
+ #   nest() %>% 
+ #   mutate(model = map (data, ~aov(PLFA ~ AC.BC, data = .)))
+ #  summary (anovas_PlaSpe_M2$model[[3]]) [[1]] [["Pr(>F)"]][[1]]
+
+ ## the summaries :
+# tTest_PlaSpe_M2$model %>%  map (broom::tidy) 
+
+## only PlaLan significant
+ ## get p etc for the significant model (PlaLan)
+
+# ANOVA partitioned the variance into  component can be explained by the predictor variable
+# and A component that cannot be explained by the predictor variable (variance within levels, the residual variance)
+# F, is the ratio of these two sources of variation
+
+#Post Hoc test - for  comparison between the PLaSpe of each treatment AC or BC
+# here Tukey is appropriate bec of normality etc
+# TukeyHSD_PlaSpe_M2 <- aov(PLFA ~ treatment, data = totalPLFA_M2) %>%  tukey_hsd()
+
+### no other significant differences beteen the treatments -- nicht relevant hier, da icht de Pfanzne selber vergliechen werden, sondern AC BC
+
+## Plot total PLFA by Plant species#####-------------------------------------------------------------------------------------------------
+## sort the data , calculate means etc 
+  totalPLFA_M2_plot1_data  <- 
+  totalPLFA_M2 %>%  
+  group_by(AC.BC, PlantSpeciesfull) %>% 
+  summarise(meanPLFA = mean (PLFA), SD = sd (PLFA)) %>% 
+  left_join (meta_plants %>%  select (PlantSpeciesfull, PlantFamily, M1_M2_order) ) %>% unique () 
+
+
+## Data for plot -Family#  
+  totalPLFA_M2_plot1_Fam_data <- 
+    totalPLFA_M2 %>%  
+    group_by(AC.BC, PlantFamily) %>% 
+    summarise(meanPLFA = mean (PLFA), SD = sd (PLFA)) 
+
+## to get the  AC BC  legend
+Plot_legend <- 
+  get_legend(   totalPLFA_M2_plot1_Fam_data %>% 
+   ggplot (aes (x= PlantFamily, y = meanPLFA, group = AC.BC, fill = paste (totalPLFA_M2_plot1_Fam_data$AC.BC, totalPLFA_M2_plot1_Fam_data$PlantFamily))) +  
+    geom_bar  (stat = "identity", position = position_dodge(), color = "black")+
+    scale_fill_manual(values=c("AC Asteraceae" = "#edc948" , "BC Asteraceae" = "#f6e4a3" , 
+                               "AC Plantaginaceae" ="#4e79a7", "BC Plantaginaceae" = "#94aeca",
+                               "AC Poaceae" ="#7F9A65" , "BC Poaceae" = "#b2c2a2",
+                               "control soil" ="beige" )) +
+    theme_bw () +
+    theme (axis.title = element_text(family = "sans", size = 13 ),  
+           legend.position = "bottom" ) +
+    labs (fill = guide_legend ( "")) ) %>% 
+  as_ggplot ()
+
+## Plot total PLFA AC BC direct comparison
+Plot_PLFA_M2_1 <- 
+  totalPLFA_M2_plot1_data  %>% 
+  ggplot (aes (x= reorder (PlantSpeciesfull, M1_M2_order), y = meanPLFA, group = AC.BC, fill = paste (totalPLFA_M2_plot1_data$AC.BC, totalPLFA_M2_plot1_data$PlantSpeciesfull))) + 
+  geom_bar (stat = "identity", position= position_dodge (), color = "black") +  
+  geom_errorbar(aes (ymin = meanPLFA, ymax =meanPLFA+SD), position = position_dodge()) +  
+  scale_fill_manual(values=c("AC A. millefolium" = "#edc948" , "BC A. millefolium" = "#f6e4a3" , 
+                             "AC C. intybus" = "#edc948" , "BC C. intybus"= "#f6e4a3" , 
+                             "AC P. lanceolata" ="#4e79a7", "BC P. lanceolata" = "#94aeca",
+                             "AC A. capillaris" ="#7F9A65" , "BC A. capillaris" = "#b2c2a2",
+                             "AC B. willdenowii"  = "#7F9A65" , "BC B. willdenowii"  = "#b2c2a2",
+                             "AC H. lanatus" ="#7F9A65" ,  "BC H. lanatus"= "#b2c2a2",
+                             "AC P. cita" ="#7F9A65" , "BC P. cita"= "#b2c2a2",
+                             "AC S. arundinaceus" ="#7F9A65" ,  "BC S. arundinaceus"= "#b2c2a2", 
+                             "control soil" ="beige" )) +
+  ylab("Bacterial PLFA in nmol/g DW soil") +
+  xlab ("Focal plant species") +
+  theme_bw () +
+  theme(axis.text.x= element_text(family= "sans", face= "italic", size = 11, angle = 45, hjust = 1 )) +
+  theme (axis.text.y=element_text(family= "sans", size = 11))  +
+  theme (axis.title = element_text(family = "sans", size = 13 ),  
+         legend.position = "none" ) +
+  geom_signif(
+    annotations = "**", y_position = 27, xmin= 2.5, xmax=3.5) ### PlaLan as 0.0017
+  
+
+## Plot for Plant families  ###------------------------------------------------------------------------------
+## Stat##
+## T test comparing AC BC for each PlaFam
+  tTest_PlaFam_M2 <-
+    totalPLFA_M2 %>%
+    filter (PlaSpe != "soil") %>%
+    dplyr::group_by(PlantFamily) %>%
+    nest() %>%
+    mutate(model = map (data, ~t_test(PLFA ~ AC.BC, data = .)))
+
+# Report
+#  tTest_PlaFam_M2$model[[2]][["p"]]
+# tTest_PlaFam_M2$model[[2]][["statistic"]]
+#  tTest_PlaFam_M2$model[[2]][["df"]]
+
+
+# #ANOVA for comparison of AC BC for each PlaSpe ####
+#   anovas_PlaFam_M2 <- 
+#     totalPLFA_M2 %>% 
+#     filter (PlaSpe != "soil") %>%  
+#     dplyr::group_by(PlantFamily) %>%  
+#     nest() %>% 
+#     mutate(model = map (data, ~aov(PLFA ~ AC.BC, data = .)))
+# ## the summaries :
+#   # anovas_PlaFam_M2$model %>%  map (broom::tidy) 
+#   
+# ## only PlaLan significant
+# ## get p etc for the significant model (PlaLan)
+#   #  summary (anovas_PlaFam_M2$model[[2]]) [[1]] [["Pr(>F)"]][[1]]
+## Data for plot#  
+  totalPLFA_M2_plot1_Fam_data <- 
+    totalPLFA_M2 %>%  
+    group_by(AC.BC, PlantFamily) %>% 
+    summarise(meanPLFA = mean (PLFA), SD = sd (PLFA)) 
+  
+# Plot ##  
+  Plot_PLFA_M2_1Fam  <- 
+  totalPLFA_M2_plot1_Fam_data %>% 
+    ggplot (aes (x= PlantFamily, y = meanPLFA, group = AC.BC, fill = paste (totalPLFA_M2_plot1_Fam_data$AC.BC, totalPLFA_M2_plot1_Fam_data$PlantFamily))) +  
+    #facet_wrap (~AC.BC) + 
+    geom_bar  (stat = "identity", position = position_dodge(), color = "black")+
+    geom_errorbar(aes (ymin = meanPLFA, ymax =meanPLFA+SD), position = position_dodge(), color = "black") +  
+    scale_fill_manual(values=c("AC Asteraceae" = "#edc948" , "BC Asteraceae" = "#f6e4a3" , 
+                               "AC Plantaginaceae" ="#4e79a7", "BC Plantaginaceae" = "#94aeca",
+                               "AC Poaceae" ="#7F9A65" , "BC Poaceae" = "#b2c2a2",
+                               "control soil" ="beige" )) +
+    ylab("Bacterial PLFA in nmol/g DW soil") +
+    xlab ("Focal plant family") +
+    theme_bw () +
+    theme(axis.text.x= element_text(family= "sans", face= "italic", size = 11, angle = 45, hjust = 1 )) +
+    theme (axis.text.y=element_text(family= "sans", size = 11))  +
+    theme (axis.title = element_text(family = "sans", size = 13 ),  
+           legend.position = "none" ) +
+    geom_signif(
+      annotations = "**", y_position = 25, xmin= 1.5, xmax=2.5)
+ 
+  
+
+  
+
+
+# table for mean  SD PLFA   --- nicht so sinnvoll hier
+Table_meanPLFA_M2 <- totalPLFA_M2 %>% 
+  group_by(AC.BC, PlantSpeciesfull) %>%  
+  summarize (totalPLFA = mean (PLFA), SD = sd (PLFA)) %>%  
+  arrange (totalPLFA)  # sort ascending
+
+
+```
+
+```{r AMF}
+### the plot is in the appendix, but not included at the moment##
+
+
+##NL AMF
+AMF_conc_Soil_M2<-  NL_FA_conc_M2  %>% 
+  group_by(sampleID, Name) %>%   #
+  dplyr::summarise (sum_groups=sum(conc_FA))  %>% ##not relevant for NL because only one FA
+  pivot_wider (names_from =  Name, values_from = sum_groups) %>% 
+  mutate_all(~replace(., is.na(.), 0))  %>%  # NA changes to 0
+  select( '16:1w5', sampleID) %>% 
+  add_column(type="soil") %>%  ## needed for comparison soil vs root
+  dplyr::rename(AMF='16:1w5') %>%  #  easier accessible name
+  left_join( meta_all, by='sampleID') %>%  # add meta again
+  left_join (meta_plants, by = "focal.sp") %>% 
+  select (-c(DW_above, roots_soil, notes) )
+
+AMF_M2_plot1_data <-  
+  AMF_conc_Soil_M2 %>% 
+  group_by (AC.BC, PlantSpeciesfull) %>%  
+  summarize (meanNLFA = mean (AMF), SD = sd (AMF))  %>% 
+  left_join (meta_plants %>%  select (PlantSpeciesfull, PlantFamily, M1_M2_order) ) %>% unique ()
+
+
+ tTest_PlaSpe_AMF_M2 <- 
+   AMF_conc_Soil_M2 %>% 
+   filter (PlaSpe != "soil") %>%  
+   dplyr::group_by(PlaSpe) %>%  
+   nest() %>% 
+   mutate(model = map (data, ~t_test(AMF ~ AC.BC, data = .)))
+
+ ###Plot AMF 
+ plot_AMF_M2 <-
+ AMF_M2_plot1_data%>% 
+    ggplot (aes (x= reorder (PlantSpeciesfull, M1_M2_order), y = meanNLFA, group = AC.BC, 
+                 fill = paste (AMF_M2_plot1_data$AC.BC, AMF_M2_plot1_data$PlantSpeciesfull))) + 
+    #facet_wrap (~AC.BC, scales="free_x") +
+  geom_bar (stat = "identity", position= position_dodge (), color = "black") +  
+    geom_errorbar(aes (ymin = meanNLFA, ymax =meanNLFA+SD), position = position_dodge()) +  
+  scale_fill_manual(values=c("AC A. millefolium" = "#edc948" , "BC A. millefolium" = "#f6e4a3" , 
+                             "AC C. intybus" = "#edc948" , "BC C. intybus"= "#f6e4a3" , 
+                             "AC P. lanceolata" ="#4e79a7", "BC P. lanceolata" = "#94aeca",
+                             "AC A. capillaris" ="#7F9A65" , "BC A. capillaris" = "#b2c2a2",
+                             "AC B. willdenowii"  = "#7F9A65" , "BC B. willdenowii"  = "#b2c2a2",
+                             "AC H. lanatus" ="#7F9A65" ,  "BC H. lanatus"= "#b2c2a2",
+                             "AC P. cita" ="#7F9A65" , "BC P. cita"= "#b2c2a2",
+                             "AC S. arundinaceus" ="#7F9A65" ,  "BC S. arundinaceus"= "#b2c2a2", 
+                             "control soil" ="beige" )) +
+    ylab("Total NLFA in nmol/g DW soil") +
+  xlab ("Focal plant Species") +
+  theme_bw () +
+  theme(axis.text.x= element_text(family= "sans", face= "italic", size = 11, angle = 45, hjust = 1 )) +
+  theme (axis.text.y=element_text(family= "sans", size = 11))  +
+  theme (axis.title = element_text(family = "sans", size = 13 ),  
+         legend.position = "none" ) +
+  geom_signif(
+    annotations = "*", y_position = 50, xmin= 2.5, xmax=3.5)
+
+ ## comparisons 
+ Tukey_AMF  <-aov (AMF ~ PlaSpe, data = AMF_conc_Soil_M2) %>%  tukey_hsd ()
+ 
+ 
+ ## mean AMF for text ##
+ 
+mean_AMF_M2 <- AMF_conc_Soil_M2 %>%     
+  filter (PlantFamily!= "soil")  %>% 
+  ungroup () %>% 
+  summarize (meanAMF = mean(AMF), SD = sd (AMF))
+ 
+ ### checked the P. cita data, GC okay, calculations okay - one sample has very high AMF amount
+###hyphal
+##PL AMF
+AMF_conc_hypSoil_M2<-  PL_FA_conc_M2  %>% 
+  group_by(sampleID, Name) %>%   #
+  dplyr::summarise (sum_groups=sum(conc_FA))  %>% ##not relevant for NL because only one FA
+  pivot_wider (names_from =  Name, values_from = sum_groups) %>% 
+  mutate_all(~replace(., is.na(.), 0))  %>%  # NA changes to 0
+  select( '16:1w5', sampleID) %>% 
+  add_column(type="soil") %>%  ## needed for comparison soil vs root
+  dplyr::rename(AMF='16:1w5') %>%  #  easier accessible name
+  left_join( meta_all, by='sampleID') %>%  # add meta again
+  left_join (meta_plants, by = "focal.sp") %>% 
+  select (-c(DW_above, roots_soil, notes) )
+
+
+###Plot AMF 
+AMF_M2_plot_hyphae  <- 
+  AMF_conc_hypSoil_M2 %>% 
+    group_by(AC.BC, PlantSpeciesfull) %>% 
+    summarise(meanPLFA = mean (AMF), SD = sd (AMF)) %>% 
+    left_join (meta_plants %>%  select (PlantSpeciesfull, PlantFamily, M1_M2_order) ) %>% unique () %>% 
+    ggplot (aes (x= reorder (PlantSpeciesfull, M1_M2_order), y = meanPLFA, fill = PlantFamily)) + 
+    facet_wrap (~AC.BC, scales="free_x") +
+    geom_bar (stat = "identity", color = "black") +  
+    geom_errorbar(aes (ymin = meanPLFA, ymax =meanPLFA+SD)) +  
+    scale_fill_manual(values=c("Asteraceae"= "#edc948" ,  "Plantaginaceae"= "#4e79a7","Poaceae" = "#7F9A65" )) +
+    ylab("Total PLFA AMFbiomarker ??in nmol/g DW soil") +
+    xlab ("Plant Species") +
+    theme_bw () +
+    theme(axis.text.x= element_text(family= "sans", face= "italic", size = 11, angle = 45, hjust = 1 )) +
+    theme (axis.text.y=element_text(family= "sans", size = 11))  +
+    theme (axis.title = element_text(family = "sans", size = 13 ),  
+           legend.title=element_text(size=12), 
+           legend.text=element_text(size=11)) 
+
+
+```
+
+
+The comparison of the soil bacterial biomass between the AC and BC treatments of each focal plant species indicated that the order of arrival of the focal plant had no impact on the bacterial biomass.
+The only exception here was *P. lanceolata*, which had a significantly smaller soil bacterial biomass when in arrived before the plant community (t-test t (`r round(tTest_PlaSpe_M2$model[3][[1]][["df"]][[1]],1)`) = `r tTest_PlaSpe_M2$model[3][[1]][["statistic"]][[1]]`, *p* = `r tTest_PlaSpe_M2$model[3][[1]][["p"]][[1]]`) than after the community (Fig. \@ref(fig:plot-totalPLFA-ACBCPlaSpe-PlaFam)).
+This corroborates the results from chapter 2, in which *P. lanceolata* was the only plant species which differed in their influence on the bacterial biomass.
+
+The total biomass of the AMF storage compartments, as measured by the NLFA AMF biomarker did differ in the comparison of the BC to AC treatment of *P. lanceolata* only (t-test t(`r round(tTest_PlaSpe_AMF_M2$model[3][[1]][["df"]][[1]],1)`) = `r tTest_PlaSpe_AMF_M2$model[3][[1]][["statistic"]][[1]]`, *p* = `r tTest_PlaSpe_AMF_M2$model[3][[1]][["p"]][[1]]` ).
+Overall, all soils showed similar and significant increases in the AMF NLFA biomarker, with a mean value of all samples at `r round(mean_AMF_M2$meanAMF,1)` $\pm$ `r round(mean_AMF_M2$SD,1)` nmol$\cdot$g^-1^ DW soil, which is about 50 x higher as the AMF biomass in the control soil.
+
+
+```{r PLFA-PCA-results}
+## get data for PCA ## 
+PLFA_PCA_M2 <-   
+  PL_FA_conc_M2 %>%
+  filter (Biom2Soil !="IS") %>%
+  filter (Biom2Soil != "NAFA" & focal.sp != "control" ) %>%  
+  group_by(sampleID, Biom2Soil) %>%  
+  summarise (group = sum (conc_FA)) %>%  
+  #bind_rows(PL_FA_conc_control %>%  group_by(Biom2Soil, sampleID) %>%  summarise (group = sum (conc_FA)) %>%  filter (Biom2Soil !="NAFA" & Biom2Soil != "IS")) %>% 
+  left_join (meta_M2 %>%  select (sampleID, AC.BC, focal.sp)) %>%  
+  left_join (meta_plants) %>%  
+  #unite ("priority_PlantFamily" , AC.BC, PlantFamily, sep = "_") %>% 
+  pivot_wider(names_from = Biom2Soil, values_from = group)  %>% 
+  replace (is.na(.), 0)
+
+# Pca to get variance % , plot will be in appendix#
+PLFA_PCA.res_M2 <- PCA (PLFA_PCA_M2[,8:13], graph = F,  scale.unit =T) # 
+
+PCA_eig_Dim1 <- round (PLFA_PCA.res_M2$eig[1,2],1)
+
+PCA_eig_Dim2 <- round (PLFA_PCA.res_M2$eig[2,2],1)
+
+```
+
+Principal component analysis (PCA) was conducted based on the microbial phospholipid fatty acid biomarker groups to reveal differences in the soil microbial community compositions between the AC and BC treatments of each plant species.
+The first two dimensions (=principal components, PC) explained `r PCA_eig_Dim1 + PCA_eig_Dim2` % of the total variance in the soil microbial communities.
+The PLFA analysis revealed that the microbial community composition in the soil differed notably between the two arrival treatments of *P. lanceolata*.
+Differences between the AC and BC treatments of the other plants were not noticeable (Fig. \@ref(fig:plot-PCA-PLFA-M2)).
+
+A comparison of the biomass ratios of Gram-positive (GP) to Gram-negative (GN) bacteria revealed that the order of arrival of *P. lanceolata* resulted in a notable difference in the GP to GN ratio (Table \@ref(tab:PLFA-GPGN).
+
+These results indicate that the differences of the soil microbial communities between the AC and BC treatment of *P. lanceolata* originated mostly from the biomass shifts in specific taxonomic groups of bacteria.
+Relating these results to the results from Chapter 2 shows the strong influence of an early arriving *P. lanceolata* on the soil community, which remains as soil legacy even after the additional establishment of several taxonomic different plant species in the plant community.
+
+```{r PLFA-GPGN, include = T, tab.id = "PLFA-GPGN", tab.cap = "Biomass ratios of Gram-positive to Gram-negative bacteria by focal plant species and order of arrival. Focal plants were grown in a plant community, and they arrived either before the community (BC) or after the plant community was established (AC). The bacterial biomass was determined by phospholipid fatty acid analysis (PLFA), and each given ratio is the mean value of the 5 replicates per treatment."}
+
+## get Table Gram-positive to GN ratios ##
+PL_FA_conc_M2 %>%
+  filter (Biom2Soil !="IS") %>%
+  filter (Biom2Soil != "NAFA" & focal.sp != "control" ) %>%  
+  group_by(sampleID, Biom2Soil) %>%  
+  summarise (group = sum (conc_FA)) %>%  
+  #bind_rows(PL_FA_conc_control %>%  group_by(Biom2Soil, sampleID) %>%  summarise (group = sum (conc_FA)) %>%  filter (Biom2Soil !="NAFA" & Biom2Soil != "IS")) %>% 
+  left_join (meta_M2 %>%  select (sampleID, AC.BC, focal.sp)) %>%  
+  left_join (meta_plants) %>%  
+  #unite ("priority_PlantFamily" , AC.BC, PlantFamily, sep = "_") %>% 
+  pivot_wider(names_from = Biom2Soil, values_from = group)   %>%  
+  drop_na (gram.neg) %>% 
+  mutate (GptoGN = gram.pos/gram.neg) %>% 
+  group_by (AC.BC, PlantSpeciesfull, M1_M2_order) %>%  
+  summarize( avGPGN = round (mean (GptoGN),1)) %>% 
+  arrange (M1_M2_order) %>% 
+  select (!M1_M2_order) %>% 
+  pivot_wider(PlantSpeciesfull, names_from = "AC.BC", values_from = "avGPGN") %>% 
+flextable() %>% 
+  set_header_labels("PlantSpeciesfull" = "Plant species", "avGPGN" = "GP:GN" ) %>% 
+  italic (j = "PlantSpeciesfull", part =  "body")
+```
+
+
+```{r plot-totalPLFA-ACBCPlaSpe-PlaFam, include =T,  fig.cap= "Influence of order of arrival of a focal plant species in a plant community on the biomass of the soil bacterial community. For each focal plant species (A) and their plant family (B), the mean total PLFA in nmol FA per g dry weight soil is compared by arrival time. AC = Arrival of focal plant after rest of the community, BC = arrival before the plant community. Whiskers denote standard deviation (SD) of the mean total PLFA. Significance levels denote comparisons of the means between AC and BC treatments (t-test): * at p<0.05, ** at p<0.005, *** at p<0.0005, **** at p<0.0001", fig.height=8, fig.width=13}
+## calculations are in 
+## Full Plot Pla Spe and PlaFamily together with the PlantFamily legend ####
+ggarrange ( ggarrange ( Plot_PLFA_M2_1, Plot_PLFA_M2_1Fam, nrow=1, widths = c(4,2), align = "h", labels = "AUTO"), Plot_legend,  nrow = 2, ncol = 1, heights = c(6,1))
+
+
+```
+
+```{r plot-totalPLFA-ACBC_perDW, include = F, fig.cap= "Influence of arrival time of a focal plant species on the biomass of the soil microbial community, accounting for plant aboveground biomass per microcosm. For each focal plant species (A) and their plant family (B), the mean total PLFA in nmol FA per g soil and per g aboveground plant biomass (dry weight) is compared by arrival time. AC = Arrival of focal plant after rest of the community, BC = arrival before the plant community. Whiskers denote standard deviation (SD) of the mean total PLFA. Significance levels denote comparisons of the means between AC and BC treatments (t-test): * at p<0.05, ** at p<0.005, *** at p<0.0005, **** at p<0.0001", dpi =300}
+
+
+#get dataframe f total PLFA per sample, incl all meta #####
+totalPLFA_M2_DW <- 
+  totalPLFA_M2 %>%  
+  filter (PlaSpe != "soil")   %>%  
+  mutate (PLFAperDW = PLFA / pot_DW)
+
+## STATS ####
+#test normality
+PLFA_shapiro_M2_DW <- totalPLFA_M2_DW  %>%  group_by (PlaSpe, AC.BC) %>% shapiro_test(PLFAperDW )
+  #p-value > 0.05 implying that the distribution of the data are not significantly different from normal distribution.
+  #In other words, we can assume the normality for all Pla Spe
+
+PLFA_bartlett_M2_DW <- bartlett.test(totalPLFA_M2_DW$PLFAperDW ~ totalPLFA_M2_DW$treatment ) # p > 0.05 variances are the same (less than 0.05 = variances not equal).
+## Plant Family ####
+#STATS ### Pla Fam
+#test normality
+ PLFA_shapiro_PlaFam_M2_DW <- totalPLFA_M2_DW %>%  group_by (PlantFamily) %>% shapiro_test(PLFAperDW )
+#   #p-value > 0.05 implying that the distribution of the data are not significantly different from normal distribution.
+#   #In other words, we can assume the normality for all Pla Spe, but not for Poaceae
+# 
+PLFA_bartlett_PlaFam_M2_DW <- bartlett.test(totalPLFA_M2_DW$PLFAperDW ~ totalPLFA_M2_DW$PlantFamily ) # heteroscad ...
+# 
+# both okay -> ANOVA possible
+  
+## t test -- also fine if approximatey normal 
+ tTest_PlaSpe_M2_DW <- 
+   totalPLFA_M2_DW %>% 
+   filter (PlaSpe != "soil") %>%  
+   dplyr::group_by(PlaSpe) %>%  
+   nest() %>% 
+   mutate(model = map (data, ~t_test(PLFAperDW ~ AC.BC, data = .)))
+ 
+ #  tTest_PlaSpe_M2_DW$model[[2]][["p"]]
+ 
+#ANOVA for comparison of AC BC for each PlaSpe ####
+ # anovas_PlaSpe_M2_DW <- 
+ #   totalPLFA_M2_DW %>% 
+ #   filter (PlaSpe != "soil") %>%  
+ #   dplyr::group_by(PlaSpe) %>%  
+ #   nest() %>% 
+ #   mutate(model = map (data, ~aov(PLFAperDW ~ AC.BC, data = .)))
+
+ ## the summaries :
+# anovas_PlaSpe_M2_DW$model %>%  map (broom::tidy) 
+
+## only BroWil significant
+ ## get p etc for the significant model (BroWil)
+ #  summary (anovas_PlaSpe_M2_DW$model[[2]]) [[1]] [["Pr(>F)"]][[1]]
+
+# ANOVA partitioned the variance into  component can be explained by the predictor variable
+# and A component that cannot be explained by the predictor variable (variance within levels, the residual variance)
+# F, is the ratio of these two sources of variation
+
+#Post Hoc test - for  comparison between the PLaSpe of each treatment AC or BC
+# here Tukey is appropriate bec of normality etc
+# TukeyHSD_PlaSpe_M2_DW <- aov(PLFA ~ treatment, data = totalPLFA_M2_DW) %>%  tukey_hsd()
+
+### no other significant differences beteen the treatments -- nicht relevant hier, da icht de Pfanzne selber vergliechen werden, sondern AC BC
+
+## Plot total PLFA by Plant species#####-------------------------------------------------------------------------------------------------
+## sort the data , calculate means etc 
+  totalPLFA_M2_plot2_data  <- 
+  totalPLFA_M2_DW %>%  
+  group_by(AC.BC, PlantSpeciesfull) %>% 
+  summarise(meanPLFA = mean (PLFAperDW), SD = sd (PLFAperDW)) %>% 
+  left_join (meta_plants %>%  select (PlantSpeciesfull, PlantFamily, M1_M2_order) ) %>% unique () 
+
+ ## sort the data , calculate means etc 
+  totalPLFA_M2_plot2Fam_data  <- 
+  totalPLFA_M2_DW %>%  
+  group_by(AC.BC, PlantFamily) %>% 
+  summarise(meanPLFA = mean (PLFAperDW), SD = sd (PLFAperDW)) %>% 
+  left_join (meta_plants %>%  select (PlantSpeciesfull, PlantFamily, M1_M2_order) ) %>% unique () 
+
+ 
+
+## to get the  AC BC  legend
+Plot_legend_DW <- 
+  get_legend(   totalPLFA_M2_plot2Fam_data %>% 
+   ggplot (aes (x= PlantFamily, y = meanPLFA, group = AC.BC, fill = paste (totalPLFA_M2_plot2Fam_data$AC.BC, totalPLFA_M2_plot2Fam_data$PlantFamily))) +  
+    geom_bar  (stat = "identity", position = position_dodge(), color = "black")+
+    scale_fill_manual(values=c("AC Asteraceae" = "#edc948" , "BC Asteraceae" = "#f6e4a3" , 
+                               "AC Plantaginaceae" ="#4e79a7", "BC Plantaginaceae" = "#94aeca",
+                               "AC Poaceae" ="#7F9A65" , "BC Poaceae" = "#b2c2a2")) +
+    theme_bw () +
+    theme (axis.title = element_text(family = "sans", size = 13 ),  
+           legend.position = "bottom" ) +
+    labs (fill = guide_legend ( "")) ) %>% 
+  as_ggplot ()
+
+## Plot total PLFA AC BC direct comparison
+Plot_PLFA_M2_2_DW <- 
+  totalPLFA_M2_plot2_data  %>% 
+  ggplot (aes (x= reorder (PlantSpeciesfull, M1_M2_order), y = meanPLFA, group = AC.BC, fill = paste (totalPLFA_M2_plot2_data$AC.BC, totalPLFA_M2_plot2_data$PlantSpeciesfull))) + 
+  geom_bar (stat = "identity", position= position_dodge (), color = "black") +  
+  geom_errorbar(aes (ymin = meanPLFA, ymax =meanPLFA+SD), position = position_dodge()) +  
+  scale_fill_manual(values=c("AC A. millefolium" = "#edc948" , "BC A. millefolium" = "#f6e4a3" , 
+                             "AC C. intybus" = "#edc948" , "BC C. intybus"= "#f6e4a3" , 
+                             "AC P. lanceolata" ="#4e79a7", "BC P. lanceolata" = "#94aeca",
+                             "AC A. capillaris" ="#7F9A65" , "BC A. capillaris" = "#b2c2a2",
+                             "AC B. willdenowii"  = "#7F9A65" , "BC B. willdenowii"  = "#b2c2a2",
+                             "AC H. lanatus" ="#7F9A65" ,  "BC H. lanatus"= "#b2c2a2",
+                             "AC P. cita" ="#7F9A65" , "BC P. cita"= "#b2c2a2",
+                             "AC S. arundinaceus" ="#7F9A65" ,  "BC S. arundinaceus"= "#b2c2a2", 
+                             "control soil" ="beige" )) +
+  ylab("Total PLFA in nmol/g DW soil \nper g aboveground biomass") +
+  xlab ("Focal plant Species") +
+  theme_bw () +
+  theme(axis.text.x= element_text(family= "sans", face= "italic", size = 11, angle = 45, hjust = 1 )) +
+  theme (axis.text.y=element_text(family= "sans", size = 11))  +
+  theme (axis.title = element_text(family = "sans", size = 13 ),  
+         legend.position = "none" ) +
+  geom_signif(
+    annotations = "*", y_position = 12, xmin= 5.5, xmax=6.5)
+  
+
+## Plot for Plant families  ###------------------------------------------------------------------------------
+  
+ ## t test  - nothing significant
+  tTest_PlaFam_M2_DW <- 
+    totalPLFA_M2_DW %>% 
+    filter (PlaSpe != "soil") %>%  
+    dplyr::group_by(PlantFamily) %>%  
+    nest() %>% 
+    mutate(model = map (data, ~t_test(PLFAperDW ~ AC.BC, data = .)))
+
+
+## Data for plot#  
+  totalPLFA_M2_plot2_Fam_data <- 
+    totalPLFA_M2_DW %>%  
+    group_by(AC.BC, PlantFamily) %>% 
+    summarise(meanPLFA = mean (PLFAperDW), SD = sd (PLFAperDW)) 
+  
+# Plot ##  
+ Plot_PLFA_M2_2Fam  <- 
+  totalPLFA_M2_plot2_Fam_data %>% 
+    ggplot (aes (x= PlantFamily, y = meanPLFA, group = AC.BC, fill = paste (totalPLFA_M2_plot2_Fam_data$AC.BC, totalPLFA_M2_plot2_Fam_data$PlantFamily))) +  
+    #facet_wrap (~AC.BC) + 
+    geom_bar  (stat = "identity", position = position_dodge(), color = "black")+
+    geom_errorbar(aes (ymin = meanPLFA, ymax =meanPLFA+SD), position = position_dodge(), color = "black") +  
+    scale_fill_manual(values=c("AC Asteraceae" = "#edc948" , "BC Asteraceae" = "#f6e4a3" , 
+                               "AC Plantaginaceae" ="#4e79a7", "BC Plantaginaceae" = "#94aeca",
+                               "AC Poaceae" ="#7F9A65" , "BC Poaceae" = "#b2c2a2",
+                               "control soil" ="beige" )) +
+    ylab("Total PLFA in nmol/g DW soil \nper aboveground biomass") +
+    xlab ("Focal plant family") +
+    theme_bw () +
+    theme(axis.text.x= element_text(family= "sans", face= "italic", size = 11, angle = 45, hjust = 1 )) +
+    theme (axis.text.y=element_text(family= "sans", size = 11))  +
+    theme (axis.title = element_text(family = "sans", size = 13 ),  
+           legend.position = "none" ) 
+ # +     geom_signif(      annotations = "**", y_position = 27, xmin= 1.5, xmax=2.5)
+ 
+ #Post Hoc test - for  comparison between the PLaSpe of each treatment AC or BC
+# here Tukey is appropriate bec of normality etc
+# TukeyHSD_PlaSFam_M2_DW <- aov(PLFAperDW ~ treatment, data = totalPLFA_M2_DW) %>%  tukey_hsd()
+  
+## Full Plot Pla Spe and PlaFamily together with the PlantFamily legend ####
+ ggarrange ( ggarrange ( Plot_PLFA_M2_2_DW , Plot_PLFA_M2_2Fam, nrow=1, widths = c(4,2), align = "h", labels = "AUTO"), Plot_legend_DW,  nrow = 2, ncol = 1, heights = c(6,1))
+  
+```
+
+```{r plot-AMF-M2, include = F, fig.cap= "Influence of arrival time of a focal plant species on the AMF storage biomass in the soil. For each focal plant species, the mean total NLFA in nmol FA per g soil a is compared by arrival time. AC = Arrival of focal plant after rest of the community, BC = arrival before the plant community. Whiskers denote standard deviation (SD) of the mean total PLFA. Significance levels denote comparisons of the means between AC and BC treatments (t-test): * at p<0.05, ** at p<0.005, *** at p<0.0005, **** at p<0.0001" , dpi =300  }
+
+# calculation in chunk  AMF##
+# AMF in soil comparison AC BC and controls#
+plot_AMF_M2
+```
+
+```{r plot-PCA-PLFA-M2, include =T, fig.cap= "Principal component analysis (PCA) of microbial groups as determined by phospholipid fatty acid (PLFA) analysis. PCA-biplot of the microbial groups bacteria, fungi, arbuscular mycorrhizal fungi (AMF), Gram-positive bacteria (gram.pos), Actinobacteria and Gram-negative bacteria (gram.neg). Arrows show the loadings for each group. Dots are samples from each pot consisting of a plant community of 8 plant species, they are colour coded by the focal plant species. Different shapes indicate the order of arrival of the focal plant: AC for arrival after the plant community, BC = arrival before the plant community. The first two dimensions (principal component 1 an 2) explain about 89 % of the variation. " }
+
+## PLFA data for PCA 
+PLFA_PCA_M2 <-   
+  PL_FA_conc_M2 %>%
+  filter (Biom2Soil !="IS") %>%
+  filter (Biom2Soil != "NAFA" & focal.sp != "control" ) %>%  
+  group_by(sampleID, Biom2Soil) %>%  
+  summarise (group = sum (conc_FA)) %>%  
+  #bind_rows(PL_FA_conc_control %>%  group_by(Biom2Soil, sampleID) %>%  summarise (group = sum (conc_FA)) %>%  filter (Biom2Soil !="NAFA" & Biom2Soil != "IS")) %>% 
+  left_join (meta_M2 %>%  select (sampleID, AC.BC, focal.sp)) %>%  
+  left_join (meta_plants) %>%  
+  #unite ("priority_PlantFamily" , AC.BC, PlantFamily, sep = "_") %>% 
+  pivot_wider(names_from = Biom2Soil, values_from = group)  %>% 
+  replace (is.na(.), 0)
+#%>% 
+  #%>%   mutate (totalPLFA = Actinobacteria+AMF+ bacteria+Fungi+gram.neg+gram.pos) 
+  #%>%  #mutate  (RatioFtoB  = Fungi/bacteria)%>% 
+  #select (-c(bacteria, Fungi)) ## ggf noch F:B dazu und einzeln F raus stattdessen?
+  # mutate (group = case_when (PlantFamily == "Asteraceae" ~ "A", PlaSpe == "PlaLan" ~ "B" , PlaSpe ==  "PoaCit" ~ "B" ,
+  #                            PlaSpe ==  "SchAru" ~ "B" ,PlaSpe == "BroWil"~ "C", PlaSpe ==  "AgrCap"~ "C", 
+  #                            PlaSpe ==  "HolLan"~ "C", PlaSpe =="SoiCon"~ "SC")) %>% 
+  # unite ("group", "group", "AC.BC")
+
+
+
+
+### ACBC in one plot 
+PLFA_PCA.res_M2 <- PCA (PLFA_PCA_M2[,8:13], graph = F,  scale.unit =T) # oder hier FALSE for scale unit?
+
+PCA_arrows_PLFA_M2<-
+  PLFA_PCA.res_M2$var$coord %>%  as_tibble (rownames = "microbes") %>% 
+  dplyr::rename("D1end" = "Dim.1", "D2end"= "Dim.2")
+
+# get PCa data for ggplot input #
+PCA_PLFA_data_M2   <- PLFA_PCA.res_M2$ind$coord  %>%  as_tibble() %>% cbind (PLFA_PCA_M2)
+
+centerFAPCA <- aggregate(cbind (Dim.1, Dim.2) ~PlantSpeciesfull+AC.BC, data =PCA_PLFA_data_M2 , FUN= mean) %>% 
+  dplyr::rename("cDim1" = "Dim.1", "cDim2" = "Dim.2") 
+PCA_PLFA_data_M2  <- PCA_PLFA_data_M2 %>%  left_join (centerFAPCA)
+
+# get variance in % #
+PCA_eig_Dim1 <- round (PLFA_PCA.res_M2$eig[1,2],1)
+
+PCA_eig_Dim2 <- round (PLFA_PCA.res_M2$eig[2,2],1)
+
+# PLOT# 
+plot_PCA_M2  <-
+  ggplot (PCA_PLFA_data_M2, aes (x = Dim.1, y = Dim.2, color = PlantSpeciesfull, shape = AC.BC)) + 
+  geom_point (size =3) +
+  geom_hline(yintercept = 0, lty = 2, color = "grey", alpha = 0.9) + 
+  geom_vline(xintercept = 0, lty = 2, color = "grey", alpha = 0.9) + 
+  #stat_ellipse(aes (x= Dim.1, y = Dim.2, color = PlaSpe), inherit.aes = F, type = "norm")  +   # thisis 95%confidence
+  geom_segment(data = PCA_arrows_PLFA_M2, aes (x=0, xend= D1end*3, y = 0, yend = D2end*3), 
+               arrow = arrow(length = unit(0.3, "picas")), color = "grey", inherit.aes = F)  +
+  geom_text (data = PCA_arrows_PLFA_M2, aes (x  = D1end*3.3, y = D2end*3.3, label = microbes), color = "black", inherit.aes = F ) + 
+ # geom_segment (data = PCA_PLFA_data_M2, mapping = aes (xend = cDim1, yend = cDim2)) +
+  geom_point (data = PCA_PLFA_data_M2, mapping = aes (x= cDim1, y = cDim2,  color = PlantSpeciesfull, shape = AC.BC), size =5, inherit.aes  = F) +
+  theme_minimal() + 
+  xlab(label = "PC1 (80.6.4 %)") +
+  ylab ("PC2 (8.8 %)") + 
+  guides (color= guide_legend( "Plant species"), shape = guide_legend("Arrival order")) +
+  theme (legend.text = element_text(face = "italic"))
+
+
+plot_PCA_M2
+
+```
+
+
+\newpage
+
